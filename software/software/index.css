@@ -1,0 +1,30 @@
+.header-bar{
+    display: inline;
+}
+
+header.header-bar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 55px;
+    width: 100%;
+    box-shadow: 0 0 10px 5px rgba(247, 201, 223, 0.836);
+    background-color: rgba(255, 255, 255, 0.562);
+}
+
+p.header-bar{
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: rgba(247, 201, 223, 0.836);
+}
+i.header-bar{
+    font-size: 35px;
+    color: rgba(247, 201, 223, 0.836);
+    font-weight: 1000;
+}
+li.side-bar{
+    list-style: none;
+    padding: 10px;
+}
