@@ -1,3 +1,6 @@
+body{
+    background-color: #FFF3F3;
+}
 .header-bar{
     display: inline;
 }
@@ -6,11 +9,11 @@ header.header-bar{
     position: fixed;
     top: 0;
     right: 0;
-    left: 0;
+    left: 30%;
     height: 55px;
     width: 100%;
-    box-shadow: 0 0 10px 5px rgba(247, 201, 223, 0.836);
-    background-color: rgba(255, 255, 255, 0.562);
+   
+    background-color:white;
 }
 
 p.header-bar{
@@ -24,7 +27,19 @@ i.header-bar{
     color: rgba(247, 201, 223, 0.836);
     font-weight: 1000;
 }
+nav.side-bar{
+    width: 250px;
+    position: fixed;
+    background-color: white;
+    left: 0;
+}
 li.side-bar{
     list-style: none;
     padding: 10px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+a.side-bar{
+    font-size: 30px;
+    color: #694532;
 }
