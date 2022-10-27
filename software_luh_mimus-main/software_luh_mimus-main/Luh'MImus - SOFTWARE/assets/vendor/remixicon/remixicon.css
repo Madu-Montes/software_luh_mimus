@@ -17,6 +17,7 @@
   url('remixicon.ttf?t=1590207869815') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
   url('remixicon.svg?t=1590207869815#remixicon') format('svg'); /* iOS 4.1- */
   font-display: swap;
+  color: #694539;
 }
 
 [class^="ri-"], [class*=" ri-"] {
@@ -24,6 +25,7 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #694539;
 }
 
 .ri-lg { font-size: 1.3333em; line-height: 0.75em; vertical-align: -.0667em; }
