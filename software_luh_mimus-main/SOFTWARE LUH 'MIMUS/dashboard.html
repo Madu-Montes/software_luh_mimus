@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Luh' Mimus</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+    <link rel="stylesheet" href="assets/vendors/iconly/bold.css">
+
+    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+    <div id="app">
+        <div id="sidebar" class="active">
+            <div class="sidebar-wrapper active">
+                <div class="sidebar-header">
+                    <div class="d-flex justify-content-between">
+                        <div class="logo">
+                            <a href="dashboard.html"><img src="assets/images/logo/logo.png" alt="Logo" srcset=""></a>
+                        </div>
+                        <div class="toggler">
+                            <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Menu -->
+                <div class="sidebar-menu">
+                    <ul class="menu">
+
+                        <!--Dashboard -->
+                        <li class="sidebar-item active ">
+                            <a href="dashboard.html" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+
+                        <!--Calendário -->
+                        <li class="sidebar-item  ">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-calendar-event"></i>
+                                <span>Calendário</span>
+                            </a>
+                        </li>
+
+                        <!--Clientes -->
+                        <li class="sidebar-item  ">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-people-fill"></i>
+                                <span>Clientes</span>
+                            </a>
+                        </li>
+
+                        <!--Anúncios -->
+                        <li class="sidebar-item  ">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-megaphone-fill"></i>
+                                <span>Anúncios</span>
+                            </a>
+                        </li>
+
+                        <!--Pedidos -->
+                        <li class="sidebar-item  ">
+                            <a href="pedidos.html" class='sidebar-link'>
+                                <i class="bi bi-basket-fill"></i>
+                                <span>Pedidos</span>
+                            </a>
+                        </li>
+
+                        <!--Receitas -->
+                        <li class="sidebar-item  ">
+                            <a href="form-layout.html" class='sidebar-link'>
+                                <i class="bi bi-book"></i>
+                                <span>Receitas</span>
+                            </a>
+                        </li>
+                        
+                        <!--Estoque -->
+                        <li class="sidebar-item  ">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-box-seam"></i>
+                                <span>Estoque</span>
+                            </a>
+                        </li>
+
+                        <!--Finanças -->
+                        <li class="sidebar-item  ">
+                            <a href="table.html" class='sidebar-link'>
+                                <i class="bi bi-cash"></i>
+                                <span>Finanças</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+            </div>
+        </div>
+       
+        <!-----Fim do Menu Lateral------->
+        <header class="header-bar">
+            <div id="pesquisar-bar" class="lado">
+                &nbsp;<input type="text" placeholder="Pesquisar" id="pesquisar-header" maxlength="15">
+                <i class="bi bi-search fs-002"></i>
+            </div>
+            <div id="resto-bar" class="lado">
+
+                <img class="lado-resto-elements"><p class="lado-resto-elements">Luana <i class="bi bi-bell fs-0f3" style="font-size: 17.5px;"></i></p>
+            </div>
+        </header>
+        
+    <!---Fim do header do topo-->
+        <br>
+        <div id="main">
+            <header class="mb-3">
+                <a href="#" class="burger-btn d-block d-xl-none">
+                    <i class="bi bi-justify fs-3"></i>
+                </a>
+            </header>
+
+            <div class="page-heading">
+                <h3>Dashboard</h3>
+            </div>
+
+            <div class="page-content  ">
+
+                <!-- cow da seção inteira-->
+                <section class="row">
+
+                <!-- col da seção inteira-->
+                    <div class="col-12 col-lg-9">
+                       
+
+
+            <!-----Cards no topo------->
+
+                        <!-- row dos cards-->
+                        <div class="row border">
+
+                <!-----Cards de Vendas------->
+                            <div class="col-6 col-lg-5 col-md-6">
+                                <div class="card">
+                                    <div class="row">
+                                        <div class="col-5 col-lg-7 border col-md-3 ms-md-auto">
+                                            <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 490" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 243, 243, 1)" offset="0%"></stop><stop stop-color="rgba(230, 176, 122, 1)" offset="100%"></stop></linearGradient></defs>
+                                                <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,392L26.7,367.5C53.3,343,107,294,160,285.8C213.3,278,267,310,320,343C373.3,376,427,408,480,392C533.3,376,587,310,640,261.3C693.3,212,747,180,800,212.3C853.3,245,907,343,960,392C1013.3,441,1067,441,1120,375.7C1173.3,310,1227,180,1280,130.7C1333.3,82,1387,114,1440,163.3C1493.3,212,1547,278,1600,261.3C1653.3,245,1707,147,1760,114.3C1813.3,82,1867,114,1920,147C1973.3,180,2027,212,2080,212.3C2133.3,212,2187,180,2240,212.3C2293.3,245,2347,343,2400,343C2453.3,343,2507,245,2560,196C2613.3,147,2667,147,2720,179.7C2773.3,212,2827,278,2880,310.3C2933.3,343,2987,343,3040,326.7C3093.3,310,3147,278,3200,261.3C3253.3,245,3307,245,3360,212.3C3413.3,180,3467,114,3520,106.2C3573.3,98,3627,147,3680,212.3C3733.3,278,3787,359,3813,400.2L3840,441L3840,490L3813.3,490C3786.7,490,3733,490,3680,490C3626.7,490,3573,490,3520,490C3466.7,490,3413,490,3360,490C3306.7,490,3253,490,3200,490C3146.7,490,3093,490,3040,490C2986.7,490,2933,490,2880,490C2826.7,490,2773,490,2720,490C2666.7,490,2613,490,2560,490C2506.7,490,2453,490,2400,490C2346.7,490,2293,490,2240,490C2186.7,490,2133,490,2080,490C2026.7,490,1973,490,1920,490C1866.7,490,1813,490,1760,490C1706.7,490,1653,490,1600,490C1546.7,490,1493,490,1440,490C1386.7,490,1333,490,1280,490C1226.7,490,1173,490,1120,490C1066.7,490,1013,490,960,490C906.7,490,853,490,800,490C746.7,490,693,490,640,490C586.7,490,533,490,480,490C426.7,490,373,490,320,490C266.7,490,213,490,160,490C106.7,490,53,490,27,490L0,490Z"></path>
+                                            </svg>
+                                    </div>
+                                        </div>
+                                    <div class="card-body px-4 py-4-5">
+                                        <div class="row lg">
+                                            <div class="col-5 border col-sm-5 col-md-4">
+                                                <h6 class="text-muted font-semibold">Vendas</h6>
+                                                <h6 class="font-extrabold mb-0">112.000</h6>
+                                            </div>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                 <!-----Cards de Lucro------->            
+                            <div class="col-6 col-lg-4 col-md-6">
+                                <div class="card border">
+                                    <div class="card-body px-3 py-4-5 border">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <h6 class="text-muted font-semibold">Lucro</h6>
+                                                <h6 class="font-extrabold mb-0">183.000</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+
+                 <!-----Cards de Encomendas------->
+                            <div class="col-6 col-lg-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-body px-3 py-4-5">
+                                        <div class="row">
+                                        
+                                            <div class="col-md-8">
+                                                <h6 class="text-muted font-semibold">Encomendas</h6>
+                                                <h6 class="font-extrabold mb-0">80.000</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            <!-----Fim de Cards no topo------->
+
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4>Profile Visit</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="chart-profile-visit"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-xl-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4>Profile Visit</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            
+                                    
+                                            
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="d-flex align-items-center">
+                                                   
+                                                    <h5 class="mb-0 ms-3">America</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <h5 class="mb-0">375</h5>
+                                            </div>
+                                            <div class="col-12">
+                                                <div id="chart-america"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="d-flex align-items-center">
+                                                    <h5 class="mb-0 ms-3">Indonesia</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <h5 class="mb-0">1025</h5>
+                                            </div>
+                                            <div class="col-12">
+                                                <div id="chart-indonesia"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-8">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4>Latest Comments</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover table-lg">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Name</th>
+                                                        <th>Comment</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="col-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="avatar avatar-md">
+                                                                    <img src="assets/images/faces/5.jpg">
+                                                                </div>
+                                                                <p class="font-bold ms-3 mb-0">Si Cantik</p>
+                                                            </div>
+                                                        </td>
+                                                        <td class="col-auto">
+                                                            <p class=" mb-0">Congratulations on your graduation!</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="col-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="avatar avatar-md">
+                                                                    <img src="assets/images/faces/2.jpg">
+                                                                </div>
+                                                                <p class="font-bold ms-3 mb-0">Si Ganteng</p>
+                                                            </div>
+                                                        </td>
+                                                        <td class="col-auto">
+                                                            <p class=" mb-0">Wow amazing design! Can you make another
+                                                                tutorial for
+                                                                this design?</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Recent Messages</h4>
+                            </div>
+                            <div class="card-content pb-4">
+                                <div class="recent-message d-flex px-4 py-3">
+                                    <div class="avatar avatar-lg">
+                                        <img src="assets/images/faces/4.jpg">
+                                    </div>
+                                    <div class="name ms-4">
+                                        <h5 class="mb-1">Hank Schrader</h5>
+                                        <h6 class="text-muted mb-0">@johnducky</h6>
+                                    </div>
+                                </div>
+                                <div class="recent-message d-flex px-4 py-3">
+                                    <div class="avatar avatar-lg">
+                                        <img src="assets/images/faces/5.jpg">
+                                    </div>
+                                    <div class="name ms-4">
+                                        <h5 class="mb-1">Dean Winchester</h5>
+                                        <h6 class="text-muted mb-0">@imdean</h6>
+                                    </div>
+                                </div>
+                                <div class="recent-message d-flex px-4 py-3">
+                                    <div class="avatar avatar-lg">
+                                        <img src="assets/images/faces/1.jpg">
+                                    </div>
+                                    <div class="name ms-4">
+                                        <h5 class="mb-1">John Dodol</h5>
+                                        <h6 class="text-muted mb-0">@dodoljohn</h6>
+                                    </div>
+                                </div>
+                                <div class="px-4">
+                                    <button class='btn btn-block btn-xl btn-light-primary font-bold mt-3'>Start
+                                        Conversation</button>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Visitors Profile</h4>
+                            </div>
+                            <div class="card-body">
+                                <div id="chart-visitors-profile"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <footer>
+                <div class="footer clearfix mb-0 text-muted">
+                    <div class="float-start">
+                        <p>2021 &copy; Mazer</p>
+                    </div>
+                    <div class="float-end">
+                        <p>Crafted with <span class="text-danger"><i class="bi bi-heart"></i></span> by <a
+                                href="http://ahmadsaugi.com">A. Saugi</a></p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/vendors/apexcharts/apexcharts.js"></script>
+    <script src="assets/js/pages/dashboard.js"></script>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
