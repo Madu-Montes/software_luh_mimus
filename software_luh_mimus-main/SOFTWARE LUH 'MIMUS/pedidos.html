@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="assets/css/pedido.css">
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
 </head>
 
 <body>
@@ -39,9 +40,9 @@
                     <ul class="menu">
 
                         <!--Dashboard -->
-                        <li class="sidebar-item  ">
+                        <li class="sidebar-item active ">
                             <a href="dashboard.html" class='sidebar-link'>
-                                <i class="bi bi-grid-fill"></i>
+                                <img src="./assets/images/home.png" alt="">
                                 <span>Dashboard</span>
                             </a>
                         </li>
@@ -49,7 +50,7 @@
                         <!--Calendário -->
                         <li class="sidebar-item  ">
                             <a href="#" class='sidebar-link'>
-                                <i class="bi bi-calendar-event"></i>
+                                <img src="./assets/images/calendario.png" alt="">
                                 <span>Calendário</span>
                             </a>
                         </li>
@@ -57,7 +58,7 @@
                         <!--Clientes -->
                         <li class="sidebar-item  ">
                             <a href="#" class='sidebar-link'>
-                                <i class="bi bi-people-fill"></i>
+                                <img src="./assets/images/clientes.png" alt="">
                                 <span>Clientes</span>
                             </a>
                         </li>
@@ -65,15 +66,15 @@
                         <!--Anúncios -->
                         <li class="sidebar-item  ">
                             <a href="#" class='sidebar-link'>
-                                <i class="bi bi-megaphone-fill"></i>
+                                <img src="./assets/images/anuncios.png" alt="">
                                 <span>Anúncios</span>
                             </a>
                         </li>
 
                         <!--Pedidos -->
-                        <li  class="sidebar-item active ">
+                        <li class="sidebar-item  ">
                             <a href="pedidos.html" class='sidebar-link'>
-                                <i class="bi bi-basket-fill"></i>
+                                <img src="./assets/images/pedidos.png" alt="">
                                 <span>Pedidos</span>
                             </a>
                         </li>
@@ -81,15 +82,15 @@
                         <!--Receitas -->
                         <li class="sidebar-item  ">
                             <a href="form-layout.html" class='sidebar-link'>
-                                <i class="bi bi-book"></i>
+                                <img src="./assets/images/receitas.png" alt="">
                                 <span>Receitas</span>
                             </a>
                         </li>
-                        
+
                         <!--Estoque -->
                         <li class="sidebar-item  ">
                             <a href="#" class='sidebar-link'>
-                                <i class="bi bi-box-seam"></i>
+                                <img src="./assets/images/estoque.png" alt="">
                                 <span>Estoque</span>
                             </a>
                         </li>
@@ -97,7 +98,7 @@
                         <!--Finanças -->
                         <li class="sidebar-item  ">
                             <a href="table.html" class='sidebar-link'>
-                                <i class="bi bi-cash"></i>
+                                <img src="./assets/images/finanças.png" alt="">
                                 <span>Finanças</span>
                             </a>
                         </li>
@@ -106,20 +107,40 @@
                 <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
             </div>
         </div>
+
         <!-----Fim do Menu Lateral------->
-
         <header class="header-bar">
-            <div id="pesquisar-bar" class="lado">
-                &nbsp;<input type="text" placeholder="Pesquisar" id="pesquisar-header" maxlength="15">
-                <i class="bi bi-search fs-002"></i>
-            </div>
-            <div id="resto-bar" class="lado">
 
-                <img class="lado-resto-elements"><p class="lado-resto-elements">Luana <i class="bi bi-bell fs-0f3" style="font-size: 17.5px;"></i></p>
+            <div class="icones-topo">
+                <a class="notification" href="./index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                        <path
+                            d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+                    </svg>
+                </a>
+
+                <div class="dropdown open">
+                    <a href="#" class="btn btn-secondary btn-sm dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <img src="./assets/images/user.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                        <strong>user</strong>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="triggerId">
+                        <li><a class="dropdown-item" href="#">Tema Escuro</a></li>
+                        <li><a class="dropdown-item" href="#">Configurções</a></li>
+                        <li><a class="dropdown-item" href="#">Ajuda</a></li>
+                        <li>
+                            <div class="dropdown-divider"></div>
+                        </li>
+                        <li><a class="dropdown-item" href="#"><img src="./assets/images/sair.png" alt="" width="32"
+                                    height="32" class="rounded-circle me-2">
+                                <strong>sair</strong> </a></li>
+                    </div>
+                </div>
             </div>
         </header>
-        
-    <!---Fim do header do topo-->
+
+        <!---Fim do header do topo-->
         <br>
         <div id="main">
             <header class="mb-3">
@@ -136,10 +157,10 @@
             <div class="pedidosTot">
                 <div class="pedidosUniInt">
                     <a href="ped01.html">
-                    &nbsp;&nbsp;<i class="bi bi-check-circle fs-058" id="header-elements" style="font-family:'Courier New', Courier, monospace;"></i>
+                        <p id="elements" style="float: left;"> &nbsp;&nbsp;<i class="bi bi-check-circle fs-058" id="elements" style="font-family:'Courier New', Courier, monospace;"></i>
                     &nbsp;&nbsp;
-                    <p id="header-elements" style="margin-right: 65%;">Entregue</p>
-                    <p id="header-elements">16 de agosto - 16:30</p>
+                    Entregue</p>
+                    <p id="elements">16 de agosto - 16:30</p>
                     <hr>
                     <table>
                         <tr>
@@ -167,67 +188,73 @@
                 </div>
             </div>
             <br>
-            <div class="pedidosUniInt">
-                &nbsp;&nbsp;<i class="bi bi-check-circle fs-058" id="header-elements" style="font-family:'Courier New', Courier, monospace;"></i>
-                &nbsp;&nbsp;
-                <p id="header-elements" style="margin-right: 65%;">Entregue</p>
-                <p id="header-elements">16 de agosto - 16:30</p>
-                <hr>
-                <table>
-                    <tr>
-                        <td>
-                            <img src="https://imagensemoldes.com.br/wp-content/uploads/2020/05/Brigadeiro-com-Fundo-Transparente-Doces-PNG.png" height="100" width="100">
-                        </td>
-                        <td>
-                            Nome do produto
-                            <p>(quant. produto)</p>
-                        </td>
-                        <td>
-                            Valor
-                        </td>
-                        <td>
-                            <img src="https://assets.stickpng.com/thumbs/585e4bf3cb11b227491c339a.png" height="100" width="100" class="usuario-img" id="usuario-lado">
-                            <p id="usuario-lado">Nome do usuário</p>
+            <div class="pedidosTot">
+                <div class="pedidosUniInt">
+                    <a href="ped01.html">
+                        <p id="elements" style="float: left;"> &nbsp;&nbsp;<i class="bi bi-check-circle fs-058" id="elements" style="font-family:'Courier New', Courier, monospace;"></i>
+                    &nbsp;&nbsp;
+                    Entregue</p>
+                    <p id="elements">16 de agosto - 16:30</p>
+                    <hr>
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="https://imagensemoldes.com.br/wp-content/uploads/2020/05/Brigadeiro-com-Fundo-Transparente-Doces-PNG.png" height="100" width="100">
+                            </td>
+                            <td>
+                                Nome do produto
+                                <p>(quant. produto)</p>
+                            </td>
+                            <td>
+                                Valor
+                            </td>
+                            <td>
+                                <img src="https://assets.stickpng.com/thumbs/585e4bf3cb11b227491c339a.png" height="100" width="100" class="usuario-img" id="usuario-lado">
+                                <p id="usuario-lado">Nome do usuário</p>
 
-                            
-                        </td>
-                    </tr>
-                </table>
-                <br>
-                <button>Chat</button>&nbsp;&nbsp;&nbsp;
+                                
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    </a>
+                    <button>Chat</button>&nbsp;&nbsp;&nbsp;
+                </div>
             </div>
             <br>
-            <div class="pedidosUniInt">
-                &nbsp;&nbsp;<i class="bi bi-check-circle fs-058" id="header-elements" style="font-family:'Courier New', Courier, monospace;"></i>
-                &nbsp;&nbsp;
-                <p id="header-elements" style="margin-right: 65%;">Entregue</p>
-                <p id="header-elements">16 de agosto - 16:30</p>
-                <hr>
-                <table>
-                    <tr>
-                        <td>
-                            <img src="https://imagensemoldes.com.br/wp-content/uploads/2020/05/Brigadeiro-com-Fundo-Transparente-Doces-PNG.png" height="100" width="100">
-                        </td>
-                        <td>
-                            Nome do produto
-                            <p>(quant. produto)</p>
-                        </td>
-                        <td>
-                            Valor
-                        </td>
-                        <td>
-                            <img src="https://assets.stickpng.com/thumbs/585e4bf3cb11b227491c339a.png" height="100" width="100" class="usuario-img" id="usuario-lado">
-                            <p id="usuario-lado">Nome do usuário</p>
+            <div class="pedidosTot">
+                <div class="pedidosUniInt">
+                    <a href="ped01.html">
+                        <p id="elements" style="float: left;"> &nbsp;&nbsp;<i class="bi bi-check-circle fs-058" id="elements" style="font-family:'Courier New', Courier, monospace;"></i>
+                    &nbsp;&nbsp;
+                    Entregue</p>
+                    <p id="elements">16 de agosto - 16:30</p>
+                    <hr>
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="https://imagensemoldes.com.br/wp-content/uploads/2020/05/Brigadeiro-com-Fundo-Transparente-Doces-PNG.png" height="100" width="100">
+                            </td>
+                            <td>
+                                Nome do produto
+                                <p>(quant. produto)</p>
+                            </td>
+                            <td>
+                                Valor
+                            </td>
+                            <td>
+                                <img src="https://assets.stickpng.com/thumbs/585e4bf3cb11b227491c339a.png" height="100" width="100" class="usuario-img" id="usuario-lado">
+                                <p id="usuario-lado">Nome do usuário</p>
 
-                            
-                        </td>
-                    </tr>
-                </table>
-                <br>
-                <button>Chat</button>&nbsp;&nbsp;&nbsp;
+                                
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    </a>
+                    <button>Chat</button>&nbsp;&nbsp;&nbsp;
+                </div>
             </div>
-
-        </div>
             
     <!--Fim dos pedidos-->
             <footer>
