@@ -82,11 +82,11 @@
                         <!--Receitas -->
                         <li class="sidebar-item  ">
                             <a href="form-layout.html" class='sidebar-link'>
-                                 <img src="./assets/images/receitas.png" alt="">
+                                <img src="./assets/images/receitas.png" alt="">
                                 <span>Receitas</span>
                             </a>
                         </li>
-                        
+
                         <!--Estoque -->
                         <li class="sidebar-item  ">
                             <a href="#" class='sidebar-link'>
@@ -114,20 +114,48 @@
                 <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
             </div>
         </div>
-       
+
         <!-----Fim do Menu Lateral------->
         <header class="header-bar">
-            <div id="pesquisar-bar" class="lado">
-                &nbsp;<input type="text" placeholder="Pesquisar" id="pesquisar-header" maxlength="15">
-                <i class="bi bi-search fs-002"></i>
-            </div>
-            <div id="resto-bar" class="lado">
 
-                <img class="lado-resto-elements"><p class="lado-resto-elements">Luana <i class="bi bi-bell fs-0f3" style="font-size: 17.5px;"></i></p>
+            <div class="search-bar">
+                <input class="search-txt" type="text" placeholder="Pesquisar">
+                <a class="search-btn" href="#">
+                    <i class="bi bi-search"></i></a>
             </div>
+
+            <div class="icones-topo">
+                <a class="notification" href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                  </svg>
+                </a>
+
+                <div class="dropdown open">
+                    <a href="#" class="btn btn-secondary btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <img src="./assets/images/user.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                                <strong>user</strong> 
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="triggerId">
+                        <li><a class="dropdown-item" href="#">Tema Escuro</a></li>
+                        <li><a class="dropdown-item" href="#">Configurções</a></li>
+                        <li><a class="dropdown-item" href="#">Ajuda</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><div class="dropdown-divider"></div></li>
+                        <li><a class="dropdown-item" href="#">After divider action</a></li>
+                    </div>
+                </div>
+
+                
+
+            </div>
+
+            
+
         </header>
-        
-    <!---Fim do header do topo-->
+
+        <!---Fim do header do topo-->
         <br>
         <div id="main">
             <header class="mb-3">
@@ -145,17 +173,17 @@
                 <!-- row da seção inteira-->
                 <section class="row">
 
-                <!-- col da seção inteira-->
+                    <!-- col da seção inteira-->
                     <div class="col-12 col-lg-9">
-                       
 
 
-            <!-----Cards no topo------->
+
+                        <!-----Cards no topo------->
 
                         <!-- row dos cards-->
                         <div class="row">
 
-                <!-----Cards de Vendas------->
+                            <!-----Cards de Vendas------->
                             <div class="col-6 col-lg-4 col-md-6">
                                 <div class="card">
                                     <div class="card-body px-3 py-4-5">
@@ -169,7 +197,7 @@
                                 </div>
                             </div>
 
-                 <!-----Cards de Lucro------->            
+                            <!-----Cards de Lucro------->
                             <div class="col-6 col-lg-4 col-md-6">
                                 <div class="card">
                                     <div class="card-body px-3 py-4-5">
@@ -182,14 +210,14 @@
                                     </div>
                                 </div>
                             </div>
-                
 
-                 <!-----Cards de Encomendas------->
+
+                            <!-----Cards de Encomendas------->
                             <div class="col-6 col-lg-4 col-md-6">
                                 <div class="card">
                                     <div class="card-body px-3 py-4-5">
                                         <div class="row">
-                                        
+
                                             <div class="col-md-8">
                                                 <h6 class="text-muted font-semibold">Encomendas</h6>
                                                 <h6 class="font-extrabold mb-0">80.000</h6>
@@ -199,7 +227,7 @@
                                 </div>
                             </div>
                         </div>
-            <!-----Fim de Cards no topo------->
+                        <!-----Fim de Cards no topo------->
 
 
                         <div class="row">
@@ -221,11 +249,11 @@
                                         <h4>Profile Visit</h4>
                                     </div>
                                     <div class="card-body">
-                                
+
                                         <div class="row">
                                             <div class="col-6">
                                                 <div class="d-flex align-items-center">
-                                                   
+
                                                     <h5 class="mb-0 ms-3">America</h5>
                                                 </div>
                                             </div>
@@ -270,7 +298,7 @@
                                                     <tr>
                                                         <td class="col-3">
                                                             <div class="d-flex align-items-center">
-                                                            
+
                                                                 <p class="font-bold ms-3 mb-0">Si Cantik</p>
                                                             </div>
                                                         </td>
@@ -328,7 +356,7 @@
                                 </div>
                             </div>
                         </div>
-                       
+
                         <div class="card">
                             <div class="card-header">
                                 <h4>Visitors Profile</h4>
