@@ -52,7 +52,7 @@ body{
 }
 
 .form-header h1{
-    color: #E6B07A;
+    color: #F99AAF;
     font-weight: bold;
     margin-left: 15%;
     margin-bottom: 10%;
@@ -74,7 +74,7 @@ body{
 .login-btn button{
     width: 50%;
     border: none;
-    background-color: #E6B07A;
+    background-color: #F99AAF;
     padding: 0.4rem 1rem;
     border-radius: 5px;
     cursor: pointer;
