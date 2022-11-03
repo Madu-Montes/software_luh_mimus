@@ -26,36 +26,47 @@
     text-align: right;
 }
 
-.search-bar {
+.search-box {
     position: absolute;
-    top: 10%;
-    right: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     height: 40px;
-    border-radius: 40px;
+    border-radius: 50px;
     padding: 10px;
-    border: 1px solid #F07882;
-}
-
-.search-btn {
-    color: #F07882;
-    float: right;
-    width: 40px;
-    height: 40px;
     display: flex;
+    justify-content: space-between;
+    border: 1px solid #000000;
+    align-items: center;
 }
 
-.search-txt {
-    border: none;
-    background: none;
-    outline: none;
-    float: left;
-    padding: 4;
-    color: rgb(0, 0, 0);
-    font-size: 16px;
-    transition: 0.4s;
-    line-height: 20px;
-    width: 240px;
+.header-bar form{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    border-radius: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.header-bar form button{
+    background-color: #FCCAD5;
+    border-radius: 50%;
+}
+
+.header-bar form .form-control{
+    border-radius: 40px;
+    font-size: 14px;
+}
+
+
+
+
+
 
 .icones-topo a svg {
     width: 26px;
