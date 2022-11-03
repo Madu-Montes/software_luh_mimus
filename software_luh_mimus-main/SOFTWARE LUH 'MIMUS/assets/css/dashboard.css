@@ -1,0 +1,17 @@
+#app .logo img{
+    width: 140px;
+    height: 140px;
+    margin-left: 25%;
+}
+
+.menu li img{
+    width: 30px;
+}
+
+#main{
+    background-color: #FCCAD5;
+}
+
+.card-body #chart-profile-visit{
+    color: #F07882;
+}
