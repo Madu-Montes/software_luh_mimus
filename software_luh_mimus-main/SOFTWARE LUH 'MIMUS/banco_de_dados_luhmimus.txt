@@ -1,0 +1,20 @@
+CREATE DATABASE luh_mimus;
+
+USE luh_mimus;
+
+CREATE TABLE User_Cdst_Site(
+id_UserCdstSite SMALLINT AUTO_INCREMENT, 
+email_UserCdstSite VARCHAR(50) NOT NULL,
+senha_UserCdstSite VARCHAR(50) NOT NULL,
+nome_UserCdstSite VARCHAR(50) NOT NULL,
+celular_UserCdstSite VARCHAR(50) NOT NULL,
+cpf_UserCdstSite VARCHAR(50) NOT NULL,
+dtn_UserCdstSite VARCHAR(50) NOT NULL,
+PRIMARY KEY (id_UserCdstSite));
+
+
+
+
+
+
+
