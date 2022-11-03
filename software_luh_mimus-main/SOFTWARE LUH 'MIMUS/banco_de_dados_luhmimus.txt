@@ -10,11 +10,40 @@ nome_UserCdstSite VARCHAR(50) NOT NULL,
 celular_UserCdstSite VARCHAR(50) NOT NULL,
 cpf_UserCdstSite VARCHAR(50) NOT NULL,
 dtn_UserCdstSite VARCHAR(50) NOT NULL,
+cep_UserCdstSite VARCHAR(50) NOT NULL,
+rua_UserCdstSite VARCHAR(140) NOT NULL,
+numero_UserCdstSite SMALLINT NOT NULL,
+comeplemento_UserCdstSite VARCHAR(50) NOT NULL,
+bairro_UserCdstSite VARCHAR (50) NOT NULL,
 PRIMARY KEY (id_UserCdstSite));
 
+CREATE TABLE categorias(
+id_categorias BIGINT AUTO_INCREMENT, 
+nome_categorias CHAR NOT NULL,
+desc_categorias VARCHAR(1000) NOT NULL,
+PRIMARY KEY (id_categorias));
 
 
+CREATE TABLE anuncios(
+id_anuncios BIGINT AUTO_INCREMENT,
+id_categorias BIGINT, 
+nome_anuncios CHAR NOT NULL,
+valor_anuncios FLOAT NOT NULL,
+desc_anuncios VARCHAR(1000) NOT NULL,
+img_anuncios VARCHAR(50) NOT NULL,
+data_encomenda DATE NOT NULL,
+PRIMARY KEY (id_anuncios)
+FOREIGN KEY (id_categorias) REFERENCES categorias(id_categorias));
 
+
+CREATE TABLE encomenda(
+id_encomenda BIGINT AUTO_INCREMENT, 
+qtd_encomenda FLOAT NOT NULL,
+massa_encomendas CHAR NOT NULL,
+recheio_encomenda CHAR NOT NULL,
+tema_encomenda CHAR NOT NULL,
+data_encomenda DATE NOT NULL,
+PRIMARY KEY (id_encomenda));
 
 
 
