@@ -1,0 +1,10 @@
+.page-title h3{
+    margin-top: 10%;
+}
+
+.col-12 .despesas a{
+    background-color: #F07882;
+    border: none;
+    border-radius: 50%;
+    font-size: 18px;
+}
