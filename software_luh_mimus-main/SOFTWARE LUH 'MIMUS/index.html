@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="./assets/css/pages/auth.css">
+    
     <title>Login</title>
 </head>
 <body>
@@ -20,26 +26,35 @@
                         <h1>BEM VINDA(O)</h1>
                     </div>
                 </div>
-                <div class="input-group">
-                    <div class="input-box">
-                        <label for="user"></label>
-                        <input id="user" type="text" name="user" placeholder="Digite seu usuário">
+                <form action="index.html">
+                    <div class="form-group position-relative has-icon-left mb-4">
+                        <input type="text" class="form-control form-control-xl" placeholder="Email">
+                        <div class="form-control-icon">
+                            <i class="bi bi-person"></i>
+                        </div>
                     </div>
+                    <div class="form-group position-relative has-icon-left mb-4">
+                        <input type="password" class="form-control form-control-xl" placeholder="Senha">
+                        <div class="form-control-icon">
+                            <i class="bi bi-shield-lock"></i>
+                        </div>
+                    </div>
+                    <div class="form-check form-check-lg d-flex align-items-end">
+                        <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label text-gray-600" for="flexCheckDefault">
+                            Lembre-se de mim
+                        </label>
+                    </div>
+                
+                    <a href="./dashboard.html" class="btn btn-secondary btn-block btn-lg shadow-lg mt-5 login">Entrar</a> 
+                </form>
+                <div class="text-center mt-5 text-lg fs-4">
                     
-                    <div class="input-box">
-                        <label for="senha"></label>
-                        <input id="password" type="password" name="password" placeholder="Digite sua senha">
-                    </div>
+                    <p><a class="font-bold" href="auth-forgot-password.html">Esqueci minha senha</a>.</p>
                 </div>
-                <div class="password-btn">
-                    <button><a href="./html/recuperar.html">Esqueci a senha</a></button>
-                </div>
-                <div class="login-btn">
-                    <button><a href="dashboard.html">Entrar</a></button>
-                </div>
-            </form>
+            </div>
         </div>
-    </div>
+       
     
 </body>
 </html>
