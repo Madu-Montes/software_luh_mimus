@@ -1,3 +1,5 @@
+
+
 #vendas{
     background-color: red;
     font-size: 30px;
@@ -37,6 +39,8 @@ body{
     width: 100%;
 }
 
+
+
 .form{
     width: 50%;
     display: flex;
@@ -71,15 +75,28 @@ body{
     font-weight: lighter;
 }
 
-.login-btn button{
+.login{
     width: 50%;
     border: none;
-    background-color: #F99AAF;
+   
     padding: 0.4rem 1rem;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 8%;
     margin-left: 25%;
+}
+
+ 
+
+.font-bold{
+    font-size: 16px;
+    font-weight: normal;
+    color: rgb(73, 73, 73)
+}
+
+.font-bold:hover{
+
+    color: #F99AAF;
 }
 
 .login-btn button:hover{
