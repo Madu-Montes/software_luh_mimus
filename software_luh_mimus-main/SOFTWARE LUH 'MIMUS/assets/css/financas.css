@@ -1,23 +1,70 @@
 .page-title h3{
-    margin-top: 10%;
+    margin-top: 8%;
 }
 
 .col-12 .despesas a{
-    background-color: #F07882;
+    background-color: #DF9DB1;
     border: none;
     border-radius: 50%;
+    height: 34px;
     font-size: 18px;
+    margin-left: 10px;
 }
 
 .page-heading .dropdown {
     margin-left: 87%;
 }
 
-.page-heading .dropdown a {
-    background-color: #F07882;
+.page-heading .dropdown strong, .relatorio{
+
+    color: white;
+    font-weight: normal;
+
+}
+
+.section .card{
+margin-top: 6%;
+}
+
+.page-heading .dropdown a:hover{
+
+    color: #DF9DB1;
+    font-weight: normal;
+    background-color: black;
+
+}
+
+.page-heading .dropdown a{
+    background-color: #DF9DB1;
     font-size: 18px;
     color: #000;
     border: none;
+    border-radius: 15px;
+
+}
+.relatorio .btn{
+
+    background-color: #DF9DB1;
+    font-size: 18px;
+    color: white;
+    border: none;
+    width: 13%;
+    border-radius: 15px;
+    margin-top: 10px;
+
+}
+
+.relatorio .btn:hover{
+    
+    font-weight: normal;
+    background-color: black;
+}
+
+
+.meses{
+
+    width: 110%;
+
 }
 
 .page-heading .dropdown li a{
@@ -25,8 +72,9 @@
     font-size: 14px;
 }
 
-.page-heading .dropdown a:hover {
-    background-color: #F07882;
+.page-heading .dropdown-menu a:hover {
+    background-color:   #FCCAD5;
+    color: #000;
 }
 
 .page-heading .dropdownli a {

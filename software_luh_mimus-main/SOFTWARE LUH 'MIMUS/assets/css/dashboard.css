@@ -47,13 +47,16 @@ textarea:focus,
 }
 
 .dropdown a {
-    background-color: #ffffff00;
+   
     color: #000;
     border: none;
+    margin-top: 12px;
 }
 
 .dropdown a:hover {
-    background-color: #F07882;
+    
+    color: #FCCAD5;
+    background-color: ;
 }
 
 .dropdown li a {
