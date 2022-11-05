@@ -8,3 +8,35 @@
     border-radius: 50%;
     font-size: 18px;
 }
+
+.page-heading .dropdown {
+    margin-left: 87%;
+}
+
+.page-heading .dropdown a {
+    background-color: #F07882;
+    font-size: 18px;
+    color: #000;
+    border: none;
+}
+
+.page-heading .dropdown li a{
+    background-color: white;
+    font-size: 14px;
+}
+
+.page-heading .dropdown a:hover {
+    background-color: #F07882;
+}
+
+.page-heading .dropdownli a {
+    font-size: 14px;
+    border: none;
+}
+
+.page-heading .dropdown{
+    right: 2%;
+    margin-top: -3%;
+    height: 40px;
+    padding: 10px;
+}

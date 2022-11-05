@@ -26,9 +26,6 @@
     text-align: right;
 }
 
-
-
-
 #pesquisar-header {
     border: hidden;
     background-color: transparent;
@@ -40,14 +37,6 @@ textarea:focus,
     box-shadow: 0 0 0 0;
     outline: 0;
 }
-
-
-
-
-
-
-
-
 
 .icones-topo a svg {
     width: 26px;
