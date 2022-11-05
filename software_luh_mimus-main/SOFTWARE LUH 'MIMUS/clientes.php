@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -128,7 +128,7 @@
                             <table class="table table-striped" id="table1">
                                 <thead>
                                     <tr>
-                                        <th class="selec-user"><input type="checkbox"></th>
+                                        <th>Excluir</th>
                                         <th>Foto</th>
                                         <th>Código</th>
                                         <th>Nome</th>
@@ -140,14 +140,35 @@
                                         <th>Status</th>
                                     </tr>
                                 </thead>
-                                
+
                                 <tbody>
                                     <tr>
-                                        <td class="selec-user"><input type="checkbox"
-                                            class="form-check-input form-check-primary" checked
-                                            name="customCheck" id="customColorCheck1">
-                                        <label class="form-check-label"
-                                            for="customColorCheck1"></label></td> <!--Quando selecionar aparecer modal de "editar perfil?-->
+
+                                        <td><a href="./index.html" class="btn btn-primary btn-lg bg-dark" data-bs-toggle="modal"
+                                                data-bs-target="#modalId"><i class="bi bi-trash"></i>
+                                            </a></td>
+
+
+                                        <div class="modal fade" id="modalId" tabindex="-1" role="dialog"
+                                            aria-labelledby="modalTitleId" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header bg-dark">
+                                                        <h5 class="modal-title" id="modalTitleId">Excluir perfil?</h5>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="container-fluid">
+                                                            Tem certeza que deseja excluir esse perfil?
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button><a href="./perfil.html">Excluir</a></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!--Quando selecionar aparecer modal de "editar perfil?-->
                                         <td>Graiden</td>
                                         <td>vehicula.aliquet@semconsequat.co.uk</td>
                                         <td>076 4820 8838</td>
@@ -414,4 +435,3 @@
 </body>
 
 </html>
-

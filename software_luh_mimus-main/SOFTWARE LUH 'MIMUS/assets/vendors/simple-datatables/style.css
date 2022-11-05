@@ -145,3 +145,7 @@
 	white-space: nowrap;
 	margin-left: 15px;
 }
+
+i .bi-trash{
+	color: #d9d9d9;
+}
