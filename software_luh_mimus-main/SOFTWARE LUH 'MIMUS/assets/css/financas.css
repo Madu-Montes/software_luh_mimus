@@ -11,39 +11,37 @@
     margin-left: 10px;
 }
 
-.page-heading .dropdown {
-    margin-left: 87%;
+.page-heading .dropdown a {
+    background-color: #DF9DB1;
+    font-size: 18px;
+    color: white;
+    border: none;
+    width: 13%;
+    border-radius: 15px;
+    margin-left: 89%;
 }
 
-.page-heading .dropdown strong, .relatorio{
+.page-heading .dropdown a:hover {
+    background-color: black;
+}
 
-    color: white;
-    font-weight: normal;
+.page-heading .dropdown-menu .dropdown-item{
+    margin-left: 0%;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 14px
+}
 
+.page-heading .dropdown-menu .dropdown-item:hover{
+    color: #DF9DB1;
+    background-color: white;
 }
 
 .section .card{
 margin-top: 6%;
 }
 
-.page-heading .dropdown a:hover{
-
-    color: #DF9DB1;
-    font-weight: normal;
-    background-color: black;
-
-}
-
-.page-heading .dropdown a{
-    background-color: #DF9DB1;
-    font-size: 18px;
-    color: #000;
-    border: none;
-    border-radius: 15px;
-
-}
 .relatorio .btn{
-
     background-color: #DF9DB1;
     font-size: 18px;
     color: white;
@@ -51,47 +49,16 @@ margin-top: 6%;
     width: 13%;
     border-radius: 15px;
     margin-top: 10px;
-
 }
 
 .relatorio .btn:hover{
-    
     font-weight: normal;
     background-color: black;
-}
-
-
-.meses{
-
-    width: 180px;
-
-}
-
-.page-heading .dropdown li a{
-    background-color: white;
-    font-size: 14px;
-}
-
-.page-heading .dropdown-menu a:hover {
-    background-color:   #FCCAD5;
-    color: #000;
-}
-
-.page-heading .dropdownli a {
-    font-size: 14px;
-    border: none;
-}
-
-.page-heading .dropdown{
-    right: 2%;
-    margin-top: -3%;
-    height: 40px;
-    padding: 10px;
 }
 
 .table-responsive .table-name{
     font-weight: 300;
     font-size: 18px;
-    
+
 
 }
