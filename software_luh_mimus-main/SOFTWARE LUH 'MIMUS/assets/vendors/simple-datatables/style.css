@@ -146,6 +146,7 @@
 	margin-left: 15px;
 }
 
-i .bi-trash{
-	color: #d9d9d9;
+.card-body button{
+	background-color: #FCCAD5;
+	border: none;
 }
