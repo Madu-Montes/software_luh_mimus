@@ -17,11 +17,39 @@
     display: inline-block;
     margin-top: 30px;
 }
-p#elements{
+
+#chat{
+    background-color: #FCCAD5;
+    border: none;
+    float: right;
+    margin-top: 40px;
+    margin-right: 5%;
+}
+
+#voltar{
+    background-color: #F99AAF;
+    width: 200px;
+    font-size: 18px;
+    border: none;
+    float: right;
+}
+
+.pedCliente h1{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.pedCliente .bi-credit-card{
+    width: 60px;
+    height: 60px;
+}
+
+.pedCliente #valores{
     display: inline-block;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 22px;
 }
+
 table{
     width: 100%;
     text-align: center;
