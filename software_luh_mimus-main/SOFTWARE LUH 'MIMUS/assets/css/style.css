@@ -128,6 +128,10 @@ body{
     margin-top: 30px;
 }
 
+.notification{
+    margin-right: -30%;
+}
+
 .user{
 
     margin-bottom: -20px;
