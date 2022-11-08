@@ -85,3 +85,8 @@ padding: 10px 10px;
 border-radius: 10px;
 border: solid #000 0px;
 }
+
+.page-heading ul {
+    margin-left: 35%;
+    width: 30%;
+}
