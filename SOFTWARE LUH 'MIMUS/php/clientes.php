@@ -309,8 +309,16 @@
         <tr>
 
         
-        <td> <a href='excluir.php?cpf=$cpf' onclick=\"return confirm('Quer mesmo apagar esses dados!!!');\">
-        Excluir</a></td>
+            <td>
+            <a href='excluir.php?cpf=$cpf' onclick=\"return confirm('Quer mesmo apagar esses dados!!!');\">
+            Excluir</a>
+            </td>
+
+            <td>
+            <a href='update.php?cpf=$cpf' onclick=\"return confirm('Quer mesmo alterar esses dados!!!');\">
+            Alterar</a>
+            </td>
+        
         <td>imagem</td>
         <td>$id</td>
         <td>$nome</td>
