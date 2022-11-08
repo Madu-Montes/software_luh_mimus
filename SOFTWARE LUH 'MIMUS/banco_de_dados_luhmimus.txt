@@ -46,4 +46,6 @@ data_encomenda DATE NOT NULL,
 PRIMARY KEY (id_encomenda));
 
 
-
+CREATE TABLE calendario(
+    
+);
