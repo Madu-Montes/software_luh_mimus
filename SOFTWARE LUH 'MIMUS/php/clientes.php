@@ -190,7 +190,10 @@
                                         <th>ID</th>
                                         <th>Nome</th>
                                         <th>Email</th>
+                                        <th>CPF</th>
                                         <th>Contato</th>
+                                        <th>Data de Nascimento</th>
+                                        <th>Senha</th>
                                         <th>CEP</th>
                                         <th>Nº</th>
                                         <th>Complemento</th>
@@ -254,48 +257,7 @@
                                         <td>1111111</td>
                                         <td>00</td>
                                         <td>rua sem saida</td>
-                                    </tr>
-
-                                    <?php
-    include'conn_banco.php';
-
-    $dados_usuarios = $sql->query("SELECT * FROM User_Cdst_Site");
-    
-    while ($linha = mysqli_fetch_array($dados_usuarios)){
-        $id = $linha['id_UserCdstSite'];
-        $cpf = $linha['cpf_UserCdstSite'];
-        $nome = $linha['nome_UserCdstSite'];
-        $email = $linha['email_UserCdstSite'];
-        $dtn = $linha['dtn_UserCdstSite'];
-        $senha = $linha['senha_UserCdstSite'];
-        $celular = $linha['celular_UserCdstSite'];
-
-        
-        echo"
-        <tr>
-        <td>$id</td>
-        <td>$cpf</td>
-        <td>$nome</td>
-        <td>$email</td>
-        <td>$dtn</td>
-        <td>$senha</td>
-        <td>$celular</td>
-        </td>
-        <td>
-            <a href='excluir_aluno.php?cpf=$cpf' onclick=\"return confirm('Quer mesmo apagar esses dados!!!');\">
-                Excluir
-            </a>
-        </td>
-        <td>
-            <a href='alterar.php?cpf=$cpf';\">
-                Alterar
-            </a>
-        </td>
-        </tr>";
-
-    }
-        echo"</table>";
-?>
+                                        </tr>
                 
                         </div>
                     </div>
@@ -326,3 +288,46 @@
 </body>
 
 </html>
+
+<?php
+    include'conn_banco.php';
+
+    $dados_usuarios = $sql->query("SELECT * FROM User_Cdst_Site");
+    
+    while ($linha = mysqli_fetch_array($dados_usuarios)){
+        $id = $linha['id_UserCdstSite'];
+        $cpf = $linha['cpf_UserCdstSite'];
+        $nome = $linha['nome_UserCdstSite'];
+        $email = $linha['email_UserCdstSite'];
+        $dtn = $linha['dtn_UserCdstSite'];
+        $senha = $linha['senha_UserCdstSite'];
+        $celular = $linha['celular_UserCdstSite'];
+
+        
+        echo"
+
+        <tr>
+
+        
+        <td> <a href='excluir.php?cpf=$cpf' onclick=\"return confirm('Quer mesmo apagar esses dados!!!');\">
+        Excluir</a></td>
+        <td>imagem</td>
+        <td>$id</td>
+        <td>$nome</td>
+        <td>$email</td>
+        <td>$cpf</td>
+        <td>$celular</td>
+        <td>$dtn</td>
+        <td>$senha</td>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+        <td>
+           
+        </td>
+ 
+        </tr>";
+
+    }
+        echo"</table>";
+?>
