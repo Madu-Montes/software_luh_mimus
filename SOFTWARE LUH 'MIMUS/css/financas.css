@@ -2,13 +2,15 @@
     margin-top: 8%;
 }
 
-.col-12 .despesas a{
-    background-color: #DF9DB1;
+.col-12 .card-header a{
+    background-color: #ffffff;
     border: none;
     border-radius: 50%;
-    height: 34px;
-    font-size: 18px;
     margin-left: 10px;
+}
+
+.col-12 .card-header svg{
+    color: rgb(0, 0, 0);
 }
 
 .page-heading .dropdown a {
@@ -59,6 +61,20 @@ margin-top: 6%;
 .table-responsive .table-name{
     font-weight: 300;
     font-size: 18px;
-
-
 }
+
+.card tbody td{
+    margin-right: 20%;
+    float: left;
+}
+
+.card-title a .bi-plus-circle{
+    color: #ffffff;
+    background-color: #DF9DB1;
+    border-radius: 50%;
+    border: none;
+    margin-left: 170px;
+    width: 30px;
+    height: 30px;
+}
+

@@ -189,7 +189,7 @@
                 </div>
             </div>
             <div class="relatorio"><a name="" id="relatorio" class="btn btn-primary" href="#" role="button">Relatório
-                    <img src="./assets/images/dowload.png" alt="" width="16px"></a></div>
+                    <img src="../images/dowload.png" alt="" width="16px"></a></div>
 
 
             <div class="dropdown open ">
@@ -301,38 +301,74 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
-                        <div class="card despesas">
+                        <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title">Despesas fixas <a name="" id="" class="btn btn-primary" href="#"
-                                        role="button">+</a></h4>
+                                <h4 class="card-title">Despesas fixas 
+                                    <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalId"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                  </svg></a></h4>
 
+                                  <!-- Modal Body-->
+                                  <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                                <div class="modal-header">
+                                                        <h5 class="modal-title" id="modalTitleId">Adicionar despesa</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                    <div class="mb-3">
+                                                      <label for="" class="form-label">Nome</label>
+                                                      <input type="text" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="gasolina">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="" class="form-label">Valor</label>
+                                                        <input type="text" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="R$50,00">
+                                                      </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Fechar</button>
+                                                <button type="button" class="btn btn-dark">Salvar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  
+                                    <a name="" id="" class="btn btn-primary" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                                  </svg></a>
                             </div>
                             <div class="card-content">
-
-                                <!-- Table with no outer spacing -->
-                                <div class="table-responsive">
-                                    <table class="table table-borderless">
-                                        <thead>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row" class="table-name">Água</th>
-                                                <td>R$</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row" class="table-name">Luz</th>
-                                                <td>R$</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row" class="table-name">Gás</th>
-                                                <td colspan="2">R$</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row" class="table-name">Total</th>
-                                                <td colspan="2">R$</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                <div class="card-body">
+                                    <!-- Table with outer spacing -->
+                                    <div class="table-responsive">
+                                        <table class="table table-borderless">
+                                            <thead>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row" class="table-name">Água</th>
+                                                    <td colspan="2">R$</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="table-name">Luz</th>
+                                                    <td colspan="2">R$</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="table-name">Gás</th>
+                                                    <td colspan="2">R$</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="table-name">Total</th>
+                                                    <td colspan="2">R$</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -350,11 +386,11 @@
                                             <tbody>
                                                 <tr>
                                                     <th scope="row" class="table-name">Despesas variáveis</th>
-                                                    <td>R$</td>
+                                                    <td colspan="2">R$</td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row" class="table-name">Despesas fixas</th>
-                                                    <td>R$</td>
+                                                    <td colspan="2">R$</td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row" class="table-name">Total</th>
@@ -371,7 +407,6 @@
         </div>
         </section>
     </div>
-
     <footer>
         <div class="footer clearfix mb-0 text-muted">
             <div class="float-end">
