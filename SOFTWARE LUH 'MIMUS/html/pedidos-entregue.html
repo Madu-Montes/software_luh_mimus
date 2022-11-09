@@ -74,7 +74,7 @@
                         <!--Pedidos -->
                         <li class="sidebar-item  ">
                             <a href="pedidos.html" class='sidebar-link'>
-                                <i class="bi bi-basket2-fill"></i>   
+                                <i class="bi bi-basket2-fill"></i>
                                 <span>Pedidos</span>
                             </a>
                         </li>
@@ -179,139 +179,130 @@
 
             <div class="page-heading">
                 <h3>Pedidos</h3>
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs" id="navId" role="tablist">
-                    <li class="nav-item">
-                        <a href="#tab1Id" class="nav-link active" data-bs-toggle="tab" aria-current="page">Entregue</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#tab2Id" class="nav-link" data-bs-toggle="tab" aria-current="page">Pronto</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#tab2Id" class="nav-link" data-bs-toggle="tab" aria-current="page">Preparando</a>
-                    </li>
-                </ul>
-                
-                <!-- Tab panes -->
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
-                    <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
-                    <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
-                    <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
-                    <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
-                </div>
-                
-                <!-- (Optional) - Place this js code after initializing bootstrap.min.js or bootstrap.bundle.min.js -->
-                <script>
-                    var triggerEl = document.querySelector('#navId a')
-                    bootstrap.Tab.getInstance(triggerEl).show() // Select tab by name
-                </script>
-                
+                <nav class="nav justify-content-center ">
+                    <a class="nav-link active" href="#" aria-current="page">Entregue</a>
+                    <a class="nav-link" href="./pedidos-finalizado.html">Finalizado</a>
+                    <a class="nav-link" href="./pedidos-preparando.html">Preparando</a>
+                </nav>
             </div>
             <br>
             <p>Todos(0)</p>
             <div class="pedidosTot">
                 <div class="pedidosUniInt">
                     <a href="ped01.html">
-                        <p id="elements" style="float: left;"> &nbsp;&nbsp;<i class="bi bi-check-circle fs-058" id="elements" style="font-family:'Courier New', Courier, monospace;"></i>
-                    &nbsp;&nbsp;
-                    Entregue</p>
-                    <p id="elements">16 de agosto - 16:30</p>
-                    <hr>
-                    <table>
-                        <tr>
-                            <td>
-                                <img class="img-fluid" src="https://imagensemoldes.com.br/wp-content/uploads/2020/05/Brigadeiro-com-Fundo-Transparente-Doces-PNG.png" height="100" width="100">
-                            </td>
-                            <td>
-                                Nome do produto
-                                <p>(quant. produto)</p>
-                            </td>
-                            <td>
-                                Valor
-                            </td>
-                            <td>
-                                <img src="https://assets.stickpng.com/thumbs/585e4bf3cb11b227491c339a.png" height="100" width="100" class="usuario-img" id="usuario-lado">
-                                <p id="usuario-lado">Nome do usuário</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="">
+                            <label class="form-check-label" for="">
+                                Entregue
+                            </label>
+                        </div>
+                        <p id="elements">16 de agosto - 16:30</p>
+                        <hr>
+                        <table>
+                            <tr>
+                                <td>
+                                    <img class="img-fluid"
+                                        src="https://imagensemoldes.com.br/wp-content/uploads/2020/05/Brigadeiro-com-Fundo-Transparente-Doces-PNG.png"
+                                        height="100" width="100">
+                                </td>
+                                <td>
+                                    Nome do produto
+                                    <p>(quant. produto)</p>
+                                </td>
+                                <td>
+                                    Valor
+                                </td>
+                                <td>
+                                    <img src="https://assets.stickpng.com/thumbs/585e4bf3cb11b227491c339a.png"
+                                        height="100" width="100" class="usuario-img" id="usuario-lado">
+                                    <p id="usuario-lado">Nome do usuário</p>
 
-                                
-                            </td>
-                        </tr>
-                    </table>
-                    <br>
+
+                                </td>
+                            </tr>
+                        </table>
+                        <br>
                 </div>
             </div>
             <br>
             <div class="pedidosTot">
                 <div class="pedidosUniInt">
                     <a href="ped01.html">
-                        <p id="elements" style="float: left;"> &nbsp;&nbsp;<i class="bi bi-check-circle fs-058" id="elements" style="font-family:'Courier New', Courier, monospace;"></i>
-                    &nbsp;&nbsp;
-                    Entregue</p>
-                    <p id="elements">16 de agosto - 16:30</p>
-                    <hr>
-                    <table>
-                        <tr>
-                            <td>
-                                <img class="img-fluid" src="https://imagensemoldes.com.br/wp-content/uploads/2020/05/Brigadeiro-com-Fundo-Transparente-Doces-PNG.png" height="100" width="100">
-                            </td>
-                            <td>
-                                Nome do produto
-                                <p>(quant. produto)</p>
-                            </td>
-                            <td>
-                                Valor
-                            </td>
-                            <td>
-                                <img src="https://assets.stickpng.com/thumbs/585e4bf3cb11b227491c339a.png" height="100" width="100" class="usuario-img" id="usuario-lado">
-                                <p id="usuario-lado">Nome do usuário</p>
-                            </td>
-                        </tr>
-                    </table>
-                    <br>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="">
+                            <label class="form-check-label" for="">
+                                Entregue
+                            </label>
+                        </div>
+                        <p id="elements">16 de agosto - 16:30</p>
+                        <hr>
+                        <table>
+                            <tr>
+                                <td>
+                                    <img class="img-fluid"
+                                        src="https://imagensemoldes.com.br/wp-content/uploads/2020/05/Brigadeiro-com-Fundo-Transparente-Doces-PNG.png"
+                                        height="100" width="100">
+                                </td>
+                                <td>
+                                    Nome do produto
+                                    <p>(quant. produto)</p>
+                                </td>
+                                <td>
+                                    Valor
+                                </td>
+                                <td>
+                                    <img src="https://assets.stickpng.com/thumbs/585e4bf3cb11b227491c339a.png"
+                                        height="100" width="100" class="usuario-img" id="usuario-lado">
+                                    <p id="usuario-lado">Nome do usuário</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <br>
                 </div>
             </div>
             <br>
             <div class="pedidosTot">
                 <div class="pedidosUniInt">
                     <a href="ped01.html">
-                        <p id="elements" style="float: left;"> &nbsp;&nbsp;<i class="bi bi-check-circle fs-058" id="elements" style="font-family:'Courier New', Courier, monospace;"></i>
-                    &nbsp;&nbsp;
-                    Entregue</p>
-                    <p id="elements">16 de agosto - 16:30</p>
-                    <hr>
-                    <table>
-                        <tr>
-                            <td>
-                                <img class="img-fluid" src="https://imagensemoldes.com.br/wp-content/uploads/2020/05/Brigadeiro-com-Fundo-Transparente-Doces-PNG.png" height="100" width="100">
-                            </td>
-                            <td>
-                                Nome do produto
-                                <p>(quant. produto)</p>
-                            </td>
-                            <td>
-                                Valor
-                            </td>
-                            <td>
-                                <img src="https://assets.stickpng.com/thumbs/585e4bf3cb11b227491c339a.png" height="100" width="100" class="usuario-img" id="usuario-lado">
-                                <p id="usuario-lado">Nome do usuário</p>
-                            </td>
-                        </tr>
-                    </table>
-                    <br>
+                        <p id="elements" style="float: left;"> &nbsp;&nbsp;<i class="bi bi-check-circle fs-058"
+                                id="elements" style="font-family:'Courier New', Courier, monospace;"></i>
+                            &nbsp;&nbsp;
+                            Entregue</p>
+                        <p id="elements">16 de agosto - 16:30</p>
+                        <hr>
+                        <table>
+                            <tr>
+                                <td>
+                                    <img class="img-fluid"
+                                        src="https://imagensemoldes.com.br/wp-content/uploads/2020/05/Brigadeiro-com-Fundo-Transparente-Doces-PNG.png"
+                                        height="100" width="100">
+                                </td>
+                                <td>
+                                    Nome do produto
+                                    <p>(quant. produto)</p>
+                                </td>
+                                <td>
+                                    Valor
+                                </td>
+                                <td>
+                                    <img src="https://assets.stickpng.com/thumbs/585e4bf3cb11b227491c339a.png"
+                                        height="100" width="100" class="usuario-img" id="usuario-lado">
+                                    <p id="usuario-lado">Nome do usuário</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <br>
                 </div>
             </div>
-            
-    <!--Fim dos pedidos-->
-    <footer>
-        <div class="footer clearfix mb-0 text-muted">
-            <div class="float-end">
-                <p>2022 &copy; Luh Mimu's</p>
-            </div>
-        </div>
-    </footer>
+
+            <!--Fim dos pedidos-->
+            <footer>
+                <div class="footer clearfix mb-0 text-muted">
+                    <div class="float-end">
+                        <p>2022 &copy; Luh Mimu's</p>
+                    </div>
+                </div>
+            </footer>
         </div>
     </div>
     <script src="../vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
