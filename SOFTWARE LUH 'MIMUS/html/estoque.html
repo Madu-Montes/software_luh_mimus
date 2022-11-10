@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="../vendors/simple-datatables/style.css">
     <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/estoque.css">
 
     <link rel="stylesheet" href="../vendors/perfect-scrollbar/perfect-scrollbar.css">
     <link rel="stylesheet" href="../vendors/bootstrap-icons/bootstrap-icons.css">
@@ -55,7 +56,7 @@
 
                         <!--Clientes -->
                         <li class="sidebar-item  ">
-                            <a href="./clientes.html" class='sidebar-link'>
+                            <a href="../php/clientes.php" class='sidebar-link'>
                                 <i class="bi bi-people-fill"></i>
                                 <span>Clientes</span>
                             </a>
@@ -71,8 +72,8 @@
 
                         <!--Pedidos -->
                         <li class="sidebar-item  ">
-                            <a href="pedidos.html" class='sidebar-link'>
-                                <i class="bi bi-basket2-fill"></i>   
+                            <a href="pedidos-entregue.html" class='sidebar-link'>
+                                <i class="bi bi-basket2-fill"></i>
                                 <span>Pedidos</span>
                             </a>
                         </li>
@@ -133,28 +134,32 @@
                                     </label>
                                 </div>
                             </a>
-                            <a class="dropdown-item" href="#"><span class="dropdown-item-emoji"><svg style="width: 21px;"
-                                        xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
-                                        class="bi bi-gear-fill" viewBox="0 0 16 16">
+                            <a class="dropdown-item" href="#"><span class="dropdown-item-emoji"><svg
+                                        style="width: 21px;" xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                        fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
                                         <path
                                             d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
                                     </svg></span>
-                                    ‎ ‎ ‎ ‎ Configurações</a>
-                            <a class="dropdown-item" href="#"><span class="dropdown-item-emoji"><svg style="width: 21px;"
-                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-question-diamond" viewBox="0 0 16 16">
+                                ‎ ‎ ‎ ‎ Configurações</a>
+                            <a class="dropdown-item" href="#"><span class="dropdown-item-emoji"><svg
+                                        style="width: 21px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-question-diamond" viewBox="0 0 16 16">
                                         <path
                                             d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z" />
                                         <path
                                             d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
                                     </svg></span>
-                                    ‎ ‎ ‎ ‎ Ajuda</a>
-                                    <hr>
-                                    <a class="dropdown-item" href="./index.html"><span class="dropdown-item-emoji"><svg style="width: 21px;"xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
-                                        <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
-                                      </svg></span>
-                                    ‎ ‎ ‎ ‎ Sair</a>
+                                ‎ ‎ ‎ ‎ Ajuda</a>
+                            <hr>
+                            <a class="dropdown-item" href="./index.html"><span class="dropdown-item-emoji"><svg
+                                        style="width: 21px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
+                                        <path fill-rule="evenodd"
+                                            d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                                    </svg></span>
+                                ‎ ‎ ‎ ‎ Sair</a>
                         </div>
                     </div>
                 </div>
@@ -180,7 +185,52 @@
                     <div class="card">
                         <div class="card-header">
                             Todos (x)
+                            <a class="btn" data-bs-toggle="modal" data-bs-target="#modalId1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                              </svg>
+                            </a>
                         </div>
+
+                        <div class="modal fade" id="modalId1" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                        <div class="modal-header">
+                                                <h5 class="modal-title" id="modalTitleId">Adicionar ingrediente</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            <div class="mb-3">
+                                              <label for="" class="form-label">Nome</label>
+                                              <input type="text" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="ex.:chocolate">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="" class="form-label">Unidade</label>
+                                                <input type="text" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="ex.: gramas">
+                                              </div>
+                                              <div class="mb-3">
+                                                <label for="" class="form-label">Quantidade</label>
+                                                <input type="number" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="ex.: 15">
+                                              </div>
+                                            <div class="mb-3">
+                                                <label for="" class="form-label">Preço/unidade</label>
+                                                <input type="text" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="ex.: $20,00">
+                                              </div>
+                                              <div class="mb-3">
+                                                <label for="" class="form-label">Observação</label>
+                                                <input type="text" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="ex.: 50%">
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Fechar</button>
+                                        <button type="button" class="btn btn-dark">Adicionar</button>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        
                         <div class="card-body">
                             <table class="table table-striped" id="table1">
                                 <thead>
@@ -188,17 +238,17 @@
                                         <th>Excluir</th>
                                         <th>Nome</th>
                                         <th>Unidade</th>
-                                        <th>Qtd</th>
+                                        <th>Quantidade</th>
                                         <th>Preço/unidade</th>
                                         <th>Observação</th>
                                     </tr>
                                 </thead>
-                                
+
                                 <tbody>
                                     <tr>
 
                                         <!-- Button trigger modal -->
-                                        <td><button type="button" class="btn btn-primary btn-lg icon"
+                                        <td><button type="button" class="btn btn-lg icon"
                                                 data-bs-toggle="modal" data-bs-target="#modalId"><i
                                                     class="bi bi-trash"></i>
                                             </button></td>
@@ -215,7 +265,7 @@
                                                     </div>
                                                     <div class="modal-body">
                                                         <div class="container-fluid">
-                                                            Tem certeza que deseja excluir esse perfil?
+                                                            Tem certeza que deseja excluir esse ingrediente?
                                                         </div>
                                                     </div>
                                                     <div class="modal-footer">
@@ -245,13 +295,13 @@
                                         <td>20</td>
                                         <td>5,99</td>
                                         <td>Integral</td>
-                                        </tr>
+                                    </tr>
                         </div>
                     </div>
 
                 </section>
             </div>
-            
+
         </div>
     </div>
     <script src="../vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
