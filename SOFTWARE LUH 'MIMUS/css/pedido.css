@@ -109,3 +109,13 @@ border: solid #000 0px;
     font-size: 18px;
     margin-right: 2%;
 }
+
+.meses{
+    background-color: #DF9DB1;
+    font-size: 18px;
+    color: white;
+    border: none;
+    width: 13%;
+    border-radius: 15px;
+    margin-left: 3%;
+}

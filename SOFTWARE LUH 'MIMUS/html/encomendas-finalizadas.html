@@ -4,20 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estoque | Luh Mimu's</title>
+    <title>Encomendas - Luh' Mimus</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/bootstrap.css">
 
-    <link rel="stylesheet" href="../vendors/simple-datatables/style.css">
-    <link rel="stylesheet" href="../css/dashboard.css">
-    <link rel="stylesheet" href="../css/estoque.css">
+    <link rel="stylesheet" href="../vendors/iconly/bold.css">
 
     <link rel="stylesheet" href="../vendors/perfect-scrollbar/perfect-scrollbar.css">
     <link rel="stylesheet" href="../vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/pedido.css">
     <link rel="stylesheet" href="../css/app.css">
     <link rel="shortcut icon" href="../images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/dashboard.css">
 </head>
 
 <body>
@@ -27,13 +27,14 @@
                 <div class="sidebar-header">
                     <div class="d-flex justify-content-between">
                         <div class="logo">
-                            <a href="../index.html"><img src="../images/logo.jfif" alt="Logo" srcset=""></a>
+                            <a href="dashboard.html"><img src="../images/logo.jfif" alt="Logo" srcset=""></a>
                         </div>
                         <div class="toggler">
                             <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
                         </div>
                     </div>
                 </div>
+
                 <!--Menu -->
                 <div class="sidebar-menu">
                     <ul class="menu">
@@ -56,7 +57,7 @@
 
                         <!--Clientes -->
                         <li class="sidebar-item  ">
-                            <a href="../php/clientes.php" class='sidebar-link'>
+                            <a href="clientes.html" class='sidebar-link'>
                                 <i class="bi bi-people-fill"></i>
                                 <span>Clientes</span>
                             </a>
@@ -71,8 +72,8 @@
                         </li>
 
                         <!--Pedidos -->
-                        <li class="sidebar-item  ">
-                            <a href="pedidos-entregue.html" class='sidebar-link'>
+                        <li class="sidebar-item active">
+                            <a href="pedidos.html" class='sidebar-link'>
                                 <i class="bi bi-basket2-fill"></i>
                                 <span>Pedidos</span>
                             </a>
@@ -86,8 +87,9 @@
                             </a>
                         </li>
 
+
                         <!--Estoque -->
-                        <li class="sidebar-item active">
+                        <li class="sidebar-item  ">
                             <a href="#" class='sidebar-link'>
                                 <i class="bi bi-box-seam"></i>
                                 <span>Estoque</span>
@@ -108,6 +110,7 @@
         </div>
 
 
+        <!-----Fim do Menu Lateral------->
         <header class="header-bar">
 
             <div class="icones-topo">
@@ -174,6 +177,8 @@
             </div>
         </header>
 
+        <!---Fim do header do topo-->
+        <br>
         <div id="main">
             <header class="mb-3">
                 <a href="#" class="burger-btn d-block d-xl-none">
@@ -182,145 +187,218 @@
             </header>
 
             <div class="page-heading">
-                <div class="page-title">
-                    <div class="row">
-                        <div class="col-12 col-md-6 order-md-1 order-last">
-                            <h3>Estoque</h3>
-                        </div>
-                    </div>
+                <h3>Encomendas</h3>
+                <nav class="nav justify-content-center ">
+                    <a class="nav-link" href="encomendas.html" aria-current="page">Todas</a>
+                    <a class="nav-link active" href="./encomendas-finalizadas.html">Finalizadas</a>
+                    <a class="nav-link" href="#">Entregues</a>
+                </nav>
+            </div>
+            <br>
+            <div class="pedidosTot">
+                <div class="pedidosUniInt">
+                    <a href="ped01.html">
+                        <br>
+                        <label class="form-check-label data-hora" for="">
+                            Data e hora da entrega
+                        </label>
+                        <hr>
+                        <table>
+                            <tr>
+                                <td>
+                                    <img class="img-fluid"
+                                        src="https://imagensemoldes.com.br/wp-content/uploads/2020/05/Brigadeiro-com-Fundo-Transparente-Doces-PNG.png"
+                                        height="100" width="100">
+                                </td>
+                                <td>
+                                    Nome do produto
+                                    <p>(quant. produto)</p>
+                                </td>
+                                <td>
+                                    Valor
+                                </td>
+                                <td>
+                                    <img src="https://assets.stickpng.com/thumbs/585e4bf3cb11b227491c339a.png"
+                                        height="100" width="100" class="usuario-img" id="usuario-lado">
+                                    <p id="usuario-lado">Nome do usuário</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <br>
                 </div>
-                <section class="section">
-                    <div class="card">
-                        <div class="card-header">
-                            Todos (x)
-                            <a class="btn" data-bs-toggle="modal" data-bs-target="#modalId1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
-                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                              </svg>
-                            </a>
+            </div>
+            <br>
+            <div class="pedidosTot">
+                <div class="pedidosUniInt">
+                    <a href="ped01.html">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="">
+                            <label class="form-check-label" for="">
+                                Finalizar
+                            </label>
                         </div>
-
-                        <div class="modal fade" id="modalId1" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                        <div class="modal-header">
-                                                <h5 class="modal-title" id="modalTitleId">Adicionar ingrediente</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                    <div class="modal-body">
-                                        <div class="container-fluid">
-                                            <div class="mb-3">
-                                              <label for="" class="form-label">Nome</label>
-                                              <input type="text" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="ex.:chocolate">
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="" class="form-label">Unidade</label>
-                                                <input type="text" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="ex.: gramas">
-                                              </div>
-                                              <div class="mb-3">
-                                                <label for="" class="form-label">Quantidade</label>
-                                                <input type="number" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="ex.: 15">
-                                              </div>
-                                            <div class="mb-3">
-                                                <label for="" class="form-label">Preço/unidade</label>
-                                                <input type="text" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="ex.: $20,00">
-                                              </div>
-                                              <div class="mb-3">
-                                                <label for="" class="form-label">Observação</label>
-                                                <input type="text" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="ex.: 50%">
-                                              </div>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Fechar</button>
-                                        <button type="button" class="btn btn-dark">Adicionar</button>
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
-                        
-                        <div class="card-body">
-                            <table class="table table-striped" id="table1">
-                                <thead>
-                                    <tr>
-                                        <th>Excluir</th>
-                                        <th>Nome</th>
-                                        <th>Unidade</th>
-                                        <th>Quantidade</th>
-                                        <th>Preço/unidade</th>
-                                        <th>Observação</th>
-                                    </tr>
-                                </thead>
-
-                                <tbody>
-                                    <tr>
-
-                                        <!-- Button trigger modal -->
-                                        <td><button type="button" class="btn btn-lg icon"
-                                                data-bs-toggle="modal" data-bs-target="#modalId"><i
-                                                    class="bi bi-trash"></i>
-                                            </button></td>
-
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="modalId" tabindex="-1" role="dialog"
-                                            aria-labelledby="modalTitleId" aria-hidden="true">
-                                            <div class="modal-dialog" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="modalTitleId">Excluir?</h5>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                            aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <div class="container-fluid">
-                                                            Tem certeza que deseja excluir esse ingrediente?
-                                                        </div>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-dark"
-                                                            data-bs-dismiss="modal">Cancelar</button>
-                                                        <button type="button" class="btn btn-dark">Excluir</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <script>
-                                            var modalId = document.getElementById('modalId');
-
-                                            modalId.addEventListener('show.bs.modal', function (event) {
-                                                // Button that triggered the modal
-                                                let button = event.relatedTarget;
-                                                // Extract info from data-bs-* attributes
-                                                let recipient = button.getAttribute('data-bs-whatever');
-
-                                                // Use above variables to manipulate the DOM
-                                            });
-                                        </script>
-
-                                        <td>Lt. condensado</td>
-                                        <td>gramas</td>
-                                        <td>20</td>
-                                        <td>5,99</td>
-                                        <td>Integral</td>
-                                    </tr>
+                        <br>
+                        <label class="form-check-label data-hora" for="">
+                            Data e hora da entrega
+                        </label>
+                        <hr>
+                        <table>
+                            <tr>
+                                <td>
+                                    <img class="img-fluid"
+                                        src="https://imagensemoldes.com.br/wp-content/uploads/2020/05/Brigadeiro-com-Fundo-Transparente-Doces-PNG.png"
+                                        height="100" width="100">
+                                </td>
+                                <td>
+                                    Nome do produto
+                                    <p>(quant. produto)</p>
+                                </td>
+                                <td>
+                                    Valor
+                                </td>
+                                <td>
+                                    <img src="https://assets.stickpng.com/thumbs/585e4bf3cb11b227491c339a.png"
+                                        height="100" width="100" class="usuario-img" id="usuario-lado">
+                                    <p id="usuario-lado">Nome do usuário</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <br>
+                </div>
+            </div>
+            <br>
+            <div class="pedidosTot">
+                <div class="pedidosUniInt">
+                    <a href="ped01.html">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="">
+                            <label class="form-check-label" for="">
+                                Finalizar
+                            </label>
                         </div>
-                    </div>
-
-                </section>
+                        <br>
+                        <label class="form-check-label data-hora" for="">
+                            Data e hora da entrega
+                        </label>
+                        <hr>
+                        <table>
+                            <tr>
+                                <td>
+                                    <img class="img-fluid"
+                                        src="https://imagensemoldes.com.br/wp-content/uploads/2020/05/Brigadeiro-com-Fundo-Transparente-Doces-PNG.png"
+                                        height="100" width="100">
+                                </td>
+                                <td>
+                                    Nome do produto
+                                    <p>(quant. produto)</p>
+                                </td>
+                                <td>
+                                    Valor
+                                </td>
+                                <td>
+                                    <img src="https://assets.stickpng.com/thumbs/585e4bf3cb11b227491c339a.png"
+                                        height="100" width="100" class="usuario-img" id="usuario-lado">
+                                    <p id="usuario-lado">Nome do usuário</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <br>
+                </div>
+            </div>
+            <br>
+            <div class="pedidosTot">
+                <div class="pedidosUniInt">
+                    <a href="ped01.html">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="">
+                            <label class="form-check-label" for="">
+                                Finalizar
+                            </label>
+                        </div>
+                        <br>
+                        <label class="form-check-label data-hora" for="">
+                            Data e hora da entrega
+                        </label>
+                        <hr>
+                        <table>
+                            <tr>
+                                <td>
+                                    <img class="img-fluid"
+                                        src="https://imagensemoldes.com.br/wp-content/uploads/2020/05/Brigadeiro-com-Fundo-Transparente-Doces-PNG.png"
+                                        height="100" width="100">
+                                </td>
+                                <td>
+                                    Nome do produto
+                                    <p>(quant. produto)</p>
+                                </td>
+                                <td>
+                                    Valor
+                                </td>
+                                <td>
+                                    <img src="https://assets.stickpng.com/thumbs/585e4bf3cb11b227491c339a.png"
+                                        height="100" width="100" class="usuario-img" id="usuario-lado">
+                                    <p id="usuario-lado">Nome do usuário</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <br>
+                </div>
+            </div>
+            <br>
+            <div class="pedidosTot">
+                <div class="pedidosUniInt">
+                    <a href="ped01.html">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="">
+                            <label class="form-check-label" for="">
+                                Finalizar
+                            </label>
+                        </div>
+                        <br>
+                        <label class="form-check-label data-hora" for="">
+                            Data e hora da entrega
+                        </label>
+                        <hr>
+                        <table>
+                            <tr>
+                                <td>
+                                    <img class="img-fluid"
+                                        src="https://imagensemoldes.com.br/wp-content/uploads/2020/05/Brigadeiro-com-Fundo-Transparente-Doces-PNG.png"
+                                        height="100" width="100">
+                                </td>
+                                <td>
+                                    Nome do produto
+                                    <p>(quant. produto)</p>
+                                </td>
+                                <td>
+                                    Valor
+                                </td>
+                                <td>
+                                    <img src="https://assets.stickpng.com/thumbs/585e4bf3cb11b227491c339a.png"
+                                        height="100" width="100" class="usuario-img" id="usuario-lado">
+                                    <p id="usuario-lado">Nome do usuário</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <br>
+                </div>
             </div>
 
+            <!--Fim dos pedidos-->
+            <footer>
+                <div class="footer clearfix mb-0 text-muted">
+                    <div class="float-end">
+                        <p>2022 &copy; Luh Mimu's</p>
+                    </div>
+                </div>
+            </footer>
         </div>
     </div>
     <script src="../vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
 
-    <script src="../vendors/simple-datatables/simple-datatables.js"></script>
-    <script>
-        // Simple Datatable
-        let table1 = document.querySelector('#table1');
-        let dataTable = new simpleDatatables.DataTable(table1);
-    </script>
+    <script src="../vendors/apexcharts/apexcharts.js"></script>
+    <script src="../js/pages/dashboard.js"></script>
 
     <script src="../js/main.js"></script>
 </body>
