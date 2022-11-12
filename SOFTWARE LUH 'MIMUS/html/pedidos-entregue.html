@@ -71,25 +71,17 @@
                             </a>
                         </li>
 
-                        <!--Pedidos -->
-                        <li class="sidebar-item">
-                            <a href="pedidos.html" class='sidebar-link'>
-                                <i class="bi bi-basket2-fill"></i>
-                                <span>Pedidos</span>
-                            </a>
-                        </li>
-
-                        <!--Encomendas -->
+                        <!--Delivery -->
                         <li class="sidebar-item active">
-                            <a href="encomendas.html" class='sidebar-link'>
-                                <i class="bi bi-basket2-fill"></i>
-                                <span>Encomendas</span>
+                            <a href="delivery.html" class='sidebar-link'>
+                                <i class="bi bi-basket2-fill"></i>   
+                                <span>Delivery</span>
                             </a>
                         </li>
 
                         <!--Estoque -->
                         <li class="sidebar-item  ">
-                            <a href="#" class='sidebar-link'>
+                            <a href="./estoque.html" class='sidebar-link'>
                                 <i class="bi bi-box-seam"></i>
                                 <span>Estoque</span>
                             </a>
@@ -186,11 +178,11 @@
             </header>
 
             <div class="page-heading">
-                <h3>Pedidos</h3>
+                <h3>Pedidos Entregues</h3>
                 <nav class="nav justify-content-center ">
-                    <a class="nav-link active" href="#" aria-current="page">Todos</a>
+                    <a class="nav-link" href="./delivery.html" aria-current="page">Todos</a>
                     <a class="nav-link" href="./pedidos-finalizado.html">Finalizado</a>
-                    <a class="nav-link" href="./pedidos-preparando.html">Entregue</a>
+                    <a class="nav-link active" href="./pedidos-entregue.html">Entregue</a>
                 </nav>
             </div>
             <br>
@@ -198,51 +190,10 @@
             <div class="pedidosTot">
                 <div class="pedidosUniInt">
                     <a href="ped01.html">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="">
-                            <label class="form-check-label" for="">
-                                Entregue
-                            </label>
-                        </div>
-                        <p id="elements">16 de agosto - 16:30</p>
-                        <hr>
-                        <table>
-                            <tr>
-                                <td>
-                                    <img class="img-fluid"
-                                        src="https://imagensemoldes.com.br/wp-content/uploads/2020/05/Brigadeiro-com-Fundo-Transparente-Doces-PNG.png"
-                                        height="100" width="100">
-                                </td>
-                                <td>
-                                    Nome do produto
-                                    <p>(quant. produto)</p>
-                                </td>
-                                <td>
-                                    Valor
-                                </td>
-                                <td>
-                                    <img src="https://assets.stickpng.com/thumbs/585e4bf3cb11b227491c339a.png"
-                                        height="100" width="100" class="usuario-img" id="usuario-lado">
-                                    <p id="usuario-lado">Nome do usuário</p>
-
-
-                                </td>
-                            </tr>
-                        </table>
                         <br>
-                </div>
-            </div>
-            <br>
-            <div class="pedidosTot">
-                <div class="pedidosUniInt">
-                    <a href="ped01.html">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="">
-                            <label class="form-check-label" for="">
-                                Entregue
-                            </label>
-                        </div>
-                        <p id="elements">16 de agosto - 16:30</p>
+                        <label class="form-check-label data-hora" for="">
+                            Data e hora da entrega
+                        </label>
                         <hr>
                         <table>
                             <tr>
@@ -252,6 +203,7 @@
                                         height="100" width="100">
                                 </td>
                                 <td>
+                                    <p>código pedido</p>
                                     Nome do produto
                                     <p>(quant. produto)</p>
                                 </td>
@@ -272,11 +224,10 @@
             <div class="pedidosTot">
                 <div class="pedidosUniInt">
                     <a href="ped01.html">
-                        <p id="elements" style="float: left;"> &nbsp;&nbsp;<i class="bi bi-check-circle fs-058"
-                                id="elements" style="font-family:'Courier New', Courier, monospace;"></i>
-                            &nbsp;&nbsp;
-                            Entregue</p>
-                        <p id="elements">16 de agosto - 16:30</p>
+                        <br>
+                        <label class="form-check-label data-hora" for="">
+                            Data e hora da entrega
+                        </label>
                         <hr>
                         <table>
                             <tr>
@@ -286,6 +237,7 @@
                                         height="100" width="100">
                                 </td>
                                 <td>
+                                    <p>código pedido</p>
                                     Nome do produto
                                     <p>(quant. produto)</p>
                                 </td>
@@ -302,15 +254,16 @@
                         <br>
                 </div>
             </div>
-
-            <!--Fim dos pedidos-->
-            <footer>
-                <div class="footer clearfix mb-0 text-muted">
-                    <div class="float-end">
-                        <p>2022 &copy; Luh Mimu's</p>
-                    </div>
-                </div>
-            </footer>
+            <br>
+            
+    <!--Fim dos pedidos-->
+    <footer>
+        <div class="footer clearfix mb-0 text-muted">
+            <div class="float-end">
+                <p>2022 &copy; Luh Mimu's</p>
+            </div>
+        </div>
+    </footer>
         </div>
     </div>
     <script src="../vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
