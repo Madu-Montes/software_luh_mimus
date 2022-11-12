@@ -64,14 +64,40 @@ textarea:focus,
    
 }
 
+.d-flex .form-control{
+    width: 180px;
+}
+
+
 .dropdown li a {
     font-size: 14px;
     border: none;
 }
 
+.pesquisinha{
+    margin-left: 40px;
+}
+
+.btn-outline {
+    color: #000;
+    border: none;
+    
+  }
+  
+  .btn-outline svg:hover {
+   color: #FCCAD5;
+   border-color: #FCCAD5;
+  }
+
+.user{
+    margin-top: 20px;
+}
+
+
+
 .dropdown {
-    right: 2%;
-    margin-top: -3%;
+    right:5%;
+    margin-top: -5%;
     height: 40px;
     padding: 10px;
 }
