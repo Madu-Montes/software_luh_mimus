@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/manual.css">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../vendors/iconly/bold.css">
@@ -48,7 +49,7 @@
 
                         <!--Dashboard -->
                         <li class="sidebar-item">
-                            <a href="#" class='sidebar-link'>
+                            <a href="#dashboard" class='sidebar-link'>
                                 <i class="bi bi-grid-fill"></i>
                                 <span>Dashboard</span>
                             </a>
@@ -56,7 +57,7 @@
 
                         <!--Calendário -->
                         <li class="sidebar-item  ">
-                            <a href="#" class='sidebar-link'>
+                            <a href="#calendarario" class='sidebar-link'>
                                 <i class="bi bi-calendar"></i>
                                 <span>Calendário</span>
                             </a>
@@ -64,7 +65,7 @@
 
                         <!--Clientes -->
                         <li class="sidebar-item  ">
-                            <a href="#" class='sidebar-link'>
+                            <a href="#clientes" class='sidebar-link'>
                                 <i class="bi bi-people-fill"></i>
                                 <span>Clientes</span>
                             </a>
@@ -81,7 +82,7 @@
                         <!--Delivery -->
                         <li class="sidebar-item">
                             <a href="#" class='sidebar-link'>
-                                <i class="bi bi-basket2-fill"></i>   
+                                <i class="bi bi-basket2-fill"></i>
                                 <span>Delivery</span>
                             </a>
                         </li>
@@ -89,7 +90,7 @@
                         <!--Encomendas -->
                         <li class="sidebar-item">
                             <a href="#" class='sidebar-link'>
-                                <i class="bi bi-basket2-fill"></i>   
+                                <i class="bi bi-basket2-fill"></i>
                                 <span>Encomendas</span>
                             </a>
                         </li>
@@ -114,26 +115,120 @@
                 <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
             </div>
         </div>
+
+        
         <div id="main">
+            <div class="page-heading">
+                <h1>Olá, bem vindo(a) ao manual</h1>
+            </div>
+            <section class="row">
+                <p>Escolha no menu lateral a opção que desejar,<br>Aqui você poderá tirar dúvidas em relação ao
+                    software</br>
+                </p>
+            </section>
+
+            <!--
             <header class="mb-3">
                 <a href="#" class="burger-btn d-block d-xl-none">
                     <i class="bi bi-justify fs-3"></i>
                 </a>
             </header>
-    
+
             <div class="page-heading">
                 <h1>Olá, bem vindo(a) ao manual</h1>
             </div>
-    
+
             <div class="page-content  ">
-                <!-- row da seção inteira-->
+                <!-- row da seção inteira
                 <section class="row">
-                    <p>Escolha no menu lateral a opção que desejar,<br>Aqui você poderá tirar dúvidas em relação ao software</br></p>
-                    
-                    
+                    <p>Escolha no menu lateral a opção que desejar,<br>Aqui você poderá tirar dúvidas em relação ao
+                        software</br>
+                    </p>
                 </section>
+                <div class="opcoes">
+                    <div id="dashboard">
+                        <h2>Dashboard</h2>
+                        <div class="menu-dash">
+                            <nav>
+                                <a href="#graficos">
+                                    <h3>gráficos</h3>
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <div id="calendario">
+                        <h2>Calendário</h2>
+                        <div class="menu-calendar">
+                            <nav>
+                                <a href="#">
+                                    <h3>Dasativar data</h3>
+                                    <h3>Alterar data</h3>
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+
+                </div>
+            </div>-->
+
+            <div id="auth">
+
+                <div class="row h-100">
+                    <div class="col-lg-5 col-12">
+                        <div id="auth-left">
+
+                            <div class="opcoes">
+                                <div id="dashboard">
+                                    <h2>Dashboard</h2>
+                                    <div class="menu-dash">
+                                        <nav>
+                                            <a href="#graficos">
+                                                <h3>gráficos</h3>
+                                            </a>
+                                        </nav>
+                                    </div>
+                                </div>
+            
+                                <div id="calendario">
+                                    <h2>Calendário</h2>
+                                    <div class="menu-calendar">
+                                        <nav>
+                                            <a href="#">
+                                                <h3>Dasativar data</h3>
+                                                <h3>Alterar data</h3>
+                                            </a>
+                                        </nav>
+                                    </div>
+                                </div>
+
+                                <div id="clientes">
+                                    <h2>Clientes</h2>
+                                    <div class="clientes">
+                                        <nav>
+                                            <a href="#graficos">
+                                                <h3>gráficos</h3>
+                                            </a>
+                                        </nav>
+                                    </div>
+                                </div>
+            
+                            </div>
+        
+                        </div>
+                    </div>
+                    <div class="col-lg-7 d-none d-lg-block">
+                        <div id="auth-right">
+                            <div class="auth-logo">
+                                <a href="../index.html"><img src="../images/logopreta.png" alt="Logo"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
             </div>
-    
+
+
             <footer>
                 <div class="footer clearfix mb-0 text-muted">
                     <div class="float-end">
@@ -142,17 +237,18 @@
                 </div>
             </footer>
         </div>
-        </div>
-        <script src="../vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-    
-        <script src="../vendors/apexcharts/apexcharts.js"></script>
-        <script src="../js/pages/dashboard.js"></script>
-    
-        <script src="../js/main.js"></script>
-    </body>
-    
-    </html>
     </div>
+    <script src="../vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
+    <script src="../vendors/apexcharts/apexcharts.js"></script>
+    <script src="../js/pages/dashboard.js"></script>
+
+    <script src="../js/main.js"></script>
 </body>
+
+</html>
+</div>
+</body>
+
 </html>

@@ -1,0 +1,11 @@
+.opcoes h2{
+color: rgba(0, 0, 0, 0.801);
+}
+
+.opcoes h3{
+    font-size: 20px;
+}
+
+.opcoes #dashboard{
+    margin-top: 3%;
+}
