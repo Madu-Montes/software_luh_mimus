@@ -37,6 +37,10 @@ body{
     flex-direction: column;
 }
 
+.d-flex .form-control{
+    width: 50px;
+}
+
 .form-header img{
     width: 50%;
     margin-left: 25%;
