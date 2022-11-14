@@ -9,3 +9,7 @@ color: rgba(0, 0, 0, 0.801);
 .opcoes #dashboard{
     margin-top: 3%;
 }
+
+#auth-right .auth-logo img{
+    width: 100%;
+}
