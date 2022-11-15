@@ -1,0 +1,41 @@
+.card-content{
+    text-align: center;
+    justify-content: center;
+    
+    }
+    
+    .card-content img{
+    margin-left: 36px;
+        }
+    
+    .page-heading .nav-link{
+        font-weight: bold;
+    
+    }
+    
+    .page-heading .nav-link:hover{
+    color: pink
+    
+    }
+    
+    .add{
+        background-color: black;
+        border-radius: 20px;
+        color: white;
+    }
+    
+    .exclui{
+        background-color: rgb(192, 30, 124);
+        border-radius: 20px;
+        color: white;
+        margin-left: 10px;
+    }
+    
+    .cat{
+        background-color: #f0a1b9;
+        border-radius: 20px;
+        color: black;
+        margin-left: 10px;
+    
+    }
+    
