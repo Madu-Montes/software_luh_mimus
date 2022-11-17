@@ -27,7 +27,7 @@
                 <div class="sidebar-header">
                     <div class="d-flex justify-content-between">
                         <div class="logo">
-                            <a href="dashboard.html"><img src="assets/images/logo.jfif" alt="Logo" srcset=""></a>
+                            <a href="dashboard.html"><img src="../images/logo.jfif" alt="Logo" srcset=""></a>
                         </div>
                         <div class="toggler">
                             <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
@@ -40,9 +40,9 @@
                     <ul class="menu">
 
                         <!--Dashboard -->
-                        <li class="sidebar-item active ">
+                        <li class="sidebar-item">
                             <a href="dashboard.html" class='sidebar-link'>
-                                <img src="./assets/images/home.png" alt="">
+                                <i class="bi bi-grid-fill"></i>
                                 <span>Dashboard</span>
                             </a>
                         </li>
@@ -50,15 +50,15 @@
                         <!--Calendário -->
                         <li class="sidebar-item  ">
                             <a href="#" class='sidebar-link'>
-                                <img src="./assets/images/calendario.png" alt="">
+                                <i class="bi bi-calendar"></i>
                                 <span>Calendário</span>
                             </a>
                         </li>
 
                         <!--Clientes -->
                         <li class="sidebar-item  ">
-                            <a href="#" class='sidebar-link'>
-                                <img src="./assets/images/clientes.png" alt="">
+                            <a href="clientes.html" class='sidebar-link'>
+                                <i class="bi bi-people-fill"></i>
                                 <span>Clientes</span>
                             </a>
                         </li>
@@ -66,39 +66,39 @@
                         <!--Anúncios -->
                         <li class="sidebar-item  ">
                             <a href="#" class='sidebar-link'>
-                                <img src="./assets/images/anuncios.png" alt="">
+                                <i class="bi bi-megaphone"></i>
                                 <span>Anúncios</span>
                             </a>
                         </li>
 
-                        <!--Pedidos -->
-                        <li class="sidebar-item  ">
-                            <a href="pedidos.html" class='sidebar-link'>
-                                <img src="./assets/images/pedidos.png" alt="">
-                                <span>Pedidos</span>
+                        <!--Delivery -->
+                        <li class="sidebar-item active">
+                            <a href="delivery.html" class='sidebar-link'>
+                                <i class="bi bi-basket2-fill"></i>
+                                <span>Delivery</span>
                             </a>
                         </li>
 
-                        <!--Receitas -->
-                        <li class="sidebar-item  ">
-                            <a href="form-layout.html" class='sidebar-link'>
-                                <img src="./assets/images/receitas.png" alt="">
-                                <span>Receitas</span>
+                        <!--Encomendas -->
+                        <li class="sidebar-item">
+                            <a href="encomendas.html" class='sidebar-link'>
+                                <i class="bi bi-basket2-fill"></i>
+                                <span>Encomendas</span>
                             </a>
                         </li>
 
                         <!--Estoque -->
                         <li class="sidebar-item  ">
                             <a href="#" class='sidebar-link'>
-                                <img src="./assets/images/estoque.png" alt="">
+                                <i class="bi bi-box-seam"></i>
                                 <span>Estoque</span>
                             </a>
                         </li>
 
                         <!--Finanças -->
                         <li class="sidebar-item  ">
-                            <a href="table.html" class='sidebar-link'>
-                                <img src="./assets/images/finanças.png" alt="">
+                            <a href="financas.html" class='sidebar-link'>
+                                <i class="bi bi-cash"></i>
                                 <span>Finanças</span>
                             </a>
                         </li>
@@ -119,19 +119,39 @@
                             d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
                     </svg>
                 </a>
-                <a class="search">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-search" viewBox="0 0 16 16">
-                        <path
-                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                    </svg>
-                </a>
+                <div class="btn-group mb-1">
+                    <div class="dropdown dropdown-color-icon">
+                        <a class="btn  dropdown-toggle pesquisa" type="button" id="dropdownMenuButtonEmoji"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 55px;">
+                            <span Class="me-50"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg></span>
+                        </a>
+                        <div class="dropdown-menu pesquisinha" aria-labelledby="dropdownMenuButtonEmoji">
+                            <nav class="navbar bg-light">
+                                <div class="container-fluid">
+                                  <form class="d-flex" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                                    <button class="btn btn-outline" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-search" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                    </svg></button>
+                                  </form>
+                                </div>
+                              </nav>
+                                
+
+                                </div>
+                            </a>
 
                 <div class="btn-group mb-1">
                     <div class="dropdown dropdown-color-icon">
                         <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButtonEmoji"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span Class="me-50"><img src="./assets/images/user.png" alt="" width="32" height="32"
+                            <span Class="me-50"><img src="../images/user.png" alt="" width="32" height="32"
                                     class="rounded-circle me-2"></span>nome do usuário
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButtonEmoji">
@@ -189,13 +209,14 @@
             </div>
 
             <div class="pedCliente" id="header-elements">
-               <img src="https://vocesa.abril.com.br/wp-content/uploads/2021/01/Dani-Almeida.jpg?quality=70&strip=info&w=650&resize=1200,800" style="border-radius: 10px; border: solid white 2px; box-shadow: 10 10 5px 10px; margin-top: -60px;" height="90" width="90">
-              &nbsp;
-               <div id="header-elements">
-                <p id="header-elements">Nome do Cliente</p>
-                <p>$rua nº CEP</p>
-            </div>
-            <a name="" id="chat" class="btn btn-primary" href="#" role="button">Enviar mensagem</a>
+                <img src="https://vocesa.abril.com.br/wp-content/uploads/2021/01/Dani-Almeida.jpg?quality=70&strip=info&w=650&resize=1200,800"
+                    style="border-radius: 10px; border: solid white 2px; box-shadow: 10 10 5px 10px; margin-top: -60px;"
+                    height="90" width="90">
+                &nbsp;
+                <div id="header-elements">
+                    <p id="header-elements">Nome do Cliente</p>
+                    <p>$rua nº CEP</p>
+                </div>
             </div>
 
             <div id="header-elements" class="pedCliente">
@@ -203,7 +224,9 @@
                 <table>
                     <tr>
                         <td>
-                            <img class="img-fluid" src="https://imagensemoldes.com.br/wp-content/uploads/2020/05/Brigadeiro-com-Fundo-Transparente-Doces-PNG.png" height="100" width="100">
+                            <img class="img-fluid"
+                                src="https://imagensemoldes.com.br/wp-content/uploads/2020/05/Brigadeiro-com-Fundo-Transparente-Doces-PNG.png"
+                                height="100" width="100">
                         </td>
                         <td>
                             Nome do produto
@@ -213,10 +236,12 @@
                             Valor
                         </td>
                         <td>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
-                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
-                                <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
-                              </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-credit-card" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z" />
+                                <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z" />
+                            </svg>
                             <p id="usuario-lado">Informações do Cartão</p>
                         </td>
                     </tr>
@@ -231,7 +256,7 @@
                     Custo do frete
                 </p>
                 <p id="valores" style="margin-left: 30px;">
-                   + Valor
+                    + Valor
                 </p>
                 <hr>
                 <p id="valores" style="float: left;">
@@ -244,26 +269,24 @@
             <br>
             <br>
 
-            <a id="voltar" class="btn btn-primary" href="./pedidos.html" role="button">Voltar</a>
-                <br>
-                <br>
-                <footer>
-                    <div class="footer clearfix mb-0 text-muted">
-                        <div class="float-end">
-                            <p>2022 &copy; Luh Mimu's</p>
-                        </div>
+            <a id="voltar" class="btn btn-primary" href="./pedidos-entregue.html" role="button">Voltar</a>
+            <br>
+            <br>
+            <footer>
+                <div class="footer clearfix mb-0 text-muted">
+                    <div class="float-end">
+                        <p>2022 &copy; Luh Mimu's</p>
                     </div>
-                </footer>
-            
+                </div>
+            </footer>
+
         </div>
         <script src="../vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
         <script src="../js/bootstrap.bundle.min.js"></script>
-    
+
         <script src="../vendors/apexcharts/apexcharts.js"></script>
         <script src="../js/pages/dashboard.js"></script>
-    
+
         <script src="../js/main.js"></script>
-    </body>
-    
-    </html>
-        
+</body>
+</html>

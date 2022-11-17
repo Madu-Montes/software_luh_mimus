@@ -86,7 +86,36 @@ border-radius: 10px;
 border: solid #000 0px;
 }
 
-.page-heading ul {
-    margin-left: 35%;
-    width: 30%;
+.page-heading .active{
+    background-color:  #F99AAF;
+    border-radius: 15px;
+}
+
+.page-heading .active:hover{
+    background-color:  #ffffff;
+}
+
+.page-heading nav a:hover{
+    color: #F99AAF;
+}
+
+.pedidosTot .form-check{
+    float: left;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+
+.data-hora{
+    font-size: 18px;
+    margin-right: 2%;
+}
+
+.meses{
+    background-color: #DF9DB1;
+    font-size: 18px;
+    color: white;
+    border: none;
+    width: 13%;
+    border-radius: 15px;
+    margin-left: 3%;
 }

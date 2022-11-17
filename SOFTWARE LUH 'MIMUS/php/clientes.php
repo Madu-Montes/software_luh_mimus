@@ -38,7 +38,7 @@
                     <ul class="menu">
 
                         <!--Dashboard -->
-                        <li class="sidebar-item active ">
+                        <li class="sidebar-item">
                             <a href="dashboard.html" class='sidebar-link'>
                                 <i class="bi bi-grid-fill"></i>
                                 <span>Dashboard</span>
@@ -74,6 +74,14 @@
                             <a href="pedidos.html" class='sidebar-link'>
                                 <i class="bi bi-basket2-fill"></i>   
                                 <span>Pedidos</span>
+                            </a>
+                        </li>
+
+                        <!--Encomendas -->
+                        <li class="sidebar-item active">
+                            <a href="encomendas.html" class='sidebar-link'>
+                                <i class="bi bi-basket2-fill"></i>   
+                                <span>Encomendas</span>
                             </a>
                         </li>
 

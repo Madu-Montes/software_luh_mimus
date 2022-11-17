@@ -69,12 +69,29 @@ margin-top: 6%;
 }
 
 .card-title a .bi-plus-circle{
-    color: #ffffff;
-    background-color: #DF9DB1;
-    border-radius: 50%;
-    border: none;
-    margin-left: 170px;
-    width: 30px;
-    height: 30px;
+    color: #DF9DB1;
+    background-color:white;
+    border-radius: 0%;
+    
+    width: 34px;
+    height: 34px;
 }
+
+.card-title a .bi-plus-circle {
+    
+    margin-left:300px;
+    width: 34px;
+    height: 34px;
+}
+
+td a{
+color: rgb(134, 134, 134);
+margin-left: 20px;
+float: right;
+
+}
+
+
+    
+
 
