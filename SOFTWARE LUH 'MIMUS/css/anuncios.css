@@ -1,11 +1,10 @@
 .card-content{
     text-align: center;
     justify-content: center;
-    
     }
     
     .card-content img{
-    margin-left: 36px;
+    width: 90%;
         }
     
     .page-heading .nav-link{

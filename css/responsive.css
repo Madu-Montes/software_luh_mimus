@@ -1,0 +1,406 @@
+@media (min-width: 1400px) and (max-width: 2000px) {
+  .owl-stage-outer {
+    margin-left: 11%;
+    align-items: center;
+  }
+
+  .maisvendidos {
+    display: flex;
+  }
+}
+
+.banners .slide1 .carousel-item {
+  background-image: url(../images/slide1.png);
+
+}
+
+.banners .slide2 .carousel-item {
+  background-image: url(../images/slide2.png);
+
+}
+
+.banners .slide3 .carousel-item {
+  background-image: url(../images/slide3.png);
+
+}
+
+
+@media (min-width: 1343px) and (max-width: 1399px) {
+  .owl-stage-outer {
+    margin-left: 5%;
+    align-items: center;
+  }
+
+  .maisvendidos {
+    display: flex;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1342px) {
+  .owl-stage-outer {
+    margin-left: 2%;
+    align-items: center;
+  }
+
+  .maisvendidos {
+    display: flex;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .photo-gallery .menu {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .maisvendidos {
+    display: flex;
+  }
+
+  .menu nav {
+    margin-top: 5%;
+    width: 100%;
+  }
+
+  .menu img {
+    width: 60px;
+    margin: 2% 35% 6%;
+  }
+
+  .menu h1 {
+    display: none;
+  }
+
+  .owl-stage-outer {
+    margin-left: 12%;
+  }
+
+  .quem-somos .col-md-5 img {
+    width: 100%;
+    margin-top: 50%;
+    margin-bottom: 50%;
+  }
+
+  .content .image-box {
+    max-width: 60%;
+  }
+
+  .content {
+    padding: 10px 0;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .d-flex a svg{
+    display: none;
+  }
+  .d-flex a span{
+    display: none;
+  }
+  
+  .header-topo .d-flex .imgemail img {
+    display: none;
+  }
+
+  .photo-gallery .menu {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .maisvendidos {
+    display: flex;
+  }
+
+  .menu nav {
+    margin-top: 5%;
+    width: 100%;
+  }
+
+  .menu a {
+    height: 20%;
+    margin: 5px 5px 2px 2px;
+    border-radius: 24px;
+  }
+
+  .menu img {
+    width: 60px;
+    margin: 2% 30% 6%;
+  }
+
+  .menu h1 {
+    display: none;
+  }
+
+  .quem-somos .col-md-5 img {
+    width: 100%;
+    margin-top: 50%;
+    margin-bottom: 50%;
+  }
+
+  .quem-somos .col-md-7 h2 {
+    font-size: 40px;
+  }
+
+  .owl-stage-outer {
+    margin-left: 25%;
+  }
+
+  .content .image-box {
+    display: none;
+  }
+
+  .content form {
+    width: 100%;
+  }
+
+  .perfil form {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .col-md-7 img {
+    margin-bottom: -1%
+  }
+
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .d-flex a svg{
+    display: none;
+  }
+  .d-flex a span{
+    display: none;
+  }
+
+  .card-wrapper {
+    display: flex;
+  }
+
+  .sabores button {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #000000;
+  }
+
+  .maisvendidos {
+    margin-left: 95px;
+  }
+
+  .menu nav {
+    margin-top: 5%;
+    width: 100%;
+  }
+
+  .menu a {
+    height: 20%;
+    margin: 5px 5px 2px 2px;
+    border-radius: 24px;
+  }
+
+  .menu img {
+    width: 50px;
+    margin: 2% 25% 6%;
+  }
+
+  .menu h1 {
+    display: none;
+  }
+
+  .photo-gallery .menu {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .owl-stage-outer {
+    margin-left: 15%;
+  }
+
+  .perfil form {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .form-row {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .quem-somos .col-md-5 img {
+    margin-top: 5%;
+    margin-bottom: 10%;
+  }
+
+  .content .image-box {
+    display: none;
+  }
+
+  .col-md-7 img {
+    margin-bottom: -1%
+  }
+
+  .footer h3 {
+    padding-top: 20px;
+  }
+
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+  .d-flex a svg{
+    display: none;
+  }
+  .d-flex a span{
+    display: none;
+  }
+
+  .maisvendidos {
+    margin-left: 30px;
+  }
+
+  .header-menu button {
+    position: relative;
+    left: 78%;
+  }
+
+  .sabores button {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: -15%;
+    background-color: #000000;
+  }
+
+  .banners .carousel-item {
+    background-image: url(../images/bolobrigadeiro.jpg);
+  }
+
+  .menu nav {
+    margin-top: 5%;
+    width: 100%;
+  }
+
+  .menu a {
+    height: 20%;
+    margin: 5px 5px 2px 2px;
+    border-radius: 24px;
+  }
+
+  .menu img {
+    margin: 2% 1% 6%;
+  }
+
+  .menu h1 {
+    display: none;
+  }
+
+  .snip1143 li:hover:before {
+    width: 10%;
+  }
+
+  .login form {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .form-group input {
+    font-size: 10px;
+  }
+
+  .owl-stage-outer {
+    margin-left: 5%;
+    align-items: center;
+  }
+
+  .form-row {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .single_course {
+    width: 70%;
+  }
+
+  .single_course .course_content {
+    height: 350px;
+  }
+
+  .course_content .btns-cardapio a {
+    width: 70%;
+    display: block;
+    margin-right: 60%;
+  }
+
+  .btn_fav .bi-heart {
+    margin-left: 80%;
+    margin-bottom: 65%;
+    margin-top: -10;
+    background-color: #000000;
+  }
+
+  .card-wrapper .card:not(:first-child) {
+    display: none;
+  }
+
+  .quem-somos .col-md-5 img {
+    margin-bottom: 10%;
+  }
+
+  .content .image-box {
+    display: none;
+  }
+
+  .content form {
+    width: 100%;
+    margin-left: 5%;
+  }
+
+  .col-md-7 img {
+    margin-bottom: -40%
+  }
+
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+
+  .container_form {
+    width: 90%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .recuperar form {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .cadastro .modal-footer button a {
+    font-size: 20px;
+  }
+
+  .footer h3 {
+    padding-top: 20px;
+    font-size: 16px;
+  }
+
+  .footer li {
+    font-size: 14px;
+  }
+
+  .copyright p {
+    font-size: 14px;
+  }
+
+}
