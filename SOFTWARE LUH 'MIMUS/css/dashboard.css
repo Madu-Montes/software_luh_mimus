@@ -1,109 +1,113 @@
-.nav-tabs{
-    background-color: #F07882;
-    float: right;
+#meu,#sino{
+    padding: 8px;
+    }
     
-}
-
-#app .logo img {
-    width: 140px;
-    height: 140px;
-    margin-left: 25%;
-}
-
-.menu li img {
-    width: 30px;
-}
-
-#main {
-    background-color: #FCCAD5;
-}
-
-.card-body #chart-profile-visit {
-    color: #F07882;
-}
-
-.header-bar {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 60px;
-    background-color: white;
-    text-align: right;
-}
-
-#pesquisar-header {
-    border: hidden;
-    background-color: transparent;
-    width: 85%;
-}
-
-textarea:focus,
-#pesquisar-header:focus {
-    box-shadow: 0 0 0 0;
-    outline: 0;
-}
-
-.icones-topo a svg {
-    width: 26px;
-    height: 26px;
-    margin-top: 1%;
+    .nav-tabs{
+        background-color: #F07882;
+        float: right;
+        
+    }
     
-    color: rgb(0, 0, 0);
-}
-
-.notification{
-    margin-right: 14px;
-}
-
-.dropdown a {
-   
-    color: #000;
-    border: none;
-    margin-top: 12px;
-}
-
-
-.dropdown a:hover {
+    #app .logo img {
+        width: 140px;
+        height: 140px;
+        margin-left: 25%;
+    }
     
-    color: #FCCAD5;
-   
-}
-
-.d-flex .form-control{
-    width: 180px;
-}
-
-
-.dropdown li a {
-    font-size: 14px;
-    border: none;
-}
-
-.pesquisinha{
-    margin-left: 40px;
-}
-
-.btn-outline {
-    color: #000;
-    border: none;
+    .menu li img {
+        width: 30px;
+    }
     
-  }
-  
-  .btn-outline svg:hover {
-   color: #FCCAD5;
-   border-color: #FCCAD5;
-  }
-
-.user{
-    margin-top: 20px;
-}
-
-
-
-.dropdown {
-    right:5%;
-    margin-top: -5%;
-    height: 40px;
-    padding: 10px;
-}
+    #main {
+        background-color: #FCCAD5;
+    }
+    
+    .card-body #chart-profile-visit {
+        color: #F07882;
+    }
+    
+    .header-bar {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 60px;
+        background-color: white;
+        text-align: right;
+    }
+    
+    #pesquisar-header {
+        border: hidden;
+        background-color: transparent;
+        width: 85%;
+    }
+    
+    textarea:focus,
+    #pesquisar-header:focus {
+        box-shadow: 0 0 0 0;
+        outline: 0;
+    }
+    
+    .icones-topo a svg {
+        width: 26px;
+        height: 26px;
+        margin-top: 1%;
+        
+        color: rgb(0, 0, 0);
+    }
+    
+    .notification{
+        margin-right: 14px;
+    }
+    
+    .dropdown a {
+       
+        color: #000;
+        border: none;
+        margin-top: 12px;
+    }
+    
+    
+    .dropdown a:hover {
+        
+        color: #FCCAD5;
+       
+    }
+    
+    .d-flex .form-control{
+        width: 180px;
+    }
+    
+    
+    .dropdown li a {
+        font-size: 14px;
+        border: none;
+    }
+    
+    .pesquisinha{
+        margin-left: 40px;
+    }
+    
+    .btn-outline {
+        color: #000;
+        border: none;
+        
+      }
+      
+      .btn-outline svg:hover {
+       color: #FCCAD5;
+       border-color: #FCCAD5;
+      }
+    
+    .user{
+        margin-top: 20px;
+    }
+    
+    
+    
+    .dropdown {
+        right:5%;
+        margin-top: -5%;
+        height: 40px;
+        padding: 10px;
+    }
