@@ -200,6 +200,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId"
                 aria-hidden="true">
                 <div class="modal-dialog" role="document">
@@ -208,36 +209,38 @@
                             <h5 class="modal-title" id="modalTitleId">Adicionar novo anúncio</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body">
-                            <div class="container-fluid">
-                                <div class="mb-3">
-                                    <label for="" class="form-label">Nome</label>
-                                    <input type="text" class="form-control" name="" id="" aria-describedby="emailHelpId"
-                                        placeholder="Ex: Brigadeiro">
+                        <form action="add_anuncio.php" method="post" enctype= "multipart/form-data">
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="mb-3">
+                                            <label for="nome" class="form-label">Nome</label>
+                                            <input type="text" class="form-control" name="nome" id="nome" aria-describedby="emailHelpId"
+                                                placeholder="Ex: Brigadeiro">
 
-                                </div>
-                                <div class="mb-3">
-                                    <label for="" class="form-label">Preço</label>
-                                    <input type="text" class="form-control" name="" id="" aria-describedby="emailHelpId"
-                                        placeholder="R$90,00">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlTextarea1" class="form-label">Descrição</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="" class="form-label">Adicione a imagem</label>
-                                    <input type="file" class="form-control" name="" id="" aria-describedby="emailHelpId"
-                                        placeholder="Ex: Brigadeiro de chocolate">
-                                </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="valor" class="form-label">Preço</label>
+                                            <input type="text" class="form-control" name="valor" id="valor" aria-describedby="emailHelpId"
+                                                placeholder="R$90,00">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlTextarea1" class="form-label">Descrição</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" name="desc" rows="3"></textarea>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="avatar" class="form-label">Adicione a imagem</label>
+                                            <input type="file" class="form-control" name="avatar" id="avatar" aria-describedby="emailHelpId"
+                                                placeholder="Ex: Brigadeiro de chocolate">
+                                        </div>
 
-                            </div>
-
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Salvar</button>
-                            <button type="button" class="btn btn-dark">Cancelar</button>
-                        </div>
+                                        <div class="modal-footer">
+                                            <button type="submit" class="btn btn-dark">Salvar</button>
+                                            <button type="reset" class="btn btn-dark" data-bs-dismiss="modal">Cancelar</button>
+    
+                                        </div>
+                                    </div>   
+                                </div>    
+                        </form>
                     </div>
                 </div>
             </div>
@@ -252,80 +255,55 @@
             </div>
             <br>
             <p>Todos(0)</p>
+
+            <!-- Anuncios já cadastrados -->
+            <?php
+                 include'conn_banco.php';
+
+                 $dados_usuarios = $sql->query("SELECT * FROM anuncios");
+                 
+                 while ($linha = mysqli_fetch_array($dados_usuarios)){
+                     $id = $linha['id_anuncios'];
+                     $nome = $linha['nome_anuncios'];
+                     $valor = $linha['valor_anuncios'];
+                     $desc = $linha['desc_anuncios'];
+
+                     $avatar = $linha['img_anuncios'];
+
+                 }
+            ?>
+
+
             <section id="groups">
                 <div class="row ">
                     <div class="col-12 mt-3 mb-1">
                         <h4 class="section-title text-uppercase">DOCES</h4>
                     </div>
                 </div>
-                <div class="row match-height">
-                    <div class="col-12">
-                        <div class="card-group">
-                            <div class="card">
-                                <div class="card-content">
-                                    <img class="card img-fluid" src="../images/anuncio.png"
-                                        alt="Card image cap" width="180px">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Brigadeiro (100 unidades)</h4>
-                                        <p class="card-text">
-                                            R$95,00 <p>
-                                        <small class="text-muted">Last updated 3 mins ago</small>
+
+                <?php
+
+                echo"
+                <div class='row match-height'>
+                    <div class='col-12'>
+                        <div class='card-group'>
+                            <div class='card'>
+                                <div class='card-content'>
+                                <img src=../$avatar height=100px alt='Card image cap' width='100px'>
+                                    <div class='card-body'>
+                                        <h4 class='card-title'> $nome</h4>
+                                        <p class='card-text'>
+                                            $valor<p>
+                                        <small class='text-muted'>Last updated 3 mins ago</small>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <div class="card-content">
-                                    <img class="card img-fluid" src="../images/anuncio.png"
-                                        alt="Card image cap" width="180px">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Brigadeiro (100 unidades)</h4>
-                                        <p class="card-text">
-                                            R$95,00 <p>
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-content">
-                                    <img class="card img-fluid" src="../images/anuncio.png"
-                                        alt="Card image cap" width="180px">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Brigadeiro (100 unidades)</h4>
-                                        <p class="card-text">
-                                            R$95,00 <p>
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-content">
-                                    <img class="card img-fluid" src="../images/anuncio.png"
-                                        alt="Card image cap" width="180px">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Brigadeiro (100 unidades)</h4>
-                                        <p class="card-text">
-                                            R$95,00 <p>
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-content">
-                                    <img class="card img-fluid" src="../images/anuncio.png"
-                                        alt="Card image cap" width="180px">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Brigadeiro (100 unidades)</h4>
-                                        <p class="card-text">
-                                            R$95,00 <p>
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-                            
                         </div>
                     </div>
                 </div>
-            </section>
+            </section>";
+?>
+
             <section id="groups">
                 <div class="row ">
                     <div class="col-12 mt-3 mb-1">
@@ -400,11 +378,9 @@
                     </div>
                 </div>
             </section>
+       
+       
         </div>
-        
-
-
-                   
                     <div class="footer clearfix mb-0 text-muted">
                         <div class="float-end">
                             <p>2022 &copy; Luh Mimu's</p>
