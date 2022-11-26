@@ -19,7 +19,7 @@
     }
     
     #main {
-        background-color: #FCCAD5;
+        background-color: #FCD8CA;
     }
     
     .card-body #chart-profile-visit {
@@ -111,3 +111,11 @@
         height: 40px;
         padding: 10px;
     }
+
+    .grafico1{
+        background-color: white;
+        margin-left: 2%;
+        border-radius: 15px;
+    }
+
+   

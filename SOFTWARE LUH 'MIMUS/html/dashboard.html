@@ -178,10 +178,7 @@
             <section class="row">
 
                 <!-- col da seção inteira-->
-                <div class="col-12 col-lg-9">
-
-
-
+                <div class="col-12 col-lg-12">
                     <!-- row dos cards-->
                     <div class="row">
 
@@ -231,38 +228,40 @@
                     </div>
                     <!-----Fim de Cards no topo------->
                 </div>
-                <div>
-                    <canvas id="myChart"></canvas>
-                </div>
+                <div class="col-lg-8 col-md-6 grafico1">
+                    <div>
+                        <canvas id="myChart"></canvas>
+                    </div>
 
-                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-                <script>
-                    const ctx = document.getElementById('myChart');
+                    <script>
+                        const ctx = document.getElementById('myChart');
 
-                    new Chart(ctx, {
-                        type: 'line',
-                        data: {
-                            labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Maio', 'Junho'],
-                            datasets: [{
-                                label: 'Encomendas',
-                                data: [12, 19, 3, 5, 2, 3],
-                                fill: false,
-                                borderWidth: 1,
-                                backgroundColor: 'rgba(255, 255, 255, 1)',
-                                borderColor: 'rgb(240, 120, 130)',
-                                tension: 0.3,
-                            }]
-                        },
-                        options: {
-                            scales: {
-                                y: {
-                                    beginAtZero: true
+                        new Chart(ctx, {
+                            type: 'line',
+                            data: {
+                                labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Maio', 'Junho'],
+                                datasets: [{
+                                    label: 'Encomendas',
+                                    data: [12, 19, 3, 5, 2, 3],
+                                    fill: false,
+                                    borderWidth: 1,
+                                    backgroundColor: 'rgba(255, 255, 255, 1)',
+                                    borderColor: 'rgb(240, 120, 130)',
+                                    tension: 0.3,
+                                }]
+                            },
+                            options: {
+                                scales: {
+                                    y: {
+                                        beginAtZero: true
+                                    }
                                 }
                             }
-                        }
-                    });
-                </script>
+                        });
+                    </script>
+                </div>
             </section>
         </div>
 
