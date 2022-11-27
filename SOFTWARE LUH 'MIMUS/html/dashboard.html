@@ -173,15 +173,11 @@
         </div>
 
         <div class="page-content  ">
-
-            <!-- row da seção inteira-->
             <section class="row">
 
                 <!-- col da seção inteira-->
                 <div class="col-12 col-lg-12">
-                    <!-- row dos cards-->
                     <div class="row">
-
                         <!-----Cards de Vendas------->
                         <div class="col-6 col-lg-4 col-md-6">
                             <div class="card">
@@ -227,42 +223,114 @@
                         </div>
                     </div>
                     <!-----Fim de Cards no topo------->
-                </div>
-                <div class="col-lg-8 col-md-6 grafico1">
-                    <div>
-                        <canvas id="myChart"></canvas>
+
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header grafico1">
+                                    <h4>Encomendas</h4>
+                                </div>
+                                <div class="col-lg-10 col-md-6 grafico1">
+                                    <div>
+                                        <canvas id="myChart"></canvas>
+                                    </div>
+
+                                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+                                    <script>
+                                        const ctx = document.getElementById('myChart');
+
+                                        new Chart(ctx, {
+                                            type: 'line',
+                                            data: {
+                                                labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Maio', 'Junho'],
+                                                datasets: [{
+                                                    label: 'Encomendas',
+                                                    data: [12, 19, 3, 5, 2, 3],
+                                                    fill: false,
+                                                    borderWidth: 1,
+                                                    backgroundColor: 'rgba(255, 255, 255, 1)',
+                                                    borderColor: 'rgb(240, 120, 130)',
+                                                    tension: 0.3,
+                                                }]
+                                            },
+                                            options: {
+                                                scales: {
+                                                    y: {
+                                                        beginAtZero: true
+                                                    }
+                                                }
+                                            }
+                                        });
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-                    <script>
-                        const ctx = document.getElementById('myChart');
-
-                        new Chart(ctx, {
-                            type: 'line',
-                            data: {
-                                labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Maio', 'Junho'],
-                                datasets: [{
-                                    label: 'Encomendas',
-                                    data: [12, 19, 3, 5, 2, 3],
-                                    fill: false,
-                                    borderWidth: 1,
-                                    backgroundColor: 'rgba(255, 255, 255, 1)',
-                                    borderColor: 'rgb(240, 120, 130)',
-                                    tension: 0.3,
-                                }]
-                            },
-                            options: {
-                                scales: {
-                                    y: {
-                                        beginAtZero: true
-                                    }
-                                }
-                            }
-                        });
-                    </script>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4>Novas Encomendas</h4>
+                                </div>
+                                <div class="card-body encomendas">
+                                    <div class="card-group">
+                                        <div class="card">
+                                            <div class="card-content">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Para o dia</h4>
+                                                    <div id="circulo"><h1>20</h1><h2>Dezembro</h2></div>
+                                                    <small class="text-muted">Cliente</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-content">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Para o dia</h4>
+                                                    <div id="circulo"><h1>20</h1><h2>Dezembro</h2></div>
+                                                    <small class="text-muted">Cliente</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-content">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Para o dia</h4>
+                                                    <div id="circulo"><h1>20</h1><h2>Dezembro</h2></div>
+                                                    <small class="text-muted">Cliente</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-content">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Para o dia</h4>
+                                                    <div id="circulo"><h1>20</h1><h2>Dezembro</h2></div>
+                                                    <small class="text-muted">Cliente</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-content">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Para o dia</h4>
+                                                    <div id="circulo"><h1>20</h1><h2>Dezembro</h2></div>
+                                                    <small class="text-muted">Cliente</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
+
+
+
         </div>
 
         <footer>
