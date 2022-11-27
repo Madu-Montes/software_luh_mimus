@@ -104,7 +104,10 @@ textarea:focus,
     margin-top: 20px;
 }
 
-
+.page-title h3{
+	margin-top: 8%;
+    margin-left: 3%;
+}
 
 .dropdown {
     right: 5%;

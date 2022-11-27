@@ -18,9 +18,10 @@
     font-size: 18px;
     color: white;
     border: none;
-    width: 13%;
+    width: 120px;
     border-radius: 15px;
-    margin-left: 89%;
+    margin-left: 92%;
+    margin-top: 3px;
 }
 
 .page-heading .dropdown a:hover {
@@ -48,9 +49,10 @@ margin-top: 6%;
     font-size: 18px;
     color: white;
     border: none;
-    width: 13%;
+    width: 120px;
     border-radius: 15px;
     margin-top: 10px;
+    margin-left: 1%;
 }
 
 .relatorio .btn:hover{
