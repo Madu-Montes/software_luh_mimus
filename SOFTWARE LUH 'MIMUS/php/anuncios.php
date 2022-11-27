@@ -237,6 +237,13 @@
                 </div>
             </div>
 
+            <?php
+                 include'conn_banco.php';
+                 $dados_anuncios = $sql->query("SELECT * FROM anuncios");
+                 $total = mysqli_num_rows($dados_anuncios);
+            ?>
+
+
             <div class="page-heading">
                 <h3>Anúncios para o site</h3>
                 <nav class="nav justify-content-center ">
@@ -246,26 +253,9 @@
                 </nav>
             </div>
             <br>
-            <p>Todos(0)</p>
+            <p>Todos(<?php echo $total; ?>)</p>
 
             <!-- Anuncios já cadastrados -->
-            <?php
-                 include'conn_banco.php';
-
-                 $dados_usuarios = $sql->query("SELECT * FROM anuncios");
-                 
-                 while ($linha = mysqli_fetch_array($dados_usuarios)){
-                     $id = $linha['id_anuncios'];
-                     $nome = $linha['nome_anuncios'];
-                     $valor = $linha['valor_anuncios'];
-                     $desc = $linha['desc_anuncios'];
-
-                     $avatar = $linha['img_anuncios'];
-
-                 }
-            ?>
-
-
             <section id="groups">
                 <div class="row ">
                     <div class="col-12 mt-3 mb-1">
@@ -273,103 +263,49 @@
                     </div>
                 </div>
 
-                <?php
-
-                echo"
-                <div class='row match-height'>
-                    <div class='col-12'>
-                        <div class='card-group'>
-                            <div class='card'>
-                                <div class='card-content'>
-                                <img src=../$avatar height=100px alt='Card image cap' width='100px'>
-                                    <div class='card-body'>
-                                        <h4 class='card-title'> $nome</h4>
-                                        <p class='card-text'>
-                                            $valor<p>
-                                        <small class='text-muted'>Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>";
-?>
+            </section>
 
             <section id="groups">
-                <div class="row ">
+                <div class="row">
                     <div class="col-12 mt-3 mb-1">
-                       
-                    </div>
-                </div>
-                <div class="row match-height">
-                    <div class="col-12">
-                        <div class="card-group">
-                            <div class="card">
-                                <div class="card-content">
-                                    <img class="card img-fluid" src="../images/anuncio.png"
-                                        alt="Card image cap" width="180px">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Brigadeiro (100 unidades)</h4>
-                                        <p class="card-text">
-                                            R$95,00 <p>
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-content">
-                                    <img class="card img-fluid" src="../images/anuncio.png"
-                                        alt="Card image cap" width="180px">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Brigadeiro (100 unidades)</h4>
-                                        <p class="card-text">
-                                            R$95,00 <p>
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-content">
-                                    <img class="card img-fluid" src="../images/anuncio.png"
-                                        alt="Card image cap" width="180px">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Brigadeiro (100 unidades)</h4>
-                                        <p class="card-text">
-                                            R$95,00 <p>
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-content">
-                                    <img class="card img-fluid" src="../images/anuncio.png"
-                                        alt="Card image cap" width="180px">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Brigadeiro (100 unidades)</h4>
-                                        <p class="card-text">
-                                            R$95,00 <p>
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-content">
-                                    <img class="card img-fluid" src="../images/anuncio.png"
-                                        alt="Card image cap" width="180px">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Brigadeiro (100 unidades)</h4>
-                                        <p class="card-text">
-                                            R$95,00 <p>
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-                            
+                        <div class="row match-height">
+
+                            <?php while ($linha = mysqli_fetch_assoc($dados_anuncios)){ ?>
+                                <div class="col-4">
+                                    <div class="card-group">
+                                        <div class="card">
+                                            <div class="card-content">
+                                                <img class="card img-fluid" src="../images/anuncio.png"
+                                                    alt="Card image cap" width="180px">
+                                                <div class="card-body">
+
+                                                    <!-- nome -->
+                                                    <h4 class="card-title">
+                                                        <?php echo $nome = $linha['nome_anuncios'];?>
+                                                    </h4>
+                                                    
+                                                    <!-- preço -->
+                                                    <p class="card-text">
+                                                    <?php echo $valor = $linha['valor_anuncios'];?>
+
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>         
+                                    </div>      
+                                </div>     
+                            <?php } ?>
+
                         </div>
                     </div>
                 </div>
             </section>
+
+              <!-- $id = $linha['id_anuncios'];
+                     
+                    
+                     $desc = $linha['desc_anuncios'];
+                     $avatar = $linha['img_anuncios']; -->
        
        
         </div>

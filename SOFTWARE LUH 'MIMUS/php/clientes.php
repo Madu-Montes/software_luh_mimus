@@ -302,6 +302,7 @@
 
     $dados_usuarios = $sql->query("SELECT * FROM User_Cdst_Site");
     
+    
     while ($linha = mysqli_fetch_array($dados_usuarios)){
         $id = $linha['id_UserCdstSite'];
         $cpf = $linha['cpf_UserCdstSite'];
