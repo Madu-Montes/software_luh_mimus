@@ -6,6 +6,7 @@
     $desc = $_POST['desc'];
     $uploaddir = "avatar/";
     $avatar = $_FILES['avatar']['name'];
+    $categorias = $_POST['categorias'];
     $separa = explode(".", $avatar);
     $separa = array_reverse($separa);
     $tipoa = $separa[0];
@@ -23,7 +24,7 @@
         $avatarbd = $uploaddir . $avatarf;
 
         $sql->query("INSERT INTO anuncios(id_anuncios, id_categorias, nome_anuncios, valor_anuncios, desc_anuncios, img_anuncios) VALUES
-        (NULL, NULL,'$nome','$valor','$desc','$avatarbd')");
+        (NULL,'$categorias','$nome','$valor','$desc','$avatarbd')");
 
         header('Location: anuncios.php');
 
