@@ -21,22 +21,92 @@
 </head>
 
 <body>
-    
+    <div id="app">
+        <div id="sidebar" class="active">
+            <div class="sidebar-wrapper active">
+                <div class="sidebar-header">
+                    <div class="d-flex justify-content-between">
+                        <div class="logo">
+                            <a href="dashboard.html"><img src="../images/logo.jfif" alt="Logo" srcset=""></a>
+                        </div>
+                        <div class="toggler">
+                            <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Menu -->
+                <div class="sidebar-menu">
+                    <ul class="menu">
+
+                        <!--Dashboard -->
+                        <li class="sidebar-item">
+                            <a href="dashboard.html" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+
+                        <!--Calendário -->
+                        <li class="sidebar-item  ">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-calendar"></i>
+                                <span>Calendário</span>
+                            </a>
+                        </li>
+
+                        <!--Clientes -->
+                        <li class="sidebar-item  ">
+                            <a href="clientes.html" class='sidebar-link'>
+                                <i class="bi bi-people-fill"></i>
+                                <span>Clientes</span>
+                            </a>
+                        </li>
+
+                        <!--Anúncios -->
+                        <li class="sidebar-item  ">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-megaphone"></i>
+                                <span>Anúncios</span>
+                            </a>
+                        </li>
+                        
+                        <!--Encomendas -->
+                        <li class="sidebar-item">
+                            <a href="encomendas.html" class='sidebar-link'>
+                                <i class="bi bi-basket2-fill"></i>
+                                <span>Encomendas</span>
+                            </a>
+                        </li>
+
+                        <!--Estoque -->
+                        <li class="sidebar-item  ">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-box-seam"></i>
+                                <span>Estoque</span>
+                            </a>
+                        </li>
+
+                        <!--Finanças -->
+                        <li class="sidebar-item  ">
+                            <a href="financas.html" class='sidebar-link'>
+                                <i class="bi bi-cash"></i>
+                                <span>Finanças</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+            </div>
+        </div>
 
 
         <!-----Fim do Menu Lateral------->
         <header class="header-bar">
 
             <div class="icones-topo">
-                <a class="notification" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-bell" viewBox="0 0 16 16">
-                        <path
-                            d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
-                    </svg>
-                </a>
                 <div class="btn-group mb-1">
-                    <div class="btn-group mb-1">
+                    <div class="btn-group mb-1" id="meu">
                         <div class="dropdown dropdown-color-icon user">
                             <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButtonEmoji"
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width:40">
@@ -47,9 +117,7 @@
                                 <a class="dropdown-item" href="#"><span class="dropdown-item-emoji"></span>
                                     <div class="form-check form-switch custom-switch">
                                         <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Tema escuro
-
-                                        </label>
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Tema escuro</label>
                                     </div>
                                 </a>
                                 <a class="dropdown-item" href="#"><span class="dropdown-item-emoji"><svg
@@ -161,11 +229,30 @@
             </div>
 
             <div class="page-heading">
-                <h3>Anúncios para o site</h3>
+
+                <div class="page-title">
+                    <div class="row">
+                        <div class="col-12 col-md-6 order-md-1 order-last">
+                            <h3>Anúncios para o site</h3>
+                        </div>
+                    </div>
+                </div>
                 <nav class="nav justify-content-center ">
                     <a class="nav-link add" data-bs-toggle="modal" data-bs-target="#modalId"> + Adicionar </a>
-                    <a class="nav-link exclui" data-bs-toggle="modal" data-bs-target="#modalId2">Excluir</a>
-                    <a class="nav-link cat" href="./pedidos-entregue.html">Categorias</a>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle cat" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categorias
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Bolos</a></li>
+                            <li><a class="dropdown-item" href="#">Doces</a></li>
+                            <li><a class="dropdown-item" href="#">Salgados</a></li>
+                            <li><a class="dropdown-item" href="#">Personalizados</a></li>
+                            <li><a class="dropdown-item" href="#">Kit festa</a></li>
+                            <!--Tem uma tela kitfesta.html os kits variam todo mê será que dá para deixar uma aba para ela fazer isso?-->
+                        </ul>
+                    </div>
                 </nav>
             </div>
             <br>
@@ -181,65 +268,159 @@
                         <div class="card-group">
                             <div class="card">
                                 <div class="card-content">
-                                    <img class="card img-fluid" src="../images/anuncio.png"
-                                        alt="Card image cap" width="180px">
+                                    <img class="card img-fluid" src="../images/anuncio.png" alt="Card image cap"
+                                        width="180px">
                                     <div class="card-body">
                                         <h4 class="card-title">Brigadeiro (100 unidades)</h4>
                                         <p class="card-text">
-                                            R$95,00 <p>
-                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                            R$95,00
+                                        <p>
+                                            <!-- Modal de edição -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16"
+                                                data-bs-toggle="modal" data-bs-target="#modalId">
+                                                <path
+                                                    d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                                <path fill-rule="evenodd"
+                                                    d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                                            </svg>
+
+                                            <!-- Modal Body -->
+                                        <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static"
+                                            data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId"
+                                            aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
+                                                role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="modalTitleId">Modal title</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        Body
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary">Save</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <script>
+                                            const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
+
+                                        </script>
+                                        <!-- Modal de edição acima -->
+
+                                        <!-- Button de excluir abaixo -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16"
+                                            data-bs-toggle="modal" data-bs-target="#modalId">
+                                            <path
+                                                d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
+                                            <path fill-rule="evenodd"
+                                                d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
+                                        </svg>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="modalId" tabindex="-1" role="dialog"
+                                            aria-labelledby="modalTitleId" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="modalTitleId">Modal title</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="container-fluid">
+                                                            Add rows here
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary">Save</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <script>
+                                            var modalId = document.getElementById('modalId');
+
+                                            modalId.addEventListener('show.bs.modal', function (event) {
+                                                // Button that triggered the modal
+                                                let button = event.relatedTarget;
+                                                // Extract info from data-bs-* attributes
+                                                let recipient = button.getAttribute('data-bs-whatever');
+
+                                                // Use above variables to manipulate the DOM
+                                            });
+                                        </script>
+
+                                        <!-- Modal de excluir acima -->
+
+
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-content">
-                                    <img class="card img-fluid" src="../images/anuncio.png"
-                                        alt="Card image cap" width="180px">
+                                    <img class="card img-fluid" src="../images/anuncio.png" alt="Card image cap"
+                                        width="180px">
                                     <div class="card-body">
                                         <h4 class="card-title">Brigadeiro (100 unidades)</h4>
                                         <p class="card-text">
-                                            R$95,00 <p>
-                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                            R$95,00
+                                        <p>
+                                            <small class="text-muted">Last updated 3 mins ago</small>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-content">
-                                    <img class="card img-fluid" src="../images/anuncio.png"
-                                        alt="Card image cap" width="180px">
+                                    <img class="card img-fluid" src="../images/anuncio.png" alt="Card image cap"
+                                        width="180px">
                                     <div class="card-body">
                                         <h4 class="card-title">Brigadeiro (100 unidades)</h4>
                                         <p class="card-text">
-                                            R$95,00 <p>
-                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                            R$95,00
+                                        <p>
+                                            <small class="text-muted">Last updated 3 mins ago</small>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-content">
-                                    <img class="card img-fluid" src="../images/anuncio.png"
-                                        alt="Card image cap" width="180px">
+                                    <img class="card img-fluid" src="../images/anuncio.png" alt="Card image cap"
+                                        width="180px">
                                     <div class="card-body">
                                         <h4 class="card-title">Brigadeiro (100 unidades)</h4>
                                         <p class="card-text">
-                                            R$95,00 <p>
-                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                            R$95,00
+                                        <p>
+                                            <small class="text-muted">Last updated 3 mins ago</small>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-content">
-                                    <img class="card img-fluid" src="../images/anuncio.png"
-                                        alt="Card image cap" width="180px">
+                                    <img class="card img-fluid" src="../images/anuncio.png" alt="Card image cap"
+                                        width="180px">
                                     <div class="card-body">
                                         <h4 class="card-title">Brigadeiro (100 unidades)</h4>
                                         <p class="card-text">
-                                            R$95,00 <p>
-                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                            R$95,00
+                                        <p>
+                                            <small class="text-muted">Last updated 3 mins ago</small>
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -247,7 +428,7 @@
             <section id="groups">
                 <div class="row ">
                     <div class="col-12 mt-3 mb-1">
-                       
+
                     </div>
                 </div>
                 <div class="row match-height">
@@ -255,90 +436,95 @@
                         <div class="card-group">
                             <div class="card">
                                 <div class="card-content">
-                                    <img class="card img-fluid" src="../images/anuncio.png"
-                                        alt="Card image cap" width="180px">
+                                    <img class="card img-fluid" src="../images/anuncio.png" alt="Card image cap"
+                                        width="180px">
                                     <div class="card-body">
                                         <h4 class="card-title">Brigadeiro (100 unidades)</h4>
                                         <p class="card-text">
-                                            R$95,00 <p>
-                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                            R$95,00
+                                        <p>
+                                            <small class="text-muted">Last updated 3 mins ago</small>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-content">
-                                    <img class="card img-fluid" src="../images/anuncio.png"
-                                        alt="Card image cap" width="180px">
+                                    <img class="card img-fluid" src="../images/anuncio.png" alt="Card image cap"
+                                        width="180px">
                                     <div class="card-body">
                                         <h4 class="card-title">Brigadeiro (100 unidades)</h4>
                                         <p class="card-text">
-                                            R$95,00 <p>
-                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                            R$95,00
+                                        <p>
+                                            <small class="text-muted">Last updated 3 mins ago</small>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-content">
-                                    <img class="card img-fluid" src="../images/anuncio.png"
-                                        alt="Card image cap" width="180px">
+                                    <img class="card img-fluid" src="../images/anuncio.png" alt="Card image cap"
+                                        width="180px">
                                     <div class="card-body">
                                         <h4 class="card-title">Brigadeiro (100 unidades)</h4>
                                         <p class="card-text">
-                                            R$95,00 <p>
-                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                            R$95,00
+                                        <p>
+                                            <small class="text-muted">Last updated 3 mins ago</small>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-content">
-                                    <img class="card img-fluid" src="../images/anuncio.png"
-                                        alt="Card image cap" width="180px">
+                                    <img class="card img-fluid" src="../images/anuncio.png" alt="Card image cap"
+                                        width="180px">
                                     <div class="card-body">
                                         <h4 class="card-title">Brigadeiro (100 unidades)</h4>
                                         <p class="card-text">
-                                            R$95,00 <p>
-                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                            R$95,00
+                                        <p>
+                                            <small class="text-muted">Last updated 3 mins ago</small>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-content">
-                                    <img class="card img-fluid" src="../images/anuncio.png"
-                                        alt="Card image cap" width="180px">
+                                    <img class="card img-fluid" src="../images/anuncio.png" alt="Card image cap"
+                                        width="180px">
                                     <div class="card-body">
                                         <h4 class="card-title">Brigadeiro (100 unidades)</h4>
                                         <p class="card-text">
-                                            R$95,00 <p>
-                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                            R$95,00
+                                        <p>
+                                            <small class="text-muted">Last updated 3 mins ago</small>
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
             </section>
         </div>
-        
 
 
-                   
-                    <div class="footer clearfix mb-0 text-muted">
-                        <div class="float-end">
-                            <p>2022 &copy; Luh Mimu's</p>
-                        </div>
-                    </div>
-                </footer>
+
+
+        <div class="footer clearfix mb-0 text-muted">
+            <div class="float-end">
+                <p>2022 &copy; Luh Mimu's</p>
             </div>
         </div>
+        </footer>
+    </div>
+    </div>
 
-        <script src="../vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 
-        <script src="../vendors/apexcharts/apexcharts.js"></script>
-        <script src="../js/pages/dashboard.js"></script>
+    <script src="../vendors/apexcharts/apexcharts.js"></script>
+    <script src="../js/pages/dashboard.js"></script>
 
-        <script src="../js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
