@@ -1,3 +1,16 @@
+
+
+
+#meu{
+    padding: 8px;
+}
+
+.nav-tabs {
+    background-color: #F07882;
+    float: right;
+
+}
+
 #app .logo img {
     width: 140px;
     height: 140px;
@@ -9,7 +22,7 @@
 }
 
 #main {
-    background-color: #FCCAD5;
+    background-color: #ffeaef;
 }
 
 .card-body #chart-profile-visit {
@@ -42,16 +55,12 @@ textarea:focus,
     width: 26px;
     height: 26px;
     margin-top: 1%;
-    
+
     color: rgb(0, 0, 0);
 }
 
-.notification{
-    margin-right: 14px;
-}
-
 .dropdown a {
-   
+
     color: #000;
     border: none;
     margin-top: 12px;
@@ -59,12 +68,12 @@ textarea:focus,
 
 
 .dropdown a:hover {
-    
+
     color: #FCCAD5;
-   
+
 }
 
-.d-flex .form-control{
+.d-flex .form-control {
     width: 180px;
 }
 
@@ -74,30 +83,92 @@ textarea:focus,
     border: none;
 }
 
-.pesquisinha{
+.pesquisinha {
     margin-left: 40px;
 }
 
 .btn-outline {
     color: #000;
     border: none;
-    
-  }
-  
-  .btn-outline svg:hover {
-   color: #FCCAD5;
-   border-color: #FCCAD5;
-  }
 
-.user{
+}
+
+.btn-outline svg:hover {
+    color: #FCCAD5;
+    border-color: #FCCAD5;
+}
+
+.user {
     margin-top: 20px;
 }
 
-
+.page-title h3{
+	margin-top: 8%;
+    margin-left: 3%;
+}
 
 .dropdown {
-    right:5%;
+    right: 5%;
     margin-top: -5%;
     height: 40px;
     padding: 10px;
+}
+
+.grafico1 h4 {
+    text-align: center;
+}
+
+.grafico1 {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+}
+
+.encomendas .card {
+    width: 100%;
+    background-color: #F99AAF;
+    justify-content: center;
+    text-align: center;
+}
+
+.encomendas .card-content {
+    background-color: white;
+    margin: 6px 6px;
+    border-radius: 10px;
+}
+
+.card-content h4 {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+#circulo {
+    background-color: #F99AAF;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: -6%;
+    /*add essa parte abaixo no responsivo para alinhar em telas menores
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+    */
+    
+}
+
+#circulo h1{
+    font-size: 24px;
+    color: white;
+    margin-top: 10px;
+}
+
+#circulo h2{
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+}
+
+.text-muted{
+    font-size: 18px;
 }

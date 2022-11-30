@@ -92,7 +92,7 @@ body{
 }
 
 .login-btn button:hover{
-    background-color: burlywood;
+    background-color: black;
 }
 
 .login-btn a{
@@ -120,11 +120,6 @@ body{
     margin-top: 30px;
 }
 
-.notification{
-    margin-right: -30%;
-}
-
 .user{
-
     margin-bottom: -20px;
 }

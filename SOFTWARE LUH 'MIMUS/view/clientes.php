@@ -4,20 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedidos - Luh' Mimus</title>
+    <title>Clientes | Luh Mimu's</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/bootstrap.css">
 
-    <link rel="stylesheet" href="../vendors/iconly/bold.css">
+    <link rel="stylesheet" href="../vendors/simple-datatables/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
 
     <link rel="stylesheet" href="../vendors/perfect-scrollbar/perfect-scrollbar.css">
     <link rel="stylesheet" href="../vendors/bootstrap-icons/bootstrap-icons.css">
-    <link rel="stylesheet" href="../css/pedido.css">
     <link rel="stylesheet" href="../css/app.css">
     <link rel="shortcut icon" href="../images/favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="../css/dashboard.css">
 </head>
 
 <body>
@@ -27,14 +26,13 @@
                 <div class="sidebar-header">
                     <div class="d-flex justify-content-between">
                         <div class="logo">
-                            <a href="dashboard.html"><img src="../images/logo.jfif" alt="Logo" srcset=""></a>
+                            <a href="../index.html"><img src="../images/logo.jfif" alt="Logo" srcset=""></a>
                         </div>
                         <div class="toggler">
                             <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
                         </div>
                     </div>
                 </div>
-
                 <!--Menu -->
                 <div class="sidebar-menu">
                     <ul class="menu">
@@ -57,7 +55,7 @@
 
                         <!--Clientes -->
                         <li class="sidebar-item  ">
-                            <a href="clientes.html" class='sidebar-link'>
+                            <a href="./clientes.html" class='sidebar-link'>
                                 <i class="bi bi-people-fill"></i>
                                 <span>Clientes</span>
                             </a>
@@ -71,17 +69,25 @@
                             </a>
                         </li>
 
-                        <!--Delivery -->
-                        <li class="sidebar-item active">
-                            <a href="delivery.html" class='sidebar-link'>
+                        <!--Pedidos -->
+                        <li class="sidebar-item  ">
+                            <a href="pedidos.html" class='sidebar-link'>
                                 <i class="bi bi-basket2-fill"></i>   
-                                <span>Delivery</span>
+                                <span>Pedidos</span>
+                            </a>
+                        </li>
+
+                        <!--Encomendas -->
+                        <li class="sidebar-item active">
+                            <a href="encomendas.html" class='sidebar-link'>
+                                <i class="bi bi-basket2-fill"></i>   
+                                <span>Encomendas</span>
                             </a>
                         </li>
 
                         <!--Estoque -->
                         <li class="sidebar-item  ">
-                            <a href="./estoque.html" class='sidebar-link'>
+                            <a href="#" class='sidebar-link'>
                                 <i class="bi bi-box-seam"></i>
                                 <span>Estoque</span>
                             </a>
@@ -101,18 +107,11 @@
         </div>
 
 
-        <!-----Fim do Menu Lateral------->
         <header class="header-bar">
+
             <div class="icones-topo">
-                <a class="notification" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-bell" viewBox="0 0 16 16">
-                        <path
-                            d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
-                    </svg>
-                </a>
-                <div class="btn-group mb-1">
-                    <div class="btn-group mb-1">
+            <div class="btn-group mb-1">
+                    <div class="btn-group mb-1" id="meu">
                         <div class="dropdown dropdown-color-icon user">
                             <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButtonEmoji"
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width:40">
@@ -160,8 +159,6 @@
                 </div>
         </header>
 
-        <!---Fim do header do topo-->
-        <br>
         <div id="main">
             <header class="mb-3">
                 <a href="#" class="burger-btn d-block d-xl-none">
@@ -170,101 +167,174 @@
             </header>
 
             <div class="page-heading">
-                <h3>Pedidos Entregues</h3>
-                <nav class="nav justify-content-center ">
-                    <a class="nav-link" href="./delivery.html" aria-current="page">Todos</a>
-                    <a class="nav-link" href="./pedidos-finalizado.html">Finalizado</a>
-                    <a class="nav-link active" href="./pedidos-entregue.html">Entregue</a>
-                </nav>
-            </div>
-            <br>
-            <p>Todos(0)</p>
-            <div class="pedidosTot">
-                <div class="pedidosUniInt">
-                    <a href="ped01.html">
-                        <br>
-                        <label class="form-check-label data-hora" for="">
-                            Data e hora da entrega
-                        </label>
-                        <hr>
-                        <table>
-                            <tr>
-                                <td>
-                                    <img class="img-fluid"
-                                        src="https://imagensemoldes.com.br/wp-content/uploads/2020/05/Brigadeiro-com-Fundo-Transparente-Doces-PNG.png"
-                                        height="100" width="100">
-                                </td>
-                                <td>
-                                    <p>código pedido</p>
-                                    Nome do produto
-                                    <p>(quant. produto)</p>
-                                </td>
-                                <td>
-                                    Valor
-                                </td>
-                                <td>
-                                    <img src="https://assets.stickpng.com/thumbs/585e4bf3cb11b227491c339a.png"
-                                        height="100" width="100" class="usuario-img" id="usuario-lado">
-                                    <p id="usuario-lado">Nome do usuário</p>
-                                </td>
-                            </tr>
-                        </table>
-                        <br>
+                <div class="page-title">
+                    <div class="row">
+                        <div class="col-12 col-md-6 order-md-1 order-last">
+                            <h3>Lista de usuários</h3>
+                        </div>
+                    </div>
                 </div>
+                <section class="section">
+                    <div class="card">
+                        <div class="card-header">
+                            Todos (x)
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-striped" id="table1">
+                                <thead>
+                                    <tr>
+                                        <th>Excluir</th>
+                                        <th>Foto</th>
+                                        <th>ID</th>
+                                        <th>Nome</th>
+                                        <th>Email</th>
+                                        <th>CPF</th>
+                                        <th>Contato</th>
+                                        <th>Data de Nascimento</th>
+                                        <th>Senha</th>
+                                        <th>CEP</th>
+                                        <th>Nº</th>
+                                        <th>Complemento</th>
+                                    </tr>
+                                </thead>
+
+                                
+
+                                <tbody>
+                                    <tr>
+
+                                        <!-- Button trigger modal -->
+                                        <td><button type="button" class="btn btn-primary btn-lg icon"
+                                                data-bs-toggle="modal" data-bs-target="#modalId"><i
+                                                    class="bi bi-trash"></i>
+                                            </button></td>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="modalId" tabindex="-1" role="dialog"
+                                            aria-labelledby="modalTitleId" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="modalTitleId">Excluir?</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="container-fluid">
+                                                            Tem certeza que deseja excluir esse perfil?
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-dark"
+                                                            data-bs-dismiss="modal">Cancelar</button>
+                                                        <button type="button" class="btn btn-dark">Excluir</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <script>
+                                            var modalId = document.getElementById('modalId');
+
+                                            modalId.addEventListener('show.bs.modal', function (event) {
+                                                // Button that triggered the modal
+                                                let button = event.relatedTarget;
+                                                // Extract info from data-bs-* attributes
+                                                let recipient = button.getAttribute('data-bs-whatever');
+
+                                                // Use above variables to manipulate the DOM
+                                            });
+                                        </script>
+
+                                        <!--Quando selecionar aparecer modal de "editar perfil?-->
+                                        <td><img src="" alt=""></td>
+                                        <td>00000</td>
+                                        <td>Paula Sousa</td>
+                                        <td>vehicula.aliquet@semconsequat.co.uk</td>
+                                        <td>076 4820 8838</td>
+                                        <td>1111111</td>
+                                        <td>00</td>
+                                        <td>rua sem saida</td>
+                                        </tr>
+                
+                        </div>
+                    </div>
+
+                </section>
             </div>
-            <br>
-            <div class="pedidosTot">
-                <div class="pedidosUniInt">
-                    <a href="ped01.html">
-                        <br>
-                        <label class="form-check-label data-hora" for="">
-                            Data e hora da entrega
-                        </label>
-                        <hr>
-                        <table>
-                            <tr>
-                                <td>
-                                    <img class="img-fluid"
-                                        src="https://imagensemoldes.com.br/wp-content/uploads/2020/05/Brigadeiro-com-Fundo-Transparente-Doces-PNG.png"
-                                        height="100" width="100">
-                                </td>
-                                <td>
-                                    <p>código pedido</p>
-                                    Nome do produto
-                                    <p>(quant. produto)</p>
-                                </td>
-                                <td>
-                                    Valor
-                                </td>
-                                <td>
-                                    <img src="https://assets.stickpng.com/thumbs/585e4bf3cb11b227491c339a.png"
-                                        height="100" width="100" class="usuario-img" id="usuario-lado">
-                                    <p id="usuario-lado">Nome do usuário</p>
-                                </td>
-                            </tr>
-                        </table>
-                        <br>
+
+            <footer>
+                <div class="footer clearfix mb-0 text-muted">
+                    <div class="float-end">
+                        <p>2022 &copy; Luh Mimu's</p>
+                    </div>
                 </div>
-            </div>
-            <br>
-            
-    <!--Fim dos pedidos-->
-    <footer>
-        <div class="footer clearfix mb-0 text-muted">
-            <div class="float-end">
-                <p>2022 &copy; Luh Mimu's</p>
-            </div>
-        </div>
-    </footer>
+            </footer>
         </div>
     </div>
     <script src="../vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
 
-    <script src="../vendors/apexcharts/apexcharts.js"></script>
-    <script src="../js/pages/dashboard.js"></script>
+    <script src="../vendors/simple-datatables/simple-datatables.js"></script>
+    <script>
+        // Simple Datatable
+        let table1 = document.querySelector('#table1');
+        let dataTable = new simpleDatatables.DataTable(table1);
+    </script>
 
     <script src="../js/main.js"></script>
 </body>
 
 </html>
+
+<?php
+    include'conn_banco.php';
+
+    $dados_usuarios = $sql->query("SELECT * FROM User_Cdst_Site");
+    
+    
+    while ($linha = mysqli_fetch_array($dados_usuarios)){
+        $id = $linha['id_UserCdstSite'];
+        $cpf = $linha['cpf_UserCdstSite'];
+        $nome = $linha['nome_UserCdstSite'];
+        $email = $linha['email_UserCdstSite'];
+        $dtn = $linha['dtn_UserCdstSite'];
+        $senha = $linha['senha_UserCdstSite'];
+        $celular = $linha['celular_UserCdstSite'];
+
+        
+        echo"
+
+        <tr>
+
+        
+            <td>
+            <a href='excluir.php?cpf=$cpf' onclick=\"return confirm('Quer mesmo apagar esses dados!!!');\">
+            Excluir</a>
+            </td>
+
+            <td>
+            <a href='update.php?cpf=$cpf' onclick=\"return confirm('Quer mesmo alterar esses dados!!!');\">
+            Alterar</a>
+            </td>
+        
+        <td>imagem</td>
+        <td>$id</td>
+        <td>$nome</td>
+        <td>$email</td>
+        <td>$cpf</td>
+        <td>$celular</td>
+        <td>$dtn</td>
+        <td>$senha</td>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+        <td>
+           
+        </td>
+ 
+        </tr>";
+
+    }
+        echo"</table>";
+?>

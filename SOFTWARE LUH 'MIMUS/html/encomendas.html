@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/bootstrap.css">
-
     <link rel="stylesheet" href="../vendors/iconly/bold.css">
 
     <link rel="stylesheet" href="../vendors/perfect-scrollbar/perfect-scrollbar.css">
@@ -65,20 +64,12 @@
 
                         <!--Anúncios -->
                         <li class="sidebar-item  ">
-                            <a href="#" class='sidebar-link'>
+                            <a href="./anuncios.html" class='sidebar-link'>
                                 <i class="bi bi-megaphone"></i>
                                 <span>Anúncios</span>
                             </a>
                         </li>
-
-                        <!--Delivery -->
-                        <li class="sidebar-item">
-                            <a href="pedidos-entregue.html" class='sidebar-link'>
-                                <i class="bi bi-basket2-fill"></i>
-                                <span>Delivery</span>
-                            </a>
-                        </li>
-
+                        
                         <!--Encomendas -->
                         <li class="sidebar-item active">
                             <a href="encomendas.html" class='sidebar-link'>
@@ -113,15 +104,8 @@
         <!-----Fim do Menu Lateral------->
         <header class="header-bar">
             <div class="icones-topo">
-                <a class="notification" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-bell" viewBox="0 0 16 16">
-                        <path
-                            d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
-                    </svg>
-                </a>
                 <div class="btn-group mb-1">
-                    <div class="btn-group mb-1">
+                    <div class="btn-group mb-1" id="meu">
                         <div class="dropdown dropdown-color-icon user">
                             <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButtonEmoji"
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width:40">
@@ -179,7 +163,14 @@
             </header>
 
             <div class="page-heading">
-                <h3>Encomendas</h3>
+                
+            <div class="page-title">
+                <div class="row">
+                    <div class="col-12 col-md-6 order-md-1 order-last">
+                        <h3>Encomendas</h3>
+                    </div>
+                </div>
+            </div>
                 <div class="dropdown open ">
                     <a href="#" class="btn btn-secondary btn-sm dropdown-toggle meses" data-bs-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
@@ -203,7 +194,7 @@
                         </li>
                     </div>
                 </div>
-                <nav class="nav justify-content-center ">
+                <nav class="nav justify-content-center">
                     <a class="nav-link active" href="#" aria-current="page">Todas</a>
                     <a class="nav-link" href="./encomendas-finalizadas.html">Finalizadas</a>
                 </nav>

@@ -23,18 +23,13 @@
         color: white;
     }
     
-    .exclui{
-        background-color: rgb(192, 30, 124);
-        border-radius: 20px;
-        color: white;
-        margin-left: 10px;
-    }
-    
     .cat{
         background-color: #f0a1b9;
+        border: none;
         border-radius: 20px;
         color: black;
-        margin-left: 10px;
+        margin-top: 33%;
+        margin-left: 40%;
     
     }
     
