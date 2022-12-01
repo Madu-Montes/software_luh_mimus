@@ -170,52 +170,63 @@
                     <div class="card">
                         <div class="card-header">
                             Todos (x)
-                            <a class="btn" data-bs-toggle="modal" data-bs-target="#modalId1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
-                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                              </svg>
+                            <a class="btn" data-bs-toggle="modal" data-bs-target="#modalId1"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path
+                                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                </svg>
                             </a>
                         </div>
 
-                        <div class="modal fade" id="modalId1" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                        <div class="modal fade" id="modalId1" tabindex="-1" role="dialog" aria-labelledby="modalTitleId"
+                            aria-hidden="true">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
-                                        <div class="modal-header">
-                                                <h5 class="modal-title" id="modalTitleId">Adicionar ingrediente</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modalTitleId">Adicionar ingrediente</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
                                     <div class="modal-body">
                                         <div class="container-fluid">
                                             <div class="mb-3">
-                                              <label for="" class="form-label">Nome</label>
-                                              <input type="text" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="ex.:chocolate">
+                                                <label for="" class="form-label">Nome</label>
+                                                <input type="text" class="form-control" name="" id=""
+                                                    aria-describedby="emailHelpId" placeholder="ex.:chocolate">
                                             </div>
                                             <div class="mb-3">
                                                 <label for="" class="form-label">Unidade</label>
-                                                <input type="text" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="ex.: gramas">
-                                              </div>
-                                              <div class="mb-3">
+                                                <input type="text" class="form-control" name="" id=""
+                                                    aria-describedby="emailHelpId" placeholder="ex.: gramas">
+                                            </div>
+                                            <div class="mb-3">
                                                 <label for="" class="form-label">Quantidade</label>
-                                                <input type="number" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="ex.: 15">
-                                              </div>
+                                                <input type="number" class="form-control" name="" id=""
+                                                    aria-describedby="emailHelpId" placeholder="ex.: 15">
+                                            </div>
                                             <div class="mb-3">
                                                 <label for="" class="form-label">Preço/unidade</label>
-                                                <input type="text" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="ex.: $20,00">
-                                              </div>
-                                              <div class="mb-3">
+                                                <input type="text" class="form-control" name="" id=""
+                                                    aria-describedby="emailHelpId" placeholder="ex.: $20,00">
+                                            </div>
+                                            <div class="mb-3">
                                                 <label for="" class="form-label">Observação</label>
-                                                <input type="text" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="ex.: 50%">
-                                              </div>
+                                                <input type="text" class="form-control" name="" id=""
+                                                    aria-describedby="emailHelpId" placeholder="ex.: 50%">
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Fechar</button>
+                                        <button type="button" class="btn btn-dark"
+                                            data-bs-dismiss="modal">Fechar</button>
                                         <button type="button" class="btn btn-dark">Adicionar</button>
                                     </div>
                                 </div>
                             </div>
-                          </div>
-                        
+                        </div>
+
                         <div class="card-body">
                             <table class="table table-striped" id="table1">
                                 <thead>
@@ -233,9 +244,8 @@
                                     <tr>
 
                                         <!-- Button trigger modal -->
-                                        <td><button type="button" class="btn btn-lg icon"
-                                                data-bs-toggle="modal" data-bs-target="#modalId"><i
-                                                    class="bi bi-trash"></i>
+                                        <td><button type="button" class="btn btn-lg icon" data-bs-toggle="modal"
+                                                data-bs-target="#modalId"><i class="bi bi-trash"></i>
                                             </button></td>
 
                                         <!-- Modal -->
@@ -277,48 +287,59 @@
 
                                         <td>Lt. condensado</td>
                                         <td>gramas</td>
-                                        <td>20 <!-- Button trigger modal -->
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modaledit">
-                                                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                                                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
-                                              </svg>
-                                        
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="modaledit" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
-                                            <div class="modal-dialog" role="document">
-                                                <div class="modal-content">
+                                        <td>20
+                                            <!-- Botão modal de editar quantidade -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16"
+                                                class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                                                data-bs-target="#modaledit">
+                                                <path
+                                                    d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                                <path fill-rule="evenodd"
+                                                    d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                                            </svg>
+
+                                            <!-- Modal com formulario-->
+                                            <div class="modal fade" id="modaledit" tabindex="-1" role="dialog"
+                                                aria-labelledby="modalTitleId" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
                                                         <div class="modal-header">
-                                                                <h5 class="modal-title" id="modalTitleId">Editar a quantidade do ingrediente</h5>
-                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                            </div>
-                                                    <div class="modal-body">
-                                                        <div class="container-fluid">
-                                                            <div class="mb-3">
-                                                              <label for="" class="form-label">Quantidade</label>
-                                                              <input type="number" class="form-control">
+                                                            <h5 class="modal-title" id="modalTitleId">Editar a
+                                                                quantidade do ingrediente</h5>
+                                                            <button type="button" class="btn-close"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="container-fluid">
+                                                                <div class="mb-3">
+                                                                    <label for="" class="form-label">Quantidade</label>
+                                                                    <input type="number" class="form-control">
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-primary">Salvar</button>
+                                                        <div class="modal-footer">
+                                                            <button type="button"
+                                                                class="btn btn-primary">Salvar</button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        
-                                        <script>
-                                            var modalId = document.getElementById('modalId');
-                                        
-                                            modalId.addEventListener('show.bs.modal', function (event) {
-                                                  // Button that triggered the modal
-                                                  let button = event.relatedTarget;
-                                                  // Extract info from data-bs-* attributes
-                                                  let recipient = button.getAttribute('data-bs-whatever');
-                                        
-                                                // Use above variables to manipulate the DOM
-                                            });
-                                        </script>
+
+                                            <script>
+                                                var modalId = document.getElementById('modalId');
+
+                                                modalId.addEventListener('show.bs.modal', function (event) {
+                                                    // Button that triggered the modal
+                                                    let button = event.relatedTarget;
+                                                    // Extract info from data-bs-* attributes
+                                                    let recipient = button.getAttribute('data-bs-whatever');
+
+                                                    // Use above variables to manipulate the DOM
+                                                });
+                                            </script>
                                         </td>
+                                        <!--Acaba aqui o botão de editar qtd-->
                                         <td>5,99</td>
                                         <td>Integral</td>
                                     </tr>
