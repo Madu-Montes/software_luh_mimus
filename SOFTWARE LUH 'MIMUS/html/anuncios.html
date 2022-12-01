@@ -162,30 +162,7 @@
                     <i class="bi bi-justify fs-3"></i>
                 </a>
             </header>
-            <div class="modal fade" id="modalId2" tabindex="-1" role="dialog" aria-labelledby="modalTitleId"
-                aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modalTitleId">Excluir anúncio</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="container-fluid">
-                                <div class="mb-3">
-                                    Deseja realmente excluir esse anúncio da página?
-
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Excluir</button>
-                            <button type="button" class="btn btn-dark">Cancelar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!--Modal de adicionar anúncio-->
             <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId"
                 aria-hidden="true">
                 <div class="modal-dialog" role="document">
@@ -216,20 +193,17 @@
                                     <input type="file" class="form-control" name="" id="" aria-describedby="emailHelpId"
                                         placeholder="Ex: Brigadeiro de chocolate">
                                 </div>
-
                             </div>
-
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Salvar</button>
-                            <button type="button" class="btn btn-dark">Cancelar</button>
                         </div>
                     </div>
                 </div>
             </div>
+            <!--fim do modal de adicionar-->
 
             <div class="page-heading">
-
                 <div class="page-title">
                     <div class="row">
                         <div class="col-12 col-md-6 order-md-1 order-last">
@@ -278,7 +252,7 @@
                                             <!-- Modal de edição -->
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16"
-                                                data-bs-toggle="modal" data-bs-target="#modalId">
+                                                data-bs-toggle="modal" data-bs-target="#modaledit">
                                                 <path
                                                     d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
                                                 <path fill-rule="evenodd"
@@ -286,39 +260,59 @@
                                             </svg>
 
                                             <!-- Modal Body -->
-                                        <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static"
-                                            data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId"
-                                            aria-hidden="true">
-                                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
-                                                role="document">
+                                        <div class="modal fade" id="modaledit" tabindex="-1" role="dialog"
+                                            aria-labelledby="modalTitleId" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h5 class="modal-title" id="modalTitleId">Modal title</h5>
+                                                        <h5 class="modal-title" id="modalTitleId">Editar anúncio</h5>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                             aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        Body
+                                                        <div class="container-fluid">
+                                                            <div class="mb-3">
+                                                                <label for="" class="form-label">Nome</label>
+                                                                <input type="text" class="form-control" name="" id=""
+                                                                    aria-describedby="emailHelpId"
+                                                                    placeholder="Ex: Brigadeiro">
+
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="" class="form-label">Preço</label>
+                                                                <input type="text" class="form-control" name="" id=""
+                                                                    aria-describedby="emailHelpId"
+                                                                    placeholder="R$90,00">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="exampleFormControlTextarea1"
+                                                                    class="form-label">Descrição</label>
+                                                                <textarea class="form-control"
+                                                                    id="exampleFormControlTextarea1"
+                                                                    rows="3"></textarea>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="" class="form-label">Adicione a
+                                                                    imagem</label>
+                                                                <input type="file" class="form-control" name="" id=""
+                                                                    aria-describedby="emailHelpId"
+                                                                    placeholder="Ex: Brigadeiro de chocolate">
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                     <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary"
-                                                            data-bs-dismiss="modal">Close</button>
-                                                        <button type="button" class="btn btn-primary">Save</button>
+                                                        <button type="button" class="btn btn-dark"
+                                                            data-bs-dismiss="modal">Salvar</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <script>
-                                            const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
-
-                                        </script>
                                         <!-- Modal de edição acima -->
 
                                         <!-- Button de excluir abaixo -->
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16"
-                                            data-bs-toggle="modal" data-bs-target="#modalId">
+                                            data-bs-toggle="modal" data-bs-target="#modalexcl">
                                             <path
                                                 d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
                                             <path fill-rule="evenodd"
@@ -326,29 +320,28 @@
                                         </svg>
 
                                         <!-- Modal -->
-                                        <div class="modal fade" id="modalId" tabindex="-1" role="dialog"
+                                        <div class="modal fade" id="modalexcl" tabindex="-1" role="dialog"
                                             aria-labelledby="modalTitleId" aria-hidden="true">
                                             <div class="modal-dialog" role="document">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h5 class="modal-title" id="modalTitleId">Modal title</h5>
+                                                        <h5 class="modal-title" id="modalTitleId">Atenção!</h5>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                             aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body">
                                                         <div class="container-fluid">
-                                                            Add rows here
+                                                            Deseja mesmo excluir este anúncio?
                                                         </div>
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-secondary"
-                                                            data-bs-dismiss="modal">Close</button>
-                                                        <button type="button" class="btn btn-primary">Save</button>
+                                                            data-bs-dismiss="modal">Cancelar</button>
+                                                        <button type="button" class="btn btn-primary">Excluir</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-
                                         <script>
                                             var modalId = document.getElementById('modalId');
 
@@ -361,10 +354,7 @@
                                                 // Use above variables to manipulate the DOM
                                             });
                                         </script>
-
                                         <!-- Modal de excluir acima -->
-
-
                                     </div>
                                 </div>
                             </div>
@@ -377,7 +367,14 @@
                                         <p class="card-text">
                                             R$95,00
                                         <p>
-                                            <small class="text-muted">Last updated 3 mins ago</small>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16"
+                                                data-bs-toggle="modal" data-bs-target="#modaledit">
+                                                <path
+                                                    d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                                <path fill-rule="evenodd"
+                                                    d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                                            </svg>
                                     </div>
                                 </div>
                             </div>
