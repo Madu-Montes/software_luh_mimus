@@ -157,6 +157,25 @@ textarea:focus,
     
 }
 
+.info-date{
+    height: 70px;
+    padding: 10px;
+}
+/*
+.info-date h1{
+    background-color: aquamarine;
+    font-size: 24px;
+    color: white;
+    margin-top: 25px;
+}
+
+.info-date h2{
+    background-color: aquamarine;
+    font-size: 20px;
+    color: white;
+}
+*/
+
 #circulo h1{
     font-size: 24px;
     color: white;
