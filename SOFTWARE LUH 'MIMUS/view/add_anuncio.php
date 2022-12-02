@@ -26,7 +26,7 @@
         $sql->query("INSERT INTO anuncios(id_anuncios, id_categorias, nome_anuncios, valor_anuncios, desc_anuncios, img_anuncios) VALUES
         (NULL,'$categorias','$nome','$valor','$desc','$avatarbd')");
 
-        header('Location: anuncios.php');
+        header('Location: anuncios2.php');
 
     }
 

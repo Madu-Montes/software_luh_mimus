@@ -28,7 +28,7 @@
             }else{
             
                 $sql->query("INSERT INTO categorias(id_categorias, nome_categorias, desc_categorias) VALUES
-                (NULL, '$nome','$desc')");  
+                (NULL, '$nomeCategoria','$desc')");  
             }
         }
     ?>
@@ -53,12 +53,12 @@
 
         while ($linha = mysqli_fetch_assoc($dados_categorias)){
             $id = $linha['id_categorias'];
-            $nome = $linha['nome_categorias'];
+            $nomeCategoria = $linha['nome_categorias'];
             $desc = $linha['desc_categorias'];
         }
 
         echo $id;
-        echo $nome;
+        echo $nomeCategoria;
         echo $desc;
     ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
