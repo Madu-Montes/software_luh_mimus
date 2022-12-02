@@ -21,6 +21,8 @@
 </head>
 
 <body>
+
+    <section id="menuLateral">
     <div id="app">
         <div id="sidebar" class="active">
             <div class="sidebar-wrapper active">
@@ -99,3 +101,4 @@
                 <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
             </div>
         </div>
+</section>
