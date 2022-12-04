@@ -71,6 +71,12 @@
                                 <i class="bi bi-megaphone"></i>
                                 <span>Anúncios</span>
                             </a>
+                            <li><a class="dropdown-item" href="../view/bolo.php">Bolos</a></li>
+                            <li><a class="dropdown-item" href="../view/anuncios2.php">Doces</a></li>
+                            <li><a class="dropdown-item" href="../view/bolo.php">Salgados</a></li>
+                            <li><a class="dropdown-item" href="../view/personalizados.php">Personalizados</a></li>
+                            <li><a class="dropdown-item" href="../view/kitfesta.php">Kit festa</a></li>
+                            <!--Tem uma tela kitfesta.html os kits variam todo mê será que dá para deixar uma aba para ela fazer isso?-->
                         </li>
 
                         <!--Encomendas -->

@@ -12,7 +12,7 @@ $sql_query_categories = $sql->query($sql_code_categories) or die($sql->error);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anúncios - Luh' Mimus</title>
+    <title>Bolos - Luh' Mimus</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -52,19 +52,30 @@ $sql_query_categories = $sql->query($sql_code_categories) or die($sql->error);
                         </div>
 
                         <!-- Formulário de cadastro do anuncios -->
-                        <form action="add_anuncio.php" method="post" enctype="multipart/form-data">
+                        <form action="Addbolo.php" method="post" enctype="multipart/form-data">
                             <div class="modal-body">
                                 <div class="container-fluid">
                                     <!-- nome -->
                                     <div class="mb-3">
                                         <label for="nome" class="form-label">Nome:</label>
-                                        <input type="text" class="form-control" name="nome" id="nome" aria-describedby="emailHelpId" placeholder="Ex: Brigadeiro">
+                                        <input type="text" class="form-control" name="nome" id="nome" aria-describedby="emailHelpId" placeholder="Ex: Bolo de morango">
                                     </div>
                                     <!-- preço -->
                                     <div class="mb-3">
-                                        <label for="valor" class="form-label">Preço: (por cento)</label>
+                                        <label for="valor" class="form-label">Preço: (por quilo)</label>
                                         <input type="text" class="form-control" name="valor" id="valor" aria-describedby="emailHelpId" placeholder="R$90,00">
                                     </div>
+
+                                    <div class="mb-3">
+                                        <label for="nome" class="form-label">Recheio:</label>
+                                        <input type="text" class="form-control" name="recheio" id="nome" aria-describedby="emailHelpId" placeholder="Ex: Brigadeiro">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="nome" class="form-label">Massa:</label>
+                                        <input type="text" class="form-control" name="massa" id="nome" aria-describedby="emailHelpId" placeholder="Ex: Brigadeiro">
+                                    </div>
+
                                     <!-- descrição -->
                                     <div class="mb-3">
                                         <label for="exampleFormControlTextarea1" class="form-label">Descrição</label>
@@ -74,7 +85,7 @@ $sql_query_categories = $sql->query($sql_code_categories) or die($sql->error);
                                     <!-- imagens -->
                                     <div class="mb-3">
                                         <label for="avatar" class="form-label">Adicione a imagem</label>
-                                        <input type="file" class="form-control" name="avatar" id="avatar" aria-describedby="emailHelpId" placeholder="Ex: Brigadeiro de chocolate">
+                                        <input type="file" class="form-control" name="img_bolo" id="avatar" aria-describedby="emailHelpId" placeholder="Ex: Brigadeiro de chocolate">
                                     </div>
                                     <!-- botão -->
                                     <div class="modal-footer">
@@ -89,9 +100,9 @@ $sql_query_categories = $sql->query($sql_code_categories) or die($sql->error);
 
                         <?php
                         //Selecioa todos os dados da tabela anuncios
-                        $dados_anuncios = $sql->query("SELECT * FROM anuncios");
+                        $dados_bolo= $sql->query("SELECT * FROM bolo");
                         //calcula o número de linhas, ou seja, a qtd de resgistros
-                        $total = mysqli_num_rows($dados_anuncios);
+                        $total = mysqli_num_rows($dados_bolo);
                         ?>
 
                     </div>
@@ -103,12 +114,12 @@ $sql_query_categories = $sql->query($sql_code_categories) or die($sql->error);
                 <div class="page-title">
                     <div class="row">
                         <div class="col-12 col-md-6 order-md-1 order-last">
-                            <h3>Cadastre os doces</h3>
+                            <h3>Cadastre os bolos</h3>
                         </div>
                     </div>
                 </div>
                 <nav class="nav justify-content-center ">
-                    <a class="nav-link add" data-bs-toggle="modal" data-bs-target="#modalId"> + Adicionar doces ao site  </a>
+                    <a class="nav-link add" data-bs-toggle="modal" data-bs-target="#modalId"> + Adicionar bolos ao site </a>
                 </nav>
             </div>
 
@@ -128,24 +139,24 @@ $sql_query_categories = $sql->query($sql_code_categories) or die($sql->error);
             <!-- Vitrine de produtos cadastrados -->
             <section id="groups">
                 <div class="row">
-                    <?php while ($linha = mysqli_fetch_assoc($dados_anuncios)) { ?>
+                    <?php while ($linha = mysqli_fetch_assoc($dados_bolo)) { ?>
                         <div class="col-4">
                             <div class="card-group">
                                 <div class="card">
                                     <div class="card-content">
                                         <!-- Imagens já cadastradas -->
-                                        <img class="card img-fluid" src="../<?php echo $avatar = $linha['img_anuncios']; ?>" alt="Card image cap" width="180px">
+                                        <img class="card img-fluid" src="../<?php echo $avatar = $linha['img_bolo']; ?>" alt="Card image cap" width="180px">
 
                                         <div class="card-body">
 
                                             <!-- nome já cadastrados -->
                                             <h4 class="card-title">
-                                                <?php echo $nome = $linha['nome_anuncios']; ?>
+                                                <?php echo $nome = $linha['nome_bolo']; ?>
                                             </h4>
 
                                             <!-- preço já cadastrados -->
                                             <p class="card-text">
-                                                <?php echo $valor = $linha['valor_anuncios']; ?>
+                                                <?php echo $valor = $linha['valor_bolo']; ?>
                                             <p>
 
                                                 <!-- Modal de edição -->
