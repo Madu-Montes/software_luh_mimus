@@ -66,18 +66,22 @@
                         </li>
 
                         <!--Anúncios -->
-                        <li class="sidebar-item  ">
-                            <a href="#" class='sidebar-link'>
+                        <li class=" sidebar-item nav-item dropdown ">
+                            <a href="#" class='sidebar-link nav-link dropdown-toggle' dropdown-toggle" href="" id="dropdownId"
+                  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="bi bi-megaphone"></i>
                                 <span>Anúncios</span>
                             </a>
-                            <li><a class="dropdown-item" href="../view/bolo.php">Bolos</a></li>
-                            <li><a class="dropdown-item" href="../view/anuncios2.php">Doces</a></li>
-                            <li><a class="dropdown-item" href="../view/bolo.php">Salgados</a></li>
-                            <li><a class="dropdown-item" href="../view/personalizados.php">Personalizados</a></li>
-                            <li><a class="dropdown-item" href="../view/kitfesta.php">Kit festa</a></li>
+                             <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="../view/bolo.php">Bolos</a>
+                            <a class="dropdown-item" href="../view/anuncios2.php">Doces</a>
+                            <a class="dropdown-item" href="../view/bolo.php">Salgados</a>
+                            <a class="dropdown-item" href="../view/personalizados.php">Personalizados</a>
+                            <a class="dropdown-item" href="../view/kitfesta.php">Kit festa</a>
+                            <div>
                             <!--Tem uma tela kitfesta.html os kits variam todo mê será que dá para deixar uma aba para ela fazer isso?-->
                         </li>
+
 
                         <!--Encomendas -->
                         <li class="sidebar-item">
