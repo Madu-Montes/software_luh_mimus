@@ -1,10 +1,3 @@
-<?php
-include 'conn_banco.php';
-include '../includes/menuLateral.php';
-
-$sql_code_categories = "SELECT * FROM categorias ORDER BY nome_categorias ASC";
-$sql_query_categories = $sql->query($sql_code_categories) or die($sql->error);
-?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -12,7 +5,7 @@ $sql_query_categories = $sql->query($sql_code_categories) or die($sql->error);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bolos - Luh' Mimus</title>
+    <title>Personalizado - Luh' Mimus</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -40,6 +33,11 @@ $sql_query_categories = $sql->query($sql_code_categories) or die($sql->error);
     <!-- Header -->
     <?php
     include '../includes/header.php';
+    ?>
+
+    <!-- Header -->
+    <?php
+    include '../includes/menuLateral.php';
     ?>
 
     <!---Fim do header do topo-->
@@ -70,18 +68,8 @@ $sql_query_categories = $sql->query($sql_code_categories) or die($sql->error);
                                 </div>
                                 <!-- preço -->
                                 <div class="mb-3">
-                                    <label for="valor" class="form-label">Preço: (por quilo)</label>
+                                    <label for="valor" class="form-label">Preço(por unidade):</label>
                                     <input type="text" class="form-control" name="valor" id="valor" aria-describedby="emailHelpId" placeholder="R$90,00">
-                                </div>
-
-                                <div class="mb-3">
-                                    <label for="nome" class="form-label">Recheio:</label>
-                                    <input type="text" class="form-control" name="recheio" id="nome" aria-describedby="emailHelpId" placeholder="Ex: Brigadeiro">
-                                </div>
-
-                                <div class="mb-3">
-                                    <label for="nome" class="form-label">Massa:</label>
-                                    <input type="text" class="form-control" name="massa" id="nome" aria-describedby="emailHelpId" placeholder="Ex: Brigadeiro">
                                 </div>
 
                                 <!-- descrição -->
@@ -115,22 +103,22 @@ $sql_query_categories = $sql->query($sql_code_categories) or die($sql->error);
             <div class="page-title">
                 <div class="row">
                     <div class="col-12 col-md-6 order-md-1 order-last">
-                        <h3>Cadastre os bolos</h3>
+                        <h3>Cadastre os personalizados</h3>
                     </div>
                 </div>
             </div>
             <nav class="nav justify-content-center ">
-                <a class="nav-link add" data-bs-toggle="modal" data-bs-target="#modalId"> + Adicionar bolos ao site </a>
+                <a class="nav-link add" data-bs-toggle="modal" data-bs-target="#modalId"> + Adicionar doce personalizado ao site </a>
             </nav>
         </div>
 
         <!-- Total de registros -->
-        <p>Todos(25)</p>
+        <p>Todos(9)</p>
 
 
         <!-- Vitrine de produtos cadastrados -->
         <?php 
-                include '../includes/cardsBolo.php'
+                include '../includes/cardsPerso.php';
             ?>
 
 

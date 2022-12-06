@@ -4,7 +4,7 @@
     $nome = $_POST['nome'];
     $valor = $_POST['valor'];
     $desc = $_POST['desc'];
-    $uploaddir = "avatar/";
+    $uploaddir = "image/produtos2";
     $avatar = $_FILES['avatar']['name'];
     $separa = explode(".", $avatar);
     $separa = array_reverse($separa);
