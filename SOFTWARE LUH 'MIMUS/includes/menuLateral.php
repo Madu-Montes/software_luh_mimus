@@ -43,7 +43,7 @@
 
                         <!--Dashboard -->
                         <li class="sidebar-item">
-                            <a href="dashboard.html" class='sidebar-link'>
+                            <a href="../view/dashboard.php" class='sidebar-link'>
                                 <i class="bi bi-grid-fill"></i>
                                 <span>Dashboard</span>
                             </a>
@@ -51,7 +51,7 @@
 
                         <!--Calendário -->
                         <li class="sidebar-item  ">
-                            <a href="#" class='sidebar-link'>
+                            <a href="../calendario/calendario.php" class='sidebar-link'>
                                 <i class="bi bi-calendar"></i>
                                 <span>Calendário</span>
                             </a>
@@ -59,7 +59,7 @@
 
                         <!--Clientes -->
                         <li class="sidebar-item  ">
-                            <a href="clientes.html" class='sidebar-link'>
+                            <a href="../view/clientes.php" class='sidebar-link'>
                                 <i class="bi bi-people-fill"></i>
                                 <span>Clientes</span>
                             </a>
