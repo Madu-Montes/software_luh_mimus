@@ -1,12 +1,20 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/cards.css">
+    <link rel="stylesheet" href="../vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="shortcut icon" href="../images/favicon.svg" type="image/x-icon">
+</head>
 
+<div class="cards">
 <div class="owl-item active" style="width: 300px; padding: 10px;">
     <div class="single_course">
         <div class="course_head">
             <a href="#productView1" data-bs-toggle="modal"> <img class="img-fluid" src="../images/produtos2/beijinho.png" alt="" /></a>
         </div>
         <div class="course_content">
-            <span class="price">R$ 95</span>
-            <span class="tag mb-4 d-inline-block">O cento</span>
+            <span class="price">R$ 95 (O cento)</span>
             <h4 class="mb-3">
                 <a href="#productView1" data-bs-toggle="modal">Beijinho</a>
             </h4>
@@ -20,7 +28,7 @@
                 </div>
             </div>
             <div class="btns-cardapio">
-                <a class="btn btn-outline-dark" href="loginpersonalizado.html" role="button">Visualizar</a>
+                <a class="btn btn-dark" href="loginpersonalizado.html" role="button">Visualizar</a>
 
                 <div class="btn_fav">
                 <a class="nav-link d-sm-flex align-items-sm-center add-cart cart37" href="#">
