@@ -51,7 +51,11 @@
 
                         <!--Calendário -->
                         <li class="sidebar-item  ">
+<<<<<<< HEAD
                             <a href="../calendario/calendario.php" class='sidebar-link'>
+=======
+                            <a href="../html/calendario.html" class='sidebar-link'>
+>>>>>>> abb847fdff5be83e8718af9c490d7c4744be2c83
                                 <i class="bi bi-calendar"></i>
                                 <span>Calendário</span>
                             </a>
@@ -67,7 +71,7 @@
 
                         <!--Anúncios -->
                         <li class=" sidebar-item nav-item dropdown ">
-                            <a href="#" class='sidebar-link nav-link dropdown-toggle' dropdown-toggle" href="" id="dropdownId"
+                            <a href="" class='sidebar-link nav-link dropdown-toggle' dropdown-toggle" href="" id="dropdownId"
                   data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="bi bi-megaphone"></i>
                                 <span>Anúncios</span>
@@ -85,7 +89,7 @@
 
                         <!--Encomendas -->
                         <li class="sidebar-item">
-                            <a href="encomendas.html" class='sidebar-link'>
+                            <a href="../html/encomendas.html" class='sidebar-link'>
                                 <i class="bi bi-basket2-fill"></i>
                                 <span>Encomendas</span>
                             </a>
@@ -93,7 +97,7 @@
 
                         <!--Finanças -->
                         <li class="sidebar-item  ">
-                            <a href="financas.html" class='sidebar-link'>
+                            <a href="../html/financas.html" class='sidebar-link'>
                                 <i class="bi bi-cash"></i>
                                 <span>Finanças</span>
                             </a>
