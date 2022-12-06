@@ -19,7 +19,7 @@
                 <a href="#productView1" data-bs-toggle="modal">Beijinho</a>
             </h4>
             <p>
-                Docinho tradicional de coco com granulado.
+                Docinho tradicional de coco.
                 <br>
                 Pedido mínimo 50 unidades.
             </p>
@@ -37,27 +37,22 @@
                 </a>
             </div>
             </div>
-
-            <!-- Icon editar -->
-           
         </div>
     </div>
 </div>
 
-
-<div class="owl-item cloned active" style="width: 300px; padding: 10px;">
+<div class="owl-item active" style="width: 300px; padding: 10px;">
     <div class="single_course">
         <div class="course_head">
-            <a href="#productView2" data-bs-toggle="modal"> <img class="img-fluid" src="../images/produtos2/doisamores.png" alt="" /></a>
+            <a href="#productView1" data-bs-toggle="modal"> <img class="img-fluid" src="../images/produtos2/doisamores.png" alt="" /></a>
         </div>
         <div class="course_content">
-            <span class="price">R$100</span>
-            <span class="tag mb-4 d-inline-block">o cento</span>
+            <span class="price">R$ 100 (O cento)</span>
             <h4 class="mb-3">
-                <a href="#productView2" data-bs-toggle="modal">Dois Amores</a>
+                <a href="#productView1" data-bs-toggle="modal">Dois Amores</a>
             </h4>
             <p>
-                Docinho meio brigadeiro branco meio chocolate.
+                Docinho tradicional meio a meio.
                 <br>
                 Pedido mínimo 50 unidades.
             </p>
@@ -66,19 +61,19 @@
                 </div>
             </div>
             <div class="btns-cardapio">
-                <a class="btn btn-outline-dark" href="loginpersonalizado.html" role="button">Encomendar</a>
-            </div>
-            <div class="btn_fav">
-                <a class="nav-link d-sm-flex align-items-sm-center add-cart cart38" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
-                    </svg>
+                <a class="btn btn-dark" href="loginpersonalizado.html" role="button">Visualizar</a>
+
+                <div class="btn_fav">
+                <a class="nav-link d-sm-flex align-items-sm-center add-cart cart37" href="#">
+                <i class="bi bi-pencil-square" style=" font-size: 30px; margin: 10px;"></i>
+                <i class="bi bi-trash" style=" font-size: 30px;  margin: 10px;"></i>
                 </a>
             </div>
+            </div>
         </div>
-
     </div>
 </div>
+
 
 <div class="owl-item active" style="width: 300px; padding: 10px;">
     <div class="single_course">
