@@ -51,11 +51,7 @@
 
                         <!--Calendário -->
                         <li class="sidebar-item  ">
-<<<<<<< HEAD
-                            <a href="../calendario/calendario.php" class='sidebar-link'>
-=======
                             <a href="../html/calendario.html" class='sidebar-link'>
->>>>>>> abb847fdff5be83e8718af9c490d7c4744be2c83
                                 <i class="bi bi-calendar"></i>
                                 <span>Calendário</span>
                             </a>
