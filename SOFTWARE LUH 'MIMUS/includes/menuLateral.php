@@ -85,7 +85,7 @@
 
                         <!--Encomendas -->
                         <li class="sidebar-item">
-                            <a href="../html/encomendas.html" class='sidebar-link'>
+                            <a href="../view/encomendas.php" class='sidebar-link'>
                                 <i class="bi bi-basket2-fill"></i>
                                 <span>Encomendas</span>
                             </a>
@@ -93,7 +93,7 @@
 
                         <!--Finanças -->
                         <li class="sidebar-item  ">
-                            <a href="../html/financas.html" class='sidebar-link'>
+                            <a href="../view/financas.php" class='sidebar-link'>
                                 <i class="bi bi-cash"></i>
                                 <span>Finanças</span>
                             </a>

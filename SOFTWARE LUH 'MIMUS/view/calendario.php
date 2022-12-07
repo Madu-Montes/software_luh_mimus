@@ -39,7 +39,7 @@ if(!isset($_SESSION)){
                 <div class="sidebar-header">
                     <div class="d-flex justify-content-between">
                         <div class="logo">
-                            <a href="dashboard.html"><img src="../images/logo.jfif" alt="Logo" srcset=""></a>
+                            <a href="dashboard.php"><img src="../images/logo.jfif" alt="Logo" srcset=""></a>
                         </div>
                         <div class="toggler">
                             <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
@@ -114,6 +114,8 @@ if(!isset($_SESSION)){
                                 <span Class="me-50"><img src="../images/user.png" alt="" width="32" height="32"
                                         class="rounded-circle me-2"></span><a" style="margin-top:20px;" &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp> <?php echo $_SESSION['nome'];?></a>
                             </button>
+                            <br>
+                            <br>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButtonEmoji">
                                 <a class="dropdown-item" href="./perfil.html"><span class="dropdown-item-emoji"><svg
                                             xmlns="http://www.w3.org/2000/svg" width="12" height="12"
