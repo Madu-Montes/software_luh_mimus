@@ -72,20 +72,20 @@
                                 <i class="bi bi-megaphone"></i>
                                 <span>Anúncios</span>
                             </a>
-                             <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
                             <a class="dropdown-item" href="../view/bolo.php">Bolos</a>
                             <a class="dropdown-item" href="../view/anuncios2.php">Doces</a>
                             <a class="dropdown-item" href="../view/bolo.php">Salgados</a>
                             <a class="dropdown-item" href="../view/personalizados.php">Personalizados</a>
                             <a class="dropdown-item" href="../view/kitfesta.php">Kit festa</a>
-                            <div>
+                            </div>
                             <!--Tem uma tela kitfesta.html os kits variam todo mê será que dá para deixar uma aba para ela fazer isso?-->
                         </li>
 
 
                         <!--Encomendas -->
                         <li class="sidebar-item">
-                            <a href="../view/encomendas.php" class='sidebar-link'>
+                            <a href="../html/encomendas.html" class='sidebar-link'>
                                 <i class="bi bi-basket2-fill"></i>
                                 <span>Encomendas</span>
                             </a>
@@ -93,7 +93,7 @@
 
                         <!--Finanças -->
                         <li class="sidebar-item  ">
-                            <a href="../view/financas.php" class='sidebar-link'>
+                            <a href="../html/financas.html" class='sidebar-link'>
                                 <i class="bi bi-cash"></i>
                                 <span>Finanças</span>
                             </a>
@@ -103,4 +103,6 @@
                 <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
             </div>
         </div>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/main.js"></script>
 </section>
