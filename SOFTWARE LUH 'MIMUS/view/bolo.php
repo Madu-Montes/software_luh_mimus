@@ -1,4 +1,12 @@
+
 <?php
+
+if(!isset($_SESSION)){
+    session_start();
+}
+
+
+
 include 'conn_banco.php';
 include '../includes/menuLateral.php';
 
