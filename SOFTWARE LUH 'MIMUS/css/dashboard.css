@@ -60,10 +60,8 @@ textarea:focus,
 }
 
 .dropdown a {
-
     color: #000;
     border: none;
-    margin-top: 12px;
 }
 
 
@@ -108,10 +106,10 @@ textarea:focus,
 }
 
 .dropdown {
-    right: 5%;
+
     margin-top: -5%;
     height: 40px;
-    padding: 10px;
+
 }
 
 .grafico1 h4 {
