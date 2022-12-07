@@ -1,3 +1,11 @@
+<?php
+
+if(!isset($_SESSION)){
+    session_start();
+}
+
+
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -39,6 +47,10 @@
     <?php
     include '../includes/menuLateral.php';
     ?>
+
+<script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/main.js"></script>
+
 
     <!---Fim do header do topo-->
     <br>

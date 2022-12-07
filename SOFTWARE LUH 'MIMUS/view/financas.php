@@ -1,3 +1,12 @@
+<?php
+
+if(!isset($_SESSION)){
+    session_start();
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -23,123 +32,23 @@
 
 <body>
 
-    <div id="app">
-        <div id="sidebar" class="active">
-            <div class="sidebar-wrapper active">
-                <div class="sidebar-header">
-                    <div class="d-flex justify-content-between">
-                        <div class="logo">
-                            <a href="dashboard.html"><img src="../images/logo.jfif" alt="Logo" srcset=""></a>
-                        </div>
-                        <div class="toggler">
-                            <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
-                        </div>
-                    </div>
-                </div>
+    <!-- Header -->
+    <?php
+    include '../includes/header.php';
+    ?>
 
-                <!--Menu -->
-                <div class="sidebar-menu">
-                    <ul class="menu">
+    <!-- Header -->
+    <?php
+    include '../includes/menuLateral.php';
+    ?>
 
-                        <!--Dashboard -->
-                        <li class="sidebar-item">
-                            <a href="dashboard.html" class='sidebar-link'>
-                                <i class="bi bi-grid-fill"></i>
-                                <span>Dashboard</span>
-                            </a>
-                        </li>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/main.js"></script>
 
-                        <!--Calendário -->
-                        <li class="sidebar-item  ">
-                            <a href="#" class='sidebar-link'>
-                                <i class="bi bi-calendar"></i>
-                                <span>Calendário</span>
-                            </a>
-                        </li>
-
-                        <!--Clientes -->
-                        <li class="sidebar-item  ">
-                            <a href="clientes.html" class='sidebar-link'>
-                                <i class="bi bi-people-fill"></i>
-                                <span>Clientes</span>
-                            </a>
-                        </li>
-
-                        <!--Anúncios -->
-                        <li class="sidebar-item  ">
-                            <a href="./anuncios.html" class='sidebar-link'>
-                                <i class="bi bi-megaphone"></i>
-                                <span>Anúncios</span>
-                            </a>
-                        </li>
-
-                        <!--Encomendas -->
-                        <li class="sidebar-item  ">
-                            <a href="encomendas.html" class='sidebar-link'>
-                                <i class="bi bi-basket2-fill"></i>
-                                <span>Encomendas</span>
-                            </a>
-                        </li>
-
-                        <!--Finanças -->
-                        <li class="sidebar-item active">
-                            <a href="financas.html" class='sidebar-link'>
-                                <i class="bi bi-cash"></i>
-                                <span>Finanças</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
-            </div>
-        </div>
 
 
         <!-----Fim do Menu Lateral------->
-        <header class="header-bar">
-            <div class="icones-topo">
-                <div class="btn-group mb-1">
-                    <div class="btn-group mb-1" id="meu">
-                        <div class="dropdown dropdown-color-icon user">
-                            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButtonEmoji"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width:40">
-                                <span Class="me-50"><img src="../images/user.png" alt="" width="32" height="32"
-                                        class="rounded-circle me-2"></span>Nome do usuário
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButtonEmoji">
-                                <a class="dropdown-item" href="./perfil.html"><span class="dropdown-item-emoji"><svg
-                                            xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                            fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                                            <path fill-rule="evenodd"
-                                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-                                        </svg></span>
-                                    ‎ ‎ ‎ ‎ Perfil</a>
-                                <a class="dropdown-item" href="./manual.html"><span class="dropdown-item-emoji"><svg
-                                            style="width: 21px;" xmlns="http://www.w3.org/2000/svg" width="12"
-                                            height="12" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
-                                            <path
-                                                d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
-                                        </svg></span>
-                                    ‎ ‎ ‎ ‎ Ajuda</a>
-                                <hr>
-                                <a class="dropdown-item" href="../index.html"><span class="dropdown-item-emoji"><svg
-                                            style="width: 21px;" xmlns="http://www.w3.org/2000/svg" width="16"
-                                            height="16" fill="currentColor" class="bi bi-box-arrow-right"
-                                            viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd"
-                                                d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
-                                            <path fill-rule="evenodd"
-                                                d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
-                                        </svg></span>
-                                    ‎ ‎ ‎ ‎ Sair</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </header>
         
-    </div>
 
     <div id="main">
         <header class="mb-3">
@@ -156,9 +65,7 @@
                     </div>
                 </div>
             </div>
-            <div class="relatorio"><a name="" id="relatorio" class="btn btn-primary" href="#" role="button">Relatório
-                    <img src="../images/dowload.png" alt="" width="16px"></a>
-            </div>
+           
 
 
             <div class="dropdown open">
@@ -220,32 +127,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Prejuízo</h4>
-                            </div>
-                            <div class="card-content">
-                                <div class="card-body">
-                                    <!-- Table with outer spacing -->
-                                    <div class="table-responsive">
-                                        <table class="table table-borderless">
-                                            <thead>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row" class="table-name">*mês*</th>
-                                                    <td>R$</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row" class="table-name">Porcentual</th>
-                                                    <td colspan="2">%</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                         <div class="card">
                             <div class="card-header">
                                 <h4 class="card-title">Saldo final</h4>
@@ -476,36 +358,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Lucro líquido</h4>
-                            </div>
-                            <div class="card-content">
-                                <div class="card-body">
-                                    <!-- Table with outer spacing -->
-                                    <div class="table-responsive">
-                                        <table class="table table-borderless">
-                                            <thead>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row" class="table-name">Despesas variáveis</th>
-                                                    <td colspan="2">R$</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row" class="table-name">Despesas fixas</th>
-                                                    <td colspan="2">R$</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row" class="table-name">Total</th>
-                                                    <td colspan="2">R$</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
         </div>

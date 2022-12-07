@@ -1,4 +1,12 @@
+
 <?php
+
+if(!isset($_SESSION)){
+    session_start();
+}
+
+
+
 include 'conn_banco.php';
 include '../includes/menuLateral.php';
 
@@ -37,12 +45,17 @@ $sql_query_categories = $sql->query($sql_code_categories) or die($sql->error);
 </head>
 
 <body>
-    <!-- Header -->
+<?php
+    include '../includes/MenuLateral.php';
+    ?>
+
+    <!-----Header------->
     <?php
     include '../includes/header.php';
     ?>
-
-    <!---Fim do header do topo-->
+    
+    <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/main.js"></script>
     <br>
     <div id="main">
         <header class="mb-3">

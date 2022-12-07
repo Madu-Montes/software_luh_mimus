@@ -1,3 +1,12 @@
+<?php
+
+if(!isset($_SESSION)){
+    session_start();
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -29,6 +38,8 @@
     <?php
     include '../includes/header.php';
     ?>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/main.js"></script>
 
 
     <br>
@@ -43,7 +54,7 @@
             <div class="page-title">
                 <div class="row">
                     <div class="col-12 col-md-6 order-md-1 order-last">
-                        <h3>Olá, *usuário*.</h3>
+                        <h3 " style="margin-top:20px;" &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp>Olá, <?php echo $_SESSION['nome'];?></h3>
                     </div>
                 </div>
             </div>

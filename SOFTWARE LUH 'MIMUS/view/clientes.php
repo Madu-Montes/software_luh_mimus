@@ -1,3 +1,12 @@
+<?php
+
+if(!isset($_SESSION)){
+    session_start();
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -30,6 +39,9 @@
     <?php
     include '../includes/header.php';
     ?>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/main.js"></script>
 
     <div id="main">
         <header class="mb-3">
