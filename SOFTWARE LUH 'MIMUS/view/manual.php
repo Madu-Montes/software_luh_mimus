@@ -1,3 +1,11 @@
+
+<?php
+if(!isset($_SESSION)){
+    session_start();
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -21,80 +29,20 @@
 </head>
 
 <body>
-    <div id="app">
-        <div id="sidebar" class="active">
-            <div class="sidebar-wrapper active">
-                <div class="sidebar-header">
-                    <div class="d-flex justify-content-between">
-                        <div class="logo">
-                            <a href="dashboard.html"><img src="../images/logo.jfif" alt="Logo" srcset=""></a>
-                        </div>
-                        <div class="toggler">
-                            <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
-                        </div>
-                    </div>
-                </div>
+    
+    <!-- Header -->
+    <?php
+    include '../includes/menuLateral.php';
+    ?>
 
-                <!--Menu -->
-                <div class="sidebar-menu">
-                    <ul class="menu">
+<script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/main.js"></script>
 
-                        <!--Dashboard -->
-                        <li class="sidebar-item">
-                            <a href="./dashboard.html" class='sidebar-link'>
-                                <i class="bi bi-grid-fill"></i>
-                                <span>Dashboard</span>
-                            </a>
-                        </li>
 
-                        <!--Calendário -->
-                        <li class="sidebar-item  ">
-                            <a href="#" class='sidebar-link'>
-                                <i class="bi bi-calendar"></i>
-                                <span>Calendário</span>
-                            </a>
-                        </li>
-
-                        <!--Clientes -->
-                        <li class="sidebar-item  ">
-                            <a href="../view/clientes.php" class='sidebar-link'>
-                                <i class="bi bi-people-fill"></i>
-                                <span>Clientes</span>
-                            </a>
-                        </li>
-
-                        <!--Anúncios -->
-                        <li class="sidebar-item  ">
-                            <a href="../view/anuncios2.php" class='sidebar-link'>
-                                <i class="bi bi-megaphone"></i>
-                                <span>Anúncios</span>
-                            </a>
-                        </li>
-
-                        <!--Encomendas -->
-                        <li class="sidebar-item">
-                            <a href="./encomendas.html" class='sidebar-link'>
-                                <i class="bi bi-basket2-fill"></i>
-                                <span>Encomendas</span>
-                            </a>
-                        </li>
-
-                        <!--Finanças -->
-                        <li class="sidebar-item  ">
-                            <a href="./financas.html" class='sidebar-link'>
-                                <i class="bi bi-cash"></i>
-                                <span>Finanças</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
-            </div>
-        </div>
 
         <div id="main">
             <div class="container-fluid">
-                <h1>Bem vindo(a) ao Manual do Software</h1>
+                <h1>Bem vindo(a) <?php echo $_SESSION['nome'];?> ao Manual do Software</h1>
                 <div class="conteudo">
                     <h2>ÍNDICE</h2>
                     <p>Clique nos links abaixo para ir para uma seção específica desta Política.</p>
@@ -141,6 +89,7 @@
                     <p>Os clientes cadastrados no site terão suas informações salvas no banco de dados, e por essa tela você pode visualizar informações importantes destes clientes, além de poder exclui-los se desejar..
                     </p>
                     <img src="../images/manual9.jfif" alt="">
+                    <br>
 
                     <h3 id="4">4. Como alterar seus anúncios</h3>
                     <p>na tela de anúncios você pode criar, editar ou excluir os anúncios que apareceram em seu site.
