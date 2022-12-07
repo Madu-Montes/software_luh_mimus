@@ -4,7 +4,10 @@
                     <div class="btn-group mb-1" id="meu">
                         <div class="dropdown dropdown-color-icon user">
                             <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButtonEmoji" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width:40">
-                                <span Class="me-50"><img src="../images/user.png" alt="" width="32" height="32" class="rounded-circle me-2"></span><a" style="margin-top:20px;" &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp> <?php echo $_SESSION['nome'];?></a>
+                                <span Class="me-50"><img src="../images/user.png" alt="" width="32" height="32" class="rounded-circle me-2"></span><a" style="margin-top:20px;" &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp> <?php 
+                                echo $_SESSION['nome']; 
+                                
+                                ?></a>
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButtonEmoji">
                                 <a class="dropdown-item" href="#"><span class="dropdown-item-emoji"></span>

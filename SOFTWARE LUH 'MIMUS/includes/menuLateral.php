@@ -68,7 +68,7 @@
                         <!--Anúncios -->
                         <li class=" sidebar-item nav-item dropdown ">
                             <a href="" class='sidebar-link nav-link dropdown-toggle' dropdown-toggle" href="" id="dropdownId"
-                  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                 <i class="bi bi-megaphone"></i>
                                 <span>Anúncios</span>
                             </a>
@@ -105,4 +105,5 @@
         </div>
         <script src="../js/bootstrap.bundle.min.js"></script>
         <script src="../js/main.js"></script>
+        
 </section>
