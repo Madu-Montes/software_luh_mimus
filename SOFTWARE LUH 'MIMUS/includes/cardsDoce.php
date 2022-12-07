@@ -31,47 +31,36 @@
                 <a class="nav-link d-sm-flex align-items-sm-center add-cart cart37" href="#">
                 <i class="bi bi-pencil-square" style=" font-size: 30px; margin: 10px;"></i>
                 <i class="bi bi-trash" style=" font-size: 30px;  margin: 10px;"></i>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
-                  Launch
-                </button>
-                
-                <!-- Modal -->
-                <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                                <div class="modal-header">
-                                        <h5 class="modal-title" id="modalTitleId">Modal title</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                            <div class="modal-body">
-                                <div class="container-fluid">
-                                    Add rows here
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save</button>
-                            </div>
+                </a>
+            </div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
+              Launch
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                <div class="modal-dialog modal-sm modal-fullscreen" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalTitleId">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            
+                        </div>
+                        <div class="modal-body">
+                            Body
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save</button>
                         </div>
                     </div>
                 </div>
-                
-                <script>
-                    var modalId = document.getElementById('modalId');
-                
-                    modalId.addEventListener('show.bs.modal', function (event) {
-                          // Button that triggered the modal
-                          let button = event.relatedTarget;
-                          // Extract info from data-bs-* attributes
-                          let recipient = button.getAttribute('data-bs-whatever');
-                
-                        // Use above variables to manipulate the DOM
-                    });
-                </script>
-                
-                </a>
             </div>
+            
+            
+            
+            
             </div>
         </div>
     </div>
@@ -114,34 +103,31 @@
 <div class="owl-item active" style="width: 300px; padding: 10px;">
     <div class="single_course">
         <div class="course_head">
-            <a href="#productView3" data-bs-toggle="modal"> <img class="img-fluid" src="../images/produtos2/bichope.png" alt="" /></a>
+            <a href="#productView1" data-bs-toggle="modal"> <img class="img-fluid" src="../images/produtos2/bichope.png" alt="" /></a>
         </div>
         <div class="course_content">
-            <span class="price">R$ 99</span>
-            <span class="tag mb-4 d-inline-block">O cento</span>
+            <span class="price">R$ 99 (O cento)</span>
             <h4 class="mb-3">
-                <a href="#productView3" data-bs-toggle="modal">Bicho de Pé</a>
+                <a href="#productView1" data-bs-toggle="modal">Dois Amores</a>
             </h4>
             <p>
-                Docinho de morango.
+                Docinho tradicional morango.
+                <br>
                 Pedido mínimo 50 unidades.
-                <br>
-                <br>
             </p>
             <div class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4">
                 <div class="mt-lg-0 mt-3">
                 </div>
             </div>
-
             <div class="btns-cardapio">
-                <a class="btn btn-outline-dark" href="loginpersonalizado.html" role="button">Encomendar</a>
-            </div>
-            <div class="btn_fav">
-                <a class="nav-link d-sm-flex align-items-sm-center add-cart cart39" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
-                    </svg>
+                <a class="btn btn-dark" href="loginpersonalizado.html" role="button">Visualizar</a>
+
+                <div class="btn_fav">
+                <a class="nav-link d-sm-flex align-items-sm-center add-cart cart37" href="#">
+                <i class="bi bi-pencil-square" style=" font-size: 30px; margin: 10px;"></i>
+                <i class="bi bi-trash" style=" font-size: 30px;  margin: 10px;"></i>
                 </a>
+            </div>
             </div>
         </div>
     </div>
