@@ -127,32 +127,7 @@ if(!isset($_SESSION)){
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Prejuízo</h4>
-                            </div>
-                            <div class="card-content">
-                                <div class="card-body">
-                                    <!-- Table with outer spacing -->
-                                    <div class="table-responsive">
-                                        <table class="table table-borderless">
-                                            <thead>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row" class="table-name">*mês*</th>
-                                                    <td>R$</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row" class="table-name">Porcentual</th>
-                                                    <td colspan="2">%</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                         <div class="card">
                             <div class="card-header">
                                 <h4 class="card-title">Saldo final</h4>
@@ -383,36 +358,7 @@ if(!isset($_SESSION)){
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Lucro líquido</h4>
-                            </div>
-                            <div class="card-content">
-                                <div class="card-body">
-                                    <!-- Table with outer spacing -->
-                                    <div class="table-responsive">
-                                        <table class="table table-borderless">
-                                            <thead>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row" class="table-name">Despesas variáveis</th>
-                                                    <td colspan="2">R$</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row" class="table-name">Despesas fixas</th>
-                                                    <td colspan="2">R$</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row" class="table-name">Total</th>
-                                                    <td colspan="2">R$</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
         </div>
