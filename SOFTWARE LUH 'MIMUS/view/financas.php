@@ -65,9 +65,7 @@ if(!isset($_SESSION)){
                     </div>
                 </div>
             </div>
-            <div class="relatorio"><a name="" id="relatorio" class="btn btn-primary" href="#" role="button">Relatório
-                    <img src="../images/dowload.png" alt="" width="16px"></a>
-            </div>
+           
 
 
             <div class="dropdown open">
