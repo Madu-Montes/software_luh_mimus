@@ -44,6 +44,8 @@ if(!isset($_SESSION)){
     include '../includes/header.php';
     ?>
     
+    <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/main.js"></script>
 
     <!---Fim do header do topo-->
     <br>

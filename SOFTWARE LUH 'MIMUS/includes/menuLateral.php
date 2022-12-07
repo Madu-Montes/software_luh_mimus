@@ -75,7 +75,7 @@
                             <div class="dropdown-menu" aria-labelledby="dropdownId">
                             <a class="dropdown-item" href="../view/bolo.php">Bolos</a>
                             <a class="dropdown-item" href="../view/anuncios2.php">Doces</a>
-                            <a class="dropdown-item" href="../view/bolo.php">Salgados</a>
+                            <a class="dropdown-item" href="../view/salgados.php">Salgados</a>
                             <a class="dropdown-item" href="../view/personalizados.php">Personalizados</a>
                             <a class="dropdown-item" href="../view/kitfesta.php">Kit festa</a>
                             </div>

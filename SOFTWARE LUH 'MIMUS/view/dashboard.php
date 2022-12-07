@@ -38,6 +38,8 @@ if(!isset($_SESSION)){
     <?php
     include '../includes/header.php';
     ?>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/main.js"></script>
 
 
     <br>
