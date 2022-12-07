@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    
 }
 
 body{
@@ -52,6 +55,7 @@ body{
     font-weight: bold;
     margin-left: 15%;
     margin-bottom: 10%;
+    font-family: 'Nunito', sans-serif;
 }
 
 .password-btn button{
@@ -70,15 +74,12 @@ body{
 .login{
     width: 50%;
     border: none;
-   
     padding: 0.4rem 1rem;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 8%;
     margin-left: 25%;
 }
-
- 
 
 .font-bold{
     font-size: 16px;
@@ -87,7 +88,6 @@ body{
 }
 
 .font-bold:hover{
-
     color: #F99AAF;
 }
 
@@ -107,14 +107,10 @@ body{
     margin-bottom: 0px;
 }
 
-.input-box input{
-    margin: 0.6rem 0;
-    padding: 0.8rem 1.2rem;
-    border: none;
-    border-radius: 5px;
-    background-color: #D5D6D7;
-    box-shadow: 1px, 1px, 6px #1b140c;
+.form-group input{
+    border-radius: 20px;
 }
+
 
 .rounded-circle .me-2{
     margin-top: 30px;
@@ -122,4 +118,9 @@ body{
 
 .user{
     margin-bottom: -20px;
+}
+
+.btn-dark{
+    width: 50%;
+   margin-left: 25%;
 }
