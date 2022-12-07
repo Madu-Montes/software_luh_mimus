@@ -91,6 +91,11 @@
                         </li>
                     </div>
                 </div>
+
+
+
+
+
                 <nav class="nav justify-content-center">
                     <a class="nav-link active" href="#" aria-current="page">Todas</a>
                     <a class="nav-link" href="./encomendas-finalizadas.html">Finalizadas</a>
@@ -110,35 +115,37 @@
                         </div>
                         <br>
                         <label class="form-check-label data-hora" for="">
-                            Data e hora da entrega
+                            15/12/2022
                         </label>
                         <hr>
                         <table>
                             <tr>
-                                <td>
+                            <td>
                                     <img class="img-fluid"
                                         src="https://imagensemoldes.com.br/wp-content/uploads/2020/05/Brigadeiro-com-Fundo-Transparente-Doces-PNG.png"
                                         height="100" width="100">
                                 </td>
                                 <td>
-                                    <p><?php echo $valor = $linha['id_encomenda']; ?></p>
+                                   
                                     Bolo de brigadeiro
-                                    <p><?php echo $valor = $linha['qtd_encomenda']; ?></p>
+                                    <p><?php echo $valor = $linha['qtd_encomenda']; ?>kg</p>
                                 </td>
                                 <td>
                                     Valor
                                 </td>
                                 <td>
-                                    <img src="https://assets.stickpng.com/thumbs/585e4bf3cb11b227491c339a.png"
-                                        height="100" width="100" class="usuario-img" id="usuario-lado">
+                            
+                                    <p>Comprado por:</p>
                                     <p id="usuario-lado">Apresentação de TCC</p>
                                 </td>
                             </tr>
                         </table>
-                        <br>
                         <?php } ?>
+                        <br>
+
                 </div>
             </div>
+            
             <br>
             <div class="pedidosTot">
                 <div class="pedidosUniInt">
