@@ -43,7 +43,7 @@
 
                         <!--Anúncios -->
                         <li class="sidebar-item  ">
-                            <a href="../pages/bolo.php" class='sidebar-link'>
+                            <a href="../pages/anuncios.php" class='sidebar-link'>
                                 <i class="bi bi-megaphone"></i>
                                 <span>Anúncios</span>
                             </a>
