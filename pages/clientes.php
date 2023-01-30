@@ -50,7 +50,7 @@ if(!isset($_SESSION)){
             </a>
         </header>
 
-        <div class="page-heading">
+        <div class="page-heading" style="width: 100%;">
             <div class="page-title">
                 <div class="row">
                     <div class="col-12 col-md-6 order-md-1 order-last">
@@ -67,52 +67,18 @@ if(!isset($_SESSION)){
                         <table class="table table-striped" id="table1">
                             <thead>
                                 <tr>
-                                    <th>Excluir</th>
+                                    <th style="width: 40px;">Excluir</th>
+                                    <th style="width: 45px;">Detalhes</th>
                                     <th>Foto</th>
-                                    <th>ID</th>
+                                    <th style="width: 30px;">ID</th>
                                     <th>Nome</th>
                                     <th>Email</th>
                                     <th>CPF</th>
                                     <th>Contato</th>
-                                    <th>Data de Nascimento</th>
-                                    <th>Senha</th>
-                                    <th>CEP</th>
-                                    <th>Nº</th>
-                                    <th>Complemento</th>
                                 </tr>
                             </thead>
 
-
-
-                            <tbody>
-                                <tr>
-
-                                    <!-- Button trigger modal -->
-                                    <td><button type="button" class="btn btn-primary btn-lg icon" data-bs-toggle="modal" data-bs-target="#modalId"><i class="bi bi-trash"></i>
-                                        </button></td>
-
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="modalTitleId">Excluir?</h5>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <div class="container-fluid">
-                                                        Tem certeza que deseja excluir esse perfil?
-                                                    </div>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cancelar</button>
-                                                    <button type="button" class="btn btn-dark">Excluir</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <script>
+                            <script>
                                         var modalId = document.getElementById('modalId');
 
                                         modalId.addEventListener('show.bs.modal', function(event) {
@@ -125,16 +91,8 @@ if(!isset($_SESSION)){
                                         });
                                     </script>
 
-                                    <!--Quando selecionar aparecer modal de "editar perfil?-->
-                                    <td><img src="" alt=""></td>
-                                    <td>00000</td>
-                                    <td>Paula Sousa</td>
-                                    <td>vehicula.aliquet@semconsequat.co.uk</td>
-                                    <td>076 4820 8838</td>
-                                    <td>1111111</td>
-                                    <td>00</td>
-                                    <td>rua sem saida</td>
-                                </tr>
+                            <tbody>
+                                
 
                     </div>
                 </div>
@@ -151,6 +109,7 @@ if(!isset($_SESSION)){
                 </script>
 
                 <script src="../js/main.js"></script>
+                
 </body>
 
 </html>
@@ -172,18 +131,40 @@ while ($linha = mysqli_fetch_array($dados_usuarios)) {
 
 
     echo "
+    <!-- Modal -->
+    <div class='modal fade' id='modalId' tabindex='-1' role='dialog' aria-labelledby='modalTitleId' aria-hidden='true'>
+        <div class='modal-dialog' role='document'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <h5 class='modal-title' id='modalTitleId'>Excluir?</h5>
+                    <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                </div>
+                <div class='modal-body'>
+                    <div class='container-fluid'>
+                        Tem certeza que deseja excluir esse perfil?
+                    </div>
+                </div>
+                <div class='modal-footer'>
+                    <button type='button' class='btn btn-dark' data-bs-dismiss='modal'>Cancelar</button>
+                    <a href='excluir_Cliente.php?cpf=$cpf'><button type='button' class='btn btn-dark'>Excluir</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
 
         <tr>
 
         
             <td>
-            <a href='excluir.php?cpf=$cpf' onclick=\"return confirm('Quer mesmo apagar esses dados!!!');\">
-            Excluir</a>
+            
+            <button type='button' class='btn btn-primary btn-lg icon' data-bs-toggle='modal' data-bs-target='#modalId'><i class='bi bi-trash'></i>
+                                        </button>
             </td>
 
             <td>
-            <a href='update.php?cpf=$cpf' onclick=\"return confirm('Quer mesmo alterar esses dados!!!');\">
-            Alterar</a>
+            <a href='usuario.php?cpf=$cpf'>
+            <button type='button' class='btn btn-primary btn-lg icon'><i class='bi bi-info-circle'></i>
+                                        </button></a>
             </td>
         
         <td>imagem</td>
@@ -192,18 +173,12 @@ while ($linha = mysqli_fetch_array($dados_usuarios)) {
         <td>$email</td>
         <td>$cpf</td>
         <td>$celular</td>
-        <td>$dtn</td>
-        <td>$senha</td>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
-        <td>
-           
-        </td>
  
         </tr>";
 }
-echo "</table>
+echo "
+    </tbody>
+        </table>
         </section>
             </div>";
 
