@@ -168,61 +168,35 @@ if(!isset($_SESSION)){
                                 <!-- Modal Body-->
                                 <div class="modal fade" id="modalId" tabindex="-1" role="dialog"
                                     aria-labelledby="modalTitleId" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="modalTitleId">Adicionar despesa</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="container-fluid">
-                                                    <div class="mb-3">
-                                                        <label for="" class="form-label">Nome</label>
-                                                        <input type="text" class="form-control" name="" id=""
-                                                            aria-describedby="emailHelpId" placeholder="gasolina">
+                                        <div class="modal-dialog" role="document">
+                                        <form action="salvar_despesa.php" method="POST">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="modalTitleId">Adicionar despesa</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="container-fluid">
+                                                        <div class="mb-3">
+                                                            <label for="" class="form-label">Nome</label>
+                                                            <input type="text" class="form-control" name="nome_despesa" id="nome_despesa"
+                                                                aria-describedby="emailHelpId" placeholder="Ex: gasolina">
 
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label for="" class="form-label">Valor</label>
-                                                        <input type="text" class="form-control" name="" id=""
-                                                            aria-describedby="emailHelpId" placeholder="R$30,00">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="" class="form-label">Valor</label>
+                                                            <input type="text" class="form-control" name="valor_despesa" id="valor_despesa"
+                                                                aria-describedby="emailHelpId" placeholder="ex: 30,00">
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-dark"
-                                                    data-bs-dismiss="modal">Salvar</button>
-                                                <button type="button" class="btn btn-dark">Cancelar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="modal fade" id="modalId2" tabindex="-1" role="dialog"
-                                    aria-labelledby="modalTitleId" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="modalTitleId">Excluir informações?</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="container-fluid">
-                                                    <div class="mb-3">
-                                                        Deseja realmente excluir essa dispesa?
-                                                    </div>
-
+                                                <div class="modal-footer">
+                                                    <button type="submit" class="btn btn-dark">Salvar</button>
                                                 </div>
                                             </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-dark"
-                                                    data-bs-dismiss="modal">Excluir</button>
-                                                <button type="button" class="btn btn-dark">Cancelar</button>
-                                            </div>
+</form>
                                         </div>
-                                    </div>
                                 </div>
 
                                 <div class="modal fade" id="modalId3" tabindex="-1" role="dialog"
@@ -264,93 +238,68 @@ if(!isset($_SESSION)){
                                     <div class="table-responsive">
                                         <table class="table table-borderless">
                                             <thead>
+                                                <tr>
+                                                    <th>Nome</th>
+                                                    <th style="width: 100px;">Valor</th>
+                                                    <th>Editar</th>
+                                                    <th>Excluir</th>
+                                                </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <th scope="row" class="table-name">Água</th>
-                                                    <td colspan="2">R$</td>
-                                                    <td colspan="2"></td>
+                                                <?php 
+                                                include "../config/conn_mySQLI.php";
+                                                $todasDespesas = $sql->query("SELECT * FROM despesas");
+                                                $total = $sql->query("SELECT SUM(valor_despesas) AS 'total' FROM despesas");
+                                                $totalDespesas = mysqli_fetch_array($total);
+                                                $total_despesas0 = $totalDespesas['total'];
+                                                $total_despesas = str_replace(".",",", $total_despesas0);
+                                                
+                                                
+                                                while($despesas = mysqli_fetch_array($todasDespesas)) {
+                                                    $idDaDespesa = $despesas['id_despesas'];
+                                                    $nomeDaDespesa = $despesas['nome_despesas'];
+                                                    $valorDaDespesa0 = $despesas['valor_despesas'];
+                                                    $valorDaDespesa = str_replace(".",",", $valorDaDespesa0);
+                                                    
 
-                                                    <td colspan="2"><a data-bs-toggle="modal"
-                                                            data-bs-target="#modalId2"><svg
-                                                                xmlns="http://www.w3.org/2000/svg" width="16"
-                                                                height="16" fill="currentColor" class="bi bi-trash"
-                                                                viewBox="0 0 16 16">
+                                                echo "
+                                                
+                                                <tr>
+                                                <td>$nomeDaDespesa</td>
+                                                    
+                                                <td>R$&nbsp;$valorDaDespesa</td>
+                                                <td>
+                                                <a data-bs-toggle='modal'
+                                                            data-bs-target='#modalId3'><svg
+                                                                xmlns='http://www.w3.org/2000/svg' width='16'
+                                                                height='16' fill='currentColor'
+                                                                class='bi bi-pencil-square' viewBox='0 0 16 16'>
                                                                 <path
-                                                                    d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
-                                                                <path fill-rule="evenodd"
-                                                                    d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
+                                                                    d='M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z' />
+                                                                <path fill-rule='evenodd'
+                                                                    d='M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z' />
                                                             </svg></a>
-                                                        <a data-bs-toggle="modal" data-bs-target="#modalId3"><svg
-                                                                xmlns="http://www.w3.org/2000/svg" width="16"
-                                                                height="16" fill="currentColor"
-                                                                class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                                </td>
+                                                <td>
+                                                <a href='excluir_despesa.php?id=$idDaDespesa' data-bs-toggle='modal'><svg
+                                                                xmlns='http://www.w3.org/2000/svg' fill='currentColor' class='bi bi-trash'>
                                                                 <path
-                                                                    d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
-                                                                <path fill-rule="evenodd"
-                                                                    d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
-                                                            </svg>
-                                                    </td></a>
-                                                    <td colspan="2">
-                                                    <td colspan="2">
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row" class="table-name">Luz</th>
-                                                    <td colspan="2">R$</td>
-                                                    <td colspan="2"></td>
-                                                    <td colspan="2"><a data-bs-toggle="modal"
-                                                            data-bs-target="#modalId2"><svg
-                                                                xmlns="http://www.w3.org/2000/svg" width="16"
-                                                                height="16" fill="currentColor" class="bi bi-trash"
-                                                                viewBox="0 0 16 16">
-                                                                <path
-                                                                    d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
-                                                                <path fill-rule="evenodd"
-                                                                    d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
+                                                                    d='M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z' />
+                                                                <path fill-rule='evenodd'
+                                                                    d='M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z' />
                                                             </svg></a>
-                                                        <a data-bs-toggle="modal" data-bs-target="#modalId3"><svg
-                                                                xmlns="http://www.w3.org/2000/svg" width="16"
-                                                                height="16" fill="currentColor"
-                                                                class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                                                <path
-                                                                    d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
-                                                                <path fill-rule="evenodd"
-                                                                    d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
-                                                            </svg>
-                                                    </td></a>
-                                                    <td colspan="2">
+                                                </td>
 
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row" class="table-name">Gás</th>
-                                                    <td colspan="2">R$</td>
-                                                    <td colspan="2"></td>
-                                                    <td colspan="2"><a data-bs-toggle="modal"
-                                                            data-bs-target="#modalId2"><svg
-                                                                xmlns="http://www.w3.org/2000/svg" width="16"
-                                                                height="16" fill="currentColor" class="bi bi-trash"
-                                                                viewBox="0 0 16 16">
-                                                                <path
-                                                                    d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
-                                                                <path fill-rule="evenodd"
-                                                                    d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
-                                                            </svg></a> <a data-bs-toggle="modal"
-                                                            data-bs-target="#modalId3"><svg
-                                                                xmlns="http://www.w3.org/2000/svg" width="16"
-                                                                height="16" fill="currentColor"
-                                                                class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                                                <path
-                                                                    d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
-                                                                <path fill-rule="evenodd"
-                                                                    d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
-                                                            </svg></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row" class="table-name">Total</th>
-                                                    <td colspan="2">R$</td>
-                                                    <td colspan="2"></td>
+                                                </tr>";}
 
-                                                </tr>
+                                                echo "<tr>
+                                                <td style='font-size: 20px'>Total</td>
+                                                
+                                                <td>R$ $total_despesas</td>
+
+                                                </tr>"
+                                                
+                                                ?>
                                             </tbody>
                                         </table>
                                     </div>

@@ -29,7 +29,14 @@
     <?php
     include '../includes/menuHeaderBar.php';
     ?>
+    <?php 
+    include "../config/conn_MySQLI.php";
 
+    $quant_clientes0 = $sql->query("SELECT COUNT(id_UserCdstSite) AS 'qnt_cliente' FROM user_cdst_site");
+    $quant_clientes1 = mysqli_fetch_array($quant_clientes0);
+    $quant_clientes2 = $quant_clientes1['qnt_cliente'];
+    
+    ?>
 
     <br>
     <div id="main">
@@ -62,7 +69,7 @@
                                     <div class="row">
                                         <div class="col-md-8">
                                             <h6 class="text-muted font-semibold">Clientes</h6>
-                                            <h6 class="font-extrabold mb-0">112.000</h6>
+                                            <h6 class="font-extrabold mb-0"><?php echo $quant_clientes2;?></h6>
                                         </div>
                                     </div>
                                 </div>
@@ -129,7 +136,7 @@
                                                     borderWidth: 1,
                                                     backgroundColor: 'rgba(255, 255, 255, 1)',
                                                     pointBackgroundColor: 'rgba(240, 120, 130, 1)',
-                                                    pointBorderWidth: 3,
+                                                    pointBorderWidth: 1,
                                                     borderColor: 'rgb(240, 120, 130)',
                                                     tension: 0.5,
 
@@ -227,6 +234,7 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        
                                     </div>
                                 </div>
                             </div>
