@@ -20,6 +20,10 @@ $email = $linha['email_UserCdstSite'];
 $dtn = $linha['dtn_UserCdstSite'];
 $senha = $linha['senha_UserCdstSite'];
 $celular = $linha['celular_UserCdstSite'];
+$endereco =  $linha['ender_UserCdstSite'];
+$nres = $linha['nres_UserCdstSite'];
+$cep = $linha['cep_UserCdstSite'];
+$complemento  = $linha['complemento_UserCdstSite'];
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -130,7 +134,15 @@ $celular = $linha['celular_UserCdstSite'];
                                     CEP
                                 </th>
                                 <td>
-                                    ...
+                                    <?php echo $cep ?>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th style="width: 300px;">
+                                    Endereço
+                                </th>
+                                <td>
+                                    <?php echo $endereco ?>
                                 </td>
                             </tr>
                             <tr>
@@ -138,7 +150,7 @@ $celular = $linha['celular_UserCdstSite'];
                                     Nº
                                 </th>
                                 <td>
-                                    ...
+                                    <?php echo $nres ?>
                                 </td>
                             </tr>
                             <tr>
@@ -146,7 +158,7 @@ $celular = $linha['celular_UserCdstSite'];
                                     Complemento
                                 </th>
                                 <td>
-                                    ...
+                                    <?php echo $complemento ?>
                                 </td>
                             </tr>
                         </table>
