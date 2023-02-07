@@ -1,5 +1,6 @@
 <?php
 
+
 require "conn_PDO.php";
 
 class Database{
@@ -38,6 +39,13 @@ class Database{
     public function select($sql, $parametros = null) //executa função de pesquisa de SQL
     {
         
+        //====VERIFICA SE É UMA INSTRUÇÃO SELECT=====//
+        if(!preg_match("/^SELECT/i", $sql)){
+            throw new Exception('Base de dados - Não é uma instruçaõ Select');
+        }
+
+
+
         //====LIGAR BD=====//
         $this->ligar();
 
