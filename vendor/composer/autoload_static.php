@@ -4,19 +4,32 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInita6e1653b177e135486d08dddac6c393b
+class ComposerStaticInitf17ac3d71cc62d8262d24ce889119767
 {
     public static $prefixLengthsPsr4 = array (
-        'M' => 
+        'p' => 
         array (
-            'Mel\\SoftwareLuhMimus\\' => 21,
+            'public\\' => 7,
+        ),
+        'c' => 
+        array (
+            'core\\' => 5,
+            'config\\' => 7,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Mel\\SoftwareLuhMimus\\' => 
+        'public\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/src',
+            0 => __DIR__ . '/../..' . '/public',
+        ),
+        'core\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/core',
+        ),
+        'config\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/config',
         ),
     );
 
@@ -27,9 +40,9 @@ class ComposerStaticInita6e1653b177e135486d08dddac6c393b
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInita6e1653b177e135486d08dddac6c393b::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInita6e1653b177e135486d08dddac6c393b::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInita6e1653b177e135486d08dddac6c393b::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitf17ac3d71cc62d8262d24ce889119767::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitf17ac3d71cc62d8262d24ce889119767::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitf17ac3d71cc62d8262d24ce889119767::$classMap;
 
         }, null, ClassLoader::class);
     }

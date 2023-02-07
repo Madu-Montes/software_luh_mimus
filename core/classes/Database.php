@@ -1,7 +1,7 @@
 <?php
 
+//Gestão da base de dados 
 
-require "conn_PDO.php";
 
 class Database{
 

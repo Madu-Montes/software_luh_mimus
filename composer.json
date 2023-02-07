@@ -1,11 +1,12 @@
 {
     "name": "mel/software_luh_mimus",
-    "description": "Software Luh Mimu's",
+    "description": "Software de gerenciamento Luh mimu's",
     "type": "project",
-    "license": "MIT",
     "autoload": {
         "psr-4": {
-            "App\\": "software_luh_mimus/"
+            "core\\": "core/",
+            "config\\": "config/",
+            "public\\": "public/"
         }
     },
     "authors": [

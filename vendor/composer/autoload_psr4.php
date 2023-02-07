@@ -6,5 +6,7 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Mel\\SoftwareLuhMimus\\' => array($baseDir . '/src'),
+    'public\\' => array($baseDir . '/public'),
+    'core\\' => array($baseDir . '/core'),
+    'config\\' => array($baseDir . '/config'),
 );
